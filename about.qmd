@@ -1,0 +1,45 @@
+---
+title: "About"
+---
+
+## 🇳🇴 High School: UWCRCN
+
+I attended the [UWC Red Cross Nordic](https://www.uwc.org/rcn) (UWCRCN), located in Flekke, Norway. UWC makes **education** a **force** to **unite people, nations and cultures** for **peace** and a **sustainable** **future.**
+
+While in Norway, I studied the International Baccalaureate (IB), taking Global Politics, Spanish Literature, English B, French ab initio, Math Analysis and Approaches, and Physics. During my time there, I also enjoyed hiking and diving, and experienced personal, academic, and spiritual growth.
+
+## 🇺🇸 Macalester College
+
+At Macalester, I'm pursuing a double major in **Economics** and **Statistics**, along with a minor in **French**.
+
+As of now, I've served as a Teaching Assistant (**TA**) for **Applied Multivariable Calculus II** and Introduction to **Statistical Modeling**. This upcoming semester, Fall 2025, I will be the TA for **Intermediate Macroeconomics**, and **Machine Learning**. As you may have perceived, I love teaching!
+
+My research interests focus primarily on development economics, immigration, and labor market inequalities. My research for my Econometrics class analyzed wage disparities among immigrant workers, emphasizing intersections of gender and citizenship.
+
+Additionally, I've participated in research and training programs such as the [Expanding Diversity in Economics](https://www.macalester.edu/news/2024/04/three-macalester-students-selected-for-university-of-chicagos-prestigious-economics-program/) (EDE) Program at the University of Chicago in the Summer of 2024 and the [Mathematical Modeling and Public Health Workshop](https://hsph.harvard.edu/epidemiology/news/mathematical-modeling-and-public-health-workshop/) at Harvard Chan School in March 2025.
+
+You can find me exploring extreme sports, cooking, or watching movies when I'm not diving into research or crunching numbers.
+
+## Relevant Courses:
+
+> -   Econometrics
+>
+> -   Intermediate Microeconomics
+>
+> -   Intermediate Macroeconomics
+>
+> -   Machine Learning
+>
+> -   Linear Algebra
+>
+> -   Multivariable Calculus II
+>
+> -   International Economics
+>
+> -   *In progress:*
+>
+>     -   Probability
+>
+>     -   Real Analysis
+>
+>     -   Growth
