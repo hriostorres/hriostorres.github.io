@@ -21,18 +21,25 @@
     "text": "🇺🇸 Macalester College\nAt Macalester, I’m pursuing a double major in Economics and Statistics, along with a minor in French.\nAs of now, I’ve served as a Teaching Assistant (TA) for Applied Multivariable Calculus II and Introduction to Statistical Modeling. This upcoming semester, Fall 2025, I will be the TA for Intermediate Macroeconomics, and Machine Learning. As you may have perceived, I love teaching!\nMy research interests focus primarily on development economics, immigration, and labor market inequalities. My research for my Econometrics class analyzed wage disparities among immigrant workers, emphasizing intersections of gender and citizenship.\nAdditionally, I’ve participated in research and training programs such as the Expanding Diversity in Economics (EDE) Program at the University of Chicago in the Summer of 2024 and the Mathematical Modeling and Public Health Workshop at Harvard Chan School in March 2025.\nYou can find me exploring extreme sports, cooking, or watching movies when I’m not diving into research or crunching numbers."
   },
   {
-    "objectID": "projects.html#harvard-workshop",
-    "href": "projects.html#harvard-workshop",
-    "title": "projects",
-    "section": "Harvard Workshop",
-    "text": "Harvard Workshop"
+    "objectID": "about.html#relevant-courses",
+    "href": "about.html#relevant-courses",
+    "title": "About",
+    "section": "Relevant Courses:",
+    "text": "Relevant Courses:\n\n\nEconometrics\nIntermediate Microeconomics\nIntermediate Macroeconomics\nMachine Learning\nLinear Algebra\nMultivariable Calculus II\nInternational Economics\nIn progress:\n\nProbability\nReal Analysis\nGrowth"
   },
   {
-    "objectID": "projects.html#ede",
-    "href": "projects.html#ede",
-    "title": "projects",
-    "section": "EDE",
-    "text": "EDE"
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "In my Econometrics class, I researched wage disparities based on gender and citizenship status in the U.S. under the supervision of Prof. Amy Damon. This study used the ACS Data from 2012-2019. I utilized a Mincer earnings regression and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects. Results: females earn approximately 32.7% less than males, primarily due to intangible factors such as employer bias and statistical discrimination. The analysis further reveals that non-citizen women face an additional 7.9% wage penalty beyond the independent effects of gender and citizenship alone.\nThis paper is in the process of being published!"
+  },
+  {
+    "objectID": "projects.html#wage-disparities-research",
+    "href": "projects.html#wage-disparities-research",
+    "title": "Projects",
+    "section": "",
+    "text": "In my Econometrics class, I researched wage disparities based on gender and citizenship status in the U.S. under the supervision of Prof. Amy Damon. This study used the ACS Data from 2012-2019. I utilized a Mincer earnings regression and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects. Results: females earn approximately 32.7% less than males, primarily due to intangible factors such as employer bias and statistical discrimination. The analysis further reveals that non-citizen women face an additional 7.9% wage penalty beyond the independent effects of gender and citizenship alone.\nThis paper is in the process of being published!"
   },
   {
     "objectID": "index.html",
@@ -40,19 +47,5 @@
     "title": "David Rios",
     "section": "",
     "text": "I am Hermogenes David Rios—Hermogenes is my first name, David is my middle name, and Rios is my last name. Hermogenes comes from a family tradition: it’s passed down to the first-born child of each generation. I’m from Bolivia and am currently studying in the U.S. at Macalester College in Saint Paul, Minnesota. Learn more about me and my work.\nStay in touch:"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "In my Econometrics class, I researched wage disparities in the U.S. under the supervision of Prof. Amy Damon. This study examines wage disparities based on gender and citizenship status using the ACS Data from 2012-2019. I used a Mincer earnings regression and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects. Results: females earn approximately 32.7% less than males, primarily due to intangible factors such as employer bias and statistical discrimination. The analysis further reveals that non-citizen women face an additional 7.9% wage penalty beyond the independent effects of gender and citizenship alone."
-  },
-  {
-    "objectID": "projects.html#wage-disparities-research",
-    "href": "projects.html#wage-disparities-research",
-    "title": "Projects",
-    "section": "",
-    "text": "In my Econometrics class, I researched wage disparities in the U.S. under the supervision of Prof. Amy Damon. This study examines wage disparities based on gender and citizenship status using the ACS Data from 2012-2019. I used a Mincer earnings regression and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects. Results: females earn approximately 32.7% less than males, primarily due to intangible factors such as employer bias and statistical discrimination. The analysis further reveals that non-citizen women face an additional 7.9% wage penalty beyond the independent effects of gender and citizenship alone."
   }
 ]
