@@ -4,21 +4,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I attended the UWC Red Cross Nordic (UWCRCN), located in Flekke, Norway. UWC makes education a force to unite people, nations and cultures for peace and a sustainable future.\nWhile in Norway, I studied the International Baccalaureate (IB), taking Global Politics, Spanish Literature, English B, French ab initio, Math Analysis and Approaches, and Physics. During my time there, I also enjoyed hiking and diving, and experienced personal, academic, and spiritual growth."
-  },
-  {
-    "objectID": "about.html#high-school-uwcrcn",
-    "href": "about.html#high-school-uwcrcn",
-    "title": "About",
-    "section": "",
-    "text": "I attended the UWC Red Cross Nordic (UWCRCN), located in Flekke, Norway. UWC makes education a force to unite people, nations and cultures for peace and a sustainable future.\nWhile in Norway, I studied the International Baccalaureate (IB), taking Global Politics, Spanish Literature, English B, French ab initio, Math Analysis and Approaches, and Physics. During my time there, I also enjoyed hiking and diving, and experienced personal, academic, and spiritual growth."
+    "text": "At Macalester, I’m pursuing a double major in Economics and Statistics, along with a minor in French.\nAs of now, I’ve served as a Teaching Assistant (TA) for Applied Multivariable Calculus II and Introduction to Statistical Modeling. This upcoming semester, Fall 2025, I will be the TA for Intermediate Macroeconomics, and Machine Learning. As you may have perceived, I love teaching!\nMy research interests focus primarily on development economics, immigration, and labor market inequalities. My research for my Econometrics class analyzed wage disparities among immigrant workers, emphasizing intersections of gender and citizenship.\nAdditionally, I’ve participated in research and training programs such as the Expanding Diversity in Economics (EDE) Program at the University of Chicago in the Summer of 2024 and the Mathematical Modeling and Public Health Workshop at Harvard Chan School in March 2025.\nYou can find me exploring extreme sports, cooking, or watching movies when I’m not diving into research or crunching numbers."
   },
   {
     "objectID": "about.html#macalester-college",
     "href": "about.html#macalester-college",
     "title": "About",
-    "section": "🇺🇸 Macalester College",
-    "text": "🇺🇸 Macalester College\nAt Macalester, I’m pursuing a double major in Economics and Statistics, along with a minor in French.\nAs of now, I’ve served as a Teaching Assistant (TA) for Applied Multivariable Calculus II and Introduction to Statistical Modeling. This upcoming semester, Fall 2025, I will be the TA for Intermediate Macroeconomics, and Machine Learning. As you may have perceived, I love teaching!\nMy research interests focus primarily on development economics, immigration, and labor market inequalities. My research for my Econometrics class analyzed wage disparities among immigrant workers, emphasizing intersections of gender and citizenship.\nAdditionally, I’ve participated in research and training programs such as the Expanding Diversity in Economics (EDE) Program at the University of Chicago in the Summer of 2024 and the Mathematical Modeling and Public Health Workshop at Harvard Chan School in March 2025.\nYou can find me exploring extreme sports, cooking, or watching movies when I’m not diving into research or crunching numbers."
+    "section": "",
+    "text": "At Macalester, I’m pursuing a double major in Economics and Statistics, along with a minor in French.\nAs of now, I’ve served as a Teaching Assistant (TA) for Applied Multivariable Calculus II and Introduction to Statistical Modeling. This upcoming semester, Fall 2025, I will be the TA for Intermediate Macroeconomics, and Machine Learning. As you may have perceived, I love teaching!\nMy research interests focus primarily on development economics, immigration, and labor market inequalities. My research for my Econometrics class analyzed wage disparities among immigrant workers, emphasizing intersections of gender and citizenship.\nAdditionally, I’ve participated in research and training programs such as the Expanding Diversity in Economics (EDE) Program at the University of Chicago in the Summer of 2024 and the Mathematical Modeling and Public Health Workshop at Harvard Chan School in March 2025.\nYou can find me exploring extreme sports, cooking, or watching movies when I’m not diving into research or crunching numbers."
   },
   {
     "objectID": "about.html#relevant-courses",
@@ -26,6 +19,13 @@
     "title": "About",
     "section": "Relevant Courses:",
     "text": "Relevant Courses:\n\n\nEconometrics\nIntermediate Microeconomics\nIntermediate Macroeconomics\nMachine Learning\nLinear Algebra\nMultivariable Calculus II\nInternational Economics\nIn progress:\n\nProbability\nReal Analysis\nGrowth"
+  },
+  {
+    "objectID": "about.html#high-school-uwcrcn",
+    "href": "about.html#high-school-uwcrcn",
+    "title": "About",
+    "section": "🇳🇴 High School: UWCRCN",
+    "text": "🇳🇴 High School: UWCRCN\nI attended the UWC Red Cross Nordic (UWCRCN), located in Flekke, Norway. UWC makes education a force to unite people, nations and cultures for peace and a sustainable future.\nWhile in Norway, I studied the International Baccalaureate (IB), taking Global Politics, Spanish Literature, English B, French ab initio, Math Analysis and Approaches, and Physics. During my time there, I also enjoyed hiking and diving, and experienced personal, academic, and spiritual growth."
   },
   {
     "objectID": "projects.html",

@@ -6,6 +6,7 @@ project:
 website:
   title: "David Rios"
   favicon: "David.jpeg"
+  google-analytics: G-JBCLMNEM0Z
   navbar:
     right:
       - href: index.qmd
@@ -36,6 +37,10 @@ format:
       dark: darkly
     css: styles.css
     toc: true
+    include-in-header: ga.html
+
+
+
     
   
 

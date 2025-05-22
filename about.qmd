@@ -2,12 +2,6 @@
 title: "About"
 ---
 
-## 🇳🇴 High School: UWCRCN
-
-I attended the [UWC Red Cross Nordic](https://www.uwc.org/rcn) (UWCRCN), located in Flekke, Norway. UWC makes **education** a **force** to **unite people, nations and cultures** for **peace** and a **sustainable** **future.**
-
-While in Norway, I studied the International Baccalaureate (IB), taking Global Politics, Spanish Literature, English B, French ab initio, Math Analysis and Approaches, and Physics. During my time there, I also enjoyed hiking and diving, and experienced personal, academic, and spiritual growth.
-
 ## 🇺🇸 Macalester College
 
 At Macalester, I'm pursuing a double major in **Economics** and **Statistics**, along with a minor in **French**.
@@ -43,3 +37,9 @@ You can find me exploring extreme sports, cooking, or watching movies when I'm n
 >     -   Real Analysis
 >
 >     -   Growth
+
+## 🇳🇴 High School: UWCRCN
+
+I attended the [UWC Red Cross Nordic](https://www.uwc.org/rcn) (UWCRCN), located in Flekke, Norway. UWC makes **education** a **force** to **unite people, nations and cultures** for **peace** and a **sustainable** **future.**
+
+While in Norway, I studied the International Baccalaureate (IB), taking Global Politics, Spanish Literature, English B, French ab initio, Math Analysis and Approaches, and Physics. During my time there, I also enjoyed hiking and diving, and experienced personal, academic, and spiritual growth.
