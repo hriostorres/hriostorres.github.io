@@ -1,6 +1,6 @@
 ---
 title: "David Rios"
-image: David.jpeg
+image: Hermo.jpeg
 about: 
   template: jolla
   links:

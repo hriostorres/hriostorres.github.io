@@ -6,23 +6,20 @@ title: "Projects"
 
 In my Econometrics class, I researched wage disparities based on gender and citizenship status in the U.S. under the supervision of Prof. Amy Damon. This study used the ACS Data from 2012-2019. My research focused on foreign-born workers in the agriculture, construction, and service sectors—industries where immigrant labor is most concentrated as seen in the figure below.
 
-> ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfcslDda6AHFJ_CcDPmOu911HyXm7DWEe09i539KGqror14cn2TjH-lr-Me2W2_b0PTUXmZWFIPbGJsXsZyfG9oizp4mTTcOO2w-BkRqfXf26NxHp6jlVp7SitlRVWAOOm0ZBm27w?key=jQ8pnCF5ujS-kikDIvD_hqPs){width="404"}
+> ![](wage1.png)**Fig. 1:** Ratio of Foreign-Born to Citizen Workers by Industry.
 >
-> **Fig. 1:** Ratio of Foreign-Born to Citizen Workers by Industry.
->
-> *Source*: own calculations using the ACS Data.
+> **Source:** own calculations using the ACS Data.
 
 I utilized a Mincer earnings regression (see equation below) and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects.
 
 $$
 \begin{align}
-\ln(wage_{i,s,t}) &= \beta_0 + \beta_1 \, \textit{Citizen}_{i,s,t} + \beta_2 \, \textit{Sex}_{i,s,t} + \beta_3 \, (\textit{Citizen} \times \textit{Sex})_{i,s,t} \\
-&\quad + \mathbf{X}'_{i,s,t} \beta_4 + \sum_{s=1}^{S} \gamma_s D_{s,i} + \sum_{t=1}^{T} \tau_t D_{t,i} \\
-&\quad + \sum_{j=1}^{J} \theta_j D_{j,i} + \sum_{k=1}^{K} \delta_k D_{k,i} + \epsilon_{i,s,t}
+\ln(wage_{i,s,t}) &= \beta_0 + \beta_1 \, \textit{Citizen}_{i,s,t} + \beta_2 \, \textit{Sex}_{i,s,t} + \beta_3 \, (\textit{Citizen} \times \textit{Sex})_{i,s,t} + \mathbf{X}'_{i,s,t} \beta_4 \\
+&\quad  + \sum_{s=1}^{S} \gamma_s D_{s,i} + \sum_{t=1}^{T} \tau_t D_{t,i} + \sum_{j=1}^{J} \theta_j D_{j,i} + \sum_{k=1}^{K} \delta_k D_{k,i} + \epsilon_{i,s,t}
 \end{align}
 $$
 
-where $$ \mathbf{X}'_{i,s,t} $$ includes education, experience, and English proficiency, and fixed effects control for geography, year, industry, and birthplace.
+where $\mathbf{X}'_{i,s,t}$ includes education, experience, and English proficiency, and fixed effects control for geography, year, industry, and birthplace.
 
 **Results?**
 
