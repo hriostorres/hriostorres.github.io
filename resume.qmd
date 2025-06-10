@@ -1,5 +1,61 @@
-<iframe 
-  width="800" 
-  height="800" 
-  src="Resume.pdf">
-</iframe> 
+---
+title: "Rios' Résumé: Online Version"
+---
+📧 [hriostor\@macalester.edu](mailto:hriostor@macalester.edu) \| 🌐 [LinkedIn](https://linkedin.com/in/hermogenesdavid)
+
+------------------------------------------------------------------------
+
+### Education
+
+**Macalester College**, Saint Paul, MN\
+**Majors:** Economics and Statistics \| **Minor:** French\
+**Relevant Coursework:** Econometrics, Machine Learning, Linear Algebra, Statistical Modeling\
+**Honors & Awards:** Kofi Annan & UWC Davis Scholar, Flemming Scholar, Dean’s List (2023–2024)
+
+------------------------------------------------------------------------
+
+### Experience
+
+**Math Corps**, St. Paul, MN\
+*College Instructor, May–July 2025*\
+- Taught math and coding in R and Python to 10 middle school students\
+- Mentored 5 high school assistants and developed interactive, data-driven lessons\
+- Used formative assessment and visualization to support computational thinking
+
+**American Statistical Association – DataFest**\
+*Winner: Best Insight, March 2025*\
+- Analyzed commercial leasing trends (2018–2024) across 10 U.S. markets\
+- Created R dashboards using census-merged data to guide office leasing decisions
+
+**University of Chicago – Becker Friedman Institute**\
+*EDE Summer Fellow, May–June 2024*\
+- Selected as 1 of 45 fellows (4.5% acceptance rate)\
+- Researched links between electricity access and human development using econometrics
+
+------------------------------------------------------------------------
+
+### Projects
+
+**STATA: Intersecting Inequalities in the U.S. Labor Market**\
+*Jan–May 2025*\
+- Utilized a Mincer Earnings Function with 4 fixed effects and conducted 4 Blinder-Oaxaca Decompositions on ACS 2012–2019 data (500k observations) to quantify labor market discrimination against immigrant women
+
+**R: Harvard T.H. Chan School of Public Health Workshop**\
+*March 2025*\
+- Explored infectious disease dynamics through SIR (Susceptible-Infected-Recovered) simulations using R Studio - Analyzed outbreak scenarios, antimicrobial resistance, and forecasting techniques, integrating ML approaches
+
+------------------------------------------------------------------------
+
+### Leadership
+
+**UWC Bolivian National Committee (Treasurer)**\
+*Aug 2024–Present*\
+- Manage alumni donations and ensure financial oversight to support committee initiatives, and the selection process - Connect Bolivian UWC alumni with current students, enhancing their UWC experience
+
+------------------------------------------------------------------------
+
+### Skills & Interests
+
+**Skills:** R, Python, STATA, MS Office, Google Suite, Slate\
+**Languages:** Spanish (Native), English (Fluent), French (Fluent)\
+**Interests:** Rock climbing, skiing, hiking, ice skating, freediving, development, research, zumba

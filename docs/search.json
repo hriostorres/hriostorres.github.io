@@ -1,51 +1,72 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "metrics.html",
+    "href": "metrics.html",
+    "title": "Wage Disparities Research",
     "section": "",
-    "text": "At Macalester, I’m pursuing a double major in Economics and Statistics, along with a minor in French.\nAs of now, I’ve served as a Teaching Assistant (TA) for Calculus II and Statistical Modeling. This upcoming semester, Fall 2025, I will be the TA for Intermediate Macroeconomics, and Machine Learning. As you may have perceived, I love teaching!\nAdditionally, I’ve participated in research and training programs such as the Expanding Diversity in Economics (EDE) Program at the University of Chicago in the Summer of 2024 and the Mathematical Modeling and Public Health Workshop at Harvard Chan School in March 2025.\nYou can find me exploring extreme sports, cooking, or watching movies when I’m not diving into research or crunching numbers."
+    "text": "In my Econometrics class, I researched wage disparities based on gender and citizenship status in the U.S. under the supervision of Prof. Amy Damon. This study used the ACS Data from 2012-2019. My research focused on foreign-born workers in the agriculture, construction, and service sectors—industries where immigrant labor is most concentrated as seen in the figure below.\n\nFig. 1: Ratio of Foreign-Born to Citizen Workers by Industry.\nSource: own calculations using the ACS Data."
   },
   {
-    "objectID": "about.html#macalester-college",
-    "href": "about.html#macalester-college",
-    "title": "About",
+    "objectID": "metrics.html#description",
+    "href": "metrics.html#description",
+    "title": "Wage Disparities Research",
     "section": "",
-    "text": "At Macalester, I’m pursuing a double major in Economics and Statistics, along with a minor in French.\nAs of now, I’ve served as a Teaching Assistant (TA) for Calculus II and Statistical Modeling. This upcoming semester, Fall 2025, I will be the TA for Intermediate Macroeconomics, and Machine Learning. As you may have perceived, I love teaching!\nAdditionally, I’ve participated in research and training programs such as the Expanding Diversity in Economics (EDE) Program at the University of Chicago in the Summer of 2024 and the Mathematical Modeling and Public Health Workshop at Harvard Chan School in March 2025.\nYou can find me exploring extreme sports, cooking, or watching movies when I’m not diving into research or crunching numbers."
+    "text": "In my Econometrics class, I researched wage disparities based on gender and citizenship status in the U.S. under the supervision of Prof. Amy Damon. This study used the ACS Data from 2012-2019. My research focused on foreign-born workers in the agriculture, construction, and service sectors—industries where immigrant labor is most concentrated as seen in the figure below.\n\nFig. 1: Ratio of Foreign-Born to Citizen Workers by Industry.\nSource: own calculations using the ACS Data."
   },
   {
-    "objectID": "about.html#relevant-courses",
-    "href": "about.html#relevant-courses",
-    "title": "About",
-    "section": "Relevant Courses:",
-    "text": "Relevant Courses:\n\nEconometrics\nIntermediate Microeconomics\nIntermediate Macroeconomics\nMachine Learning\nLinear Algebra\nMultivariable Calculus II\nInternational Economics\nIn progress: Probability, Real Analysis, and Growth"
+    "objectID": "metrics.html#empirical-strategy",
+    "href": "metrics.html#empirical-strategy",
+    "title": "Wage Disparities Research",
+    "section": "Empirical Strategy",
+    "text": "Empirical Strategy\nI utilized a Mincer earnings regression (see equation below) and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects.\n\\[\n\\begin{align}\n\\ln(wage_{i,s,t}) &= \\beta_0 + \\beta_1 \\, \\textit{Citizen}_{i,s,t} + \\beta_2 \\, \\textit{Sex}_{i,s,t} + \\beta_3 \\, (\\textit{Citizen} \\times \\textit{Sex})_{i,s,t} + \\mathbf{X}'_{i,s,t} \\beta_4 \\\\\n&\\quad  + \\sum_{s=1}^{S} \\gamma_s D_{s,i} + \\sum_{t=1}^{T} \\tau_t D_{t,i} + \\sum_{j=1}^{J} \\theta_j D_{j,i} + \\sum_{k=1}^{K} \\delta_k D_{k,i} + \\epsilon_{i,s,t}\n\\end{align}\n\\]\nwhere \\(\\mathbf{X}'_{i,s,t}\\) includes education, experience, and English proficiency, and fixed effects control for geography, year, industry, and birthplace."
   },
   {
-    "objectID": "about.html#high-school-uwcrcn",
-    "href": "about.html#high-school-uwcrcn",
-    "title": "About",
-    "section": "🇳🇴 High School: UWCRCN",
-    "text": "🇳🇴 High School: UWCRCN\nI attended the UWC Red Cross Nordic (UWCRCN), located in Flekke, Norway. UWC makes education a force to unite people, nations and cultures for peace and a sustainable future.\nWhile in Norway, I pursued the International Baccalaureate (IB) and had the honor of representing the UWC movement and my school at the Nobel Peace Prize Ceremony in December 2022. Beyond academics, I spent my time hiking, diving, and growing—personally, intellectually, and spiritually."
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "In my Econometrics class, I researched wage disparities based on gender and citizenship status in the U.S. under the supervision of Prof. Amy Damon. This study used the ACS Data from 2012-2019. My research focused on foreign-born workers in the agriculture, construction, and service sectors—industries where immigrant labor is most concentrated as seen in the figure below.\n\nFig. 1: Ratio of Foreign-Born to Citizen Workers by Industry.\nSource: own calculations using the ACS Data.\n\nI utilized a Mincer earnings regression (see equation below) and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects.\n\\[\n\\begin{align}\n\\ln(wage_{i,s,t}) &= \\beta_0 + \\beta_1 \\, \\textit{Citizen}_{i,s,t} + \\beta_2 \\, \\textit{Sex}_{i,s,t} + \\beta_3 \\, (\\textit{Citizen} \\times \\textit{Sex})_{i,s,t} + \\mathbf{X}'_{i,s,t} \\beta_4 \\\\\n&\\quad  + \\sum_{s=1}^{S} \\gamma_s D_{s,i} + \\sum_{t=1}^{T} \\tau_t D_{t,i} + \\sum_{j=1}^{J} \\theta_j D_{j,i} + \\sum_{k=1}^{K} \\delta_k D_{k,i} + \\epsilon_{i,s,t}\n\\end{align}\n\\]\nwhere \\(\\mathbf{X}'_{i,s,t}\\) includes education, experience, and English proficiency, and fixed effects control for geography, year, industry, and birthplace.\nResults?\n\nFemales earn approximately 32.7% less than males, primarily due to intangible factors such as employer bias and statistical discrimination.\nThe analysis further reveals that non-citizen women face an additional 7.9% wage penalty beyond the independent effects of gender and citizenship alone.\nAdditionally, Naturalized citizens earn about 3.7% more than native-born citizens, likely due to positive selection and legal protections.\n\n\nThis paper is in the process of being published at the Macalester Street Journal."
-  },
-  {
-    "objectID": "projects.html#wage-disparities-research",
-    "href": "projects.html#wage-disparities-research",
-    "title": "Projects",
-    "section": "",
-    "text": "In my Econometrics class, I researched wage disparities based on gender and citizenship status in the U.S. under the supervision of Prof. Amy Damon. This study used the ACS Data from 2012-2019. My research focused on foreign-born workers in the agriculture, construction, and service sectors—industries where immigrant labor is most concentrated as seen in the figure below.\n\nFig. 1: Ratio of Foreign-Born to Citizen Workers by Industry.\nSource: own calculations using the ACS Data.\n\nI utilized a Mincer earnings regression (see equation below) and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects.\n\\[\n\\begin{align}\n\\ln(wage_{i,s,t}) &= \\beta_0 + \\beta_1 \\, \\textit{Citizen}_{i,s,t} + \\beta_2 \\, \\textit{Sex}_{i,s,t} + \\beta_3 \\, (\\textit{Citizen} \\times \\textit{Sex})_{i,s,t} + \\mathbf{X}'_{i,s,t} \\beta_4 \\\\\n&\\quad  + \\sum_{s=1}^{S} \\gamma_s D_{s,i} + \\sum_{t=1}^{T} \\tau_t D_{t,i} + \\sum_{j=1}^{J} \\theta_j D_{j,i} + \\sum_{k=1}^{K} \\delta_k D_{k,i} + \\epsilon_{i,s,t}\n\\end{align}\n\\]\nwhere \\(\\mathbf{X}'_{i,s,t}\\) includes education, experience, and English proficiency, and fixed effects control for geography, year, industry, and birthplace.\nResults?\n\nFemales earn approximately 32.7% less than males, primarily due to intangible factors such as employer bias and statistical discrimination.\nThe analysis further reveals that non-citizen women face an additional 7.9% wage penalty beyond the independent effects of gender and citizenship alone.\nAdditionally, Naturalized citizens earn about 3.7% more than native-born citizens, likely due to positive selection and legal protections.\n\n\nThis paper is in the process of being published at the Macalester Street Journal."
+    "objectID": "metrics.html#results",
+    "href": "metrics.html#results",
+    "title": "Wage Disparities Research",
+    "section": "Results?",
+    "text": "Results?\n\nFemales earn approximately 32.7% less than males, primarily due to intangible factors such as employer bias and statistical discrimination.\nThe analysis further reveals that non-citizen women face an additional 7.9% wage penalty beyond the independent effects of gender and citizenship alone.\nAdditionally, Naturalized citizens earn about 3.7% more than native-born citizens, likely due to positive selection and legal protections.\n\n\nThis paper is in the process of being published at the Macalester Street Journal."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "David Rios",
     "section": "",
-    "text": "I am Hermogenes David Rios—Hermogenes is my first name, David is my middle name, and Rios is my last name. Hermogenes comes from a family tradition: it’s passed down to the first-born child of each generation. I’m from Bolivia and am currently studying in the U.S. at Macalester College in Saint Paul, Minnesota. Learn more about me and my work.\nStay in touch:"
+    "text": "I am Hermogenes David Rios—Hermogenes is my first name, David is my middle name, and Rios is my last name. Yes, Hermogenes, like a Greek philosopher or maybe a rejected Harry Potter spell. I’m from Bolivia and am currently studying in the U.S. at Macalester College in Saint Paul, Minnesota. Learn more about me and my work.\n\nStay in touch:"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Rios’ Résumé: Online Version",
+    "section": "",
+    "text": "📧 hriostor@macalester.edu | 🌐 LinkedIn\n\n\nEducation\nMacalester College, Saint Paul, MN\nMajors: Economics and Statistics | Minor: French\nRelevant Coursework: Econometrics, Machine Learning, Linear Algebra, Statistical Modeling\nHonors & Awards: Kofi Annan & UWC Davis Scholar, Flemming Scholar, Dean’s List (2023–2024)\n\n\n\nExperience\nMath Corps, St. Paul, MN\nCollege Instructor, May–July 2025\n- Taught math and coding in R and Python to 10 middle school students\n- Mentored 5 high school assistants and developed interactive, data-driven lessons\n- Used formative assessment and visualization to support computational thinking\nAmerican Statistical Association – DataFest\nWinner: Best Insight, March 2025\n- Analyzed commercial leasing trends (2018–2024) across 10 U.S. markets\n- Created R dashboards using census-merged data to guide office leasing decisions\nUniversity of Chicago – Becker Friedman Institute\nEDE Summer Fellow, May–June 2024\n- Selected as 1 of 45 fellows (4.5% acceptance rate)\n- Researched links between electricity access and human development using econometrics\n\n\n\nProjects\nSTATA: Intersecting Inequalities in the U.S. Labor Market\nJan–May 2025\n- Utilized a Mincer Earnings Function with 4 fixed effects and conducted 4 Blinder-Oaxaca Decompositions on ACS 2012–2019 data (500k observations) to quantify labor market discrimination against immigrant women\nR: Harvard T.H. Chan School of Public Health Workshop\nMarch 2025\n- Explored infectious disease dynamics through SIR (Susceptible-Infected-Recovered) simulations using R Studio - Analyzed outbreak scenarios, antimicrobial resistance, and forecasting techniques, integrating ML approaches\n\n\n\nLeadership\nUWC Bolivian National Committee (Treasurer)\nAug 2024–Present\n- Manage alumni donations and ensure financial oversight to support committee initiatives, and the selection process - Connect Bolivian UWC alumni with current students, enhancing their UWC experience\n\n\n\nSkills & Interests\nSkills: R, Python, STATA, MS Office, Google Suite, Slate\nLanguages: Spanish (Native), English (Fluent), French (Fluent)\nInterests: Rock climbing, skiing, hiking, ice skating, freediving, development, research, zumba"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Wage Disparity Research\n\n\nEconometrics Research Project\n\n\n\nRead a bit more about my wage disparities research where I utilized Mincer regressions and Blinder-Oaxaca decompositions\n\n\nFor this, I used ACS data (2012–2019, n = 500k) to investigate gender and citizenship-based inequality\n\n\n\nRead more"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "At Macalester, I’m pursuing a double major in Economics and Statistics, along with a minor in French.\nAs of now, I’ve served as a Teaching Assistant (TA) for Calculus II and Statistical Modeling. This upcoming semester, Fall 2025, I will be the TA for Intermediate Macroeconomics, and Machine Learning. As you may have perceived, I love teaching!\nAdditionally, I’ve participated in research and training programs such as the Expanding Diversity in Economics (EDE) Program at the University of Chicago in the Summer of 2024 and the Mathematical Modeling and Public Health Workshop at Harvard Chan School in March 2025.\n\n\n\n\n\n\n\n\nOutside the classroom, I love being active and exploring nature. I’ve been getting into bouldering and sport climbing, mostly indoors. Climbing challenges me to stay focused and push my limits, both mentally and physically.\nI also enjoy running, apnea diving, and trying out new restaurants. These hobbies keep me grounded, adventurous, and open to discovery."
+  },
+  {
+    "objectID": "about.html#macalester-college",
+    "href": "about.html#macalester-college",
+    "title": "About",
+    "section": "",
+    "text": "At Macalester, I’m pursuing a double major in Economics and Statistics, along with a minor in French.\nAs of now, I’ve served as a Teaching Assistant (TA) for Calculus II and Statistical Modeling. This upcoming semester, Fall 2025, I will be the TA for Intermediate Macroeconomics, and Machine Learning. As you may have perceived, I love teaching!\nAdditionally, I’ve participated in research and training programs such as the Expanding Diversity in Economics (EDE) Program at the University of Chicago in the Summer of 2024 and the Mathematical Modeling and Public Health Workshop at Harvard Chan School in March 2025.\n\n\n\n\n\n\n\n\nOutside the classroom, I love being active and exploring nature. I’ve been getting into bouldering and sport climbing, mostly indoors. Climbing challenges me to stay focused and push my limits, both mentally and physically.\nI also enjoy running, apnea diving, and trying out new restaurants. These hobbies keep me grounded, adventurous, and open to discovery."
+  },
+  {
+    "objectID": "about.html#uwc-rcn-high-school",
+    "href": "about.html#uwc-rcn-high-school",
+    "title": "About",
+    "section": "🏫 UWC RCN: High School",
+    "text": "🏫 UWC RCN: High School\nI attended the UWC Red Cross Nordic (UWCRCN), located in Flekke, Norway. UWC makes education a force to unite people, nations and cultures for peace and a sustainable future.\nWhile in Norway, I pursued the International Baccalaureate (IB) and had the honor of representing the UWC movement and my school at the Nobel Peace Prize Ceremony in December 2022. Beyond academics, I spent my time hiking, diving, and growing—personally, intellectually, and spiritually."
   }
 ]

@@ -78,45 +78,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-JBCLMNEM0Z', { 'anonymize_ip': true});
 </script>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-JBCLMNEM0Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-JBCLMNEM0Z');
-</script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -176,14 +138,8 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#wage-disparities-research" id="toc-wage-disparities-research" class="nav-link active" data-scroll-target="#wage-disparities-research">Wage Disparities Research</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -207,33 +163,27 @@ window.Quarto = {
 </header>
 
 
-<section id="wage-disparities-research" class="level2">
-<h2 class="anchored" data-anchor-id="wage-disparities-research">Wage Disparities Research</h2>
-<p>In my Econometrics class, I researched wage disparities based on gender and citizenship status in the U.S. under the supervision of Prof.&nbsp;Amy Damon. This study used the ACS Data from 2012-2019. My research focused on foreign-born workers in the agriculture, construction, and service sectors—industries where immigrant labor is most concentrated as seen in the figure below.</p>
-<blockquote class="blockquote">
-<p><img src="wage1.png" class="img-fluid"><strong>Fig. 1:</strong> Ratio of Foreign-Born to Citizen Workers by Industry.</p>
-<p><strong>Source:</strong> own calculations using the ACS Data.</p>
-</blockquote>
-<p>I utilized a Mincer earnings regression (see equation below) and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects.</p>
-<p><span class="math display">\[
-\begin{align}
-\ln(wage_{i,s,t}) &amp;= \beta_0 + \beta_1 \, \textit{Citizen}_{i,s,t} + \beta_2 \, \textit{Sex}_{i,s,t} + \beta_3 \, (\textit{Citizen} \times \textit{Sex})_{i,s,t} + \mathbf{X}'_{i,s,t} \beta_4 \\
-&amp;\quad  + \sum_{s=1}^{S} \gamma_s D_{s,i} + \sum_{t=1}^{T} \tau_t D_{t,i} + \sum_{j=1}^{J} \theta_j D_{j,i} + \sum_{k=1}^{K} \delta_k D_{k,i} + \epsilon_{i,s,t}
-\end{align}
-\]</span></p>
-<p>where <span class="math inline">\(\mathbf{X}'_{i,s,t}\)</span> includes education, experience, and English proficiency, and fixed effects control for geography, year, industry, and birthplace.</p>
-<p><strong>Results?</strong></p>
+<div class="card">
+<h3 class="anchored">
+Wage Disparity Research
+</h3>
+<p>
+<strong>Econometrics Research Project</strong>
+</p>
 <ul>
-<li><p>Females earn approximately 32.7% less than males, primarily due to intangible factors such as employer bias and statistical discrimination.</p></li>
-<li><p>The analysis further reveals that non-citizen women face an additional 7.9% wage penalty beyond the independent effects of gender and citizenship alone.</p></li>
-<li><p>Additionally, Naturalized citizens earn about 3.7% more than native-born citizens, likely due to positive selection and legal protections.</p></li>
+<li>
+Read a bit more about my wage disparities research where I utilized Mincer regressions and Blinder-Oaxaca decompositions
+</li>
+<li>
+For this, I used ACS data (2012–2019, n = 500k) to investigate gender and citizenship-based inequality
+</li>
 </ul>
-<blockquote class="blockquote">
-<p>This paper is in the process of being published at <em>the</em> <em>Macalester Street Journal.</em></p>
-</blockquote>
+<p>
+<a href="./metrics.html" class="btn">Read more</a>
+</p>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

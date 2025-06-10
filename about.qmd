@@ -1,8 +1,10 @@
 ---
 title: "About"
+format: html
+css: styles.css
 ---
 
-## 🇺🇸 Macalester College
+## 📍Macalester College
 
 At Macalester, I'm pursuing a double major in **Economics** and **Statistics**, along with a minor in **French**.
 
@@ -10,27 +12,23 @@ As of now, I've served as a Teaching Assistant (**TA**) for **Calculus II** and 
 
 Additionally, I've participated in research and training programs such as the [Expanding Diversity in Economics](https://www.macalester.edu/news/2024/04/three-macalester-students-selected-for-university-of-chicagos-prestigious-economics-program/) (EDE) Program at the University of Chicago in the Summer of 2024 and the [Mathematical Modeling and Public Health Workshop](https://hsph.harvard.edu/epidemiology/news/mathematical-modeling-and-public-health-workshop/) at Harvard Chan School in March 2025.
 
-You can find me exploring extreme sports, cooking, or watching movies when I'm not diving into research or crunching numbers.
+### 🧗🏼 Hobbies
 
-## Relevant Courses:
+<table style="width:100%; border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td style="width: 40%; vertical-align: top; border: none;">
+      <img src="v6.jpg" alt="V5-V7 @Vertical Endeavors" style="width: 8cm;">
+    </td>
+    <td style="vertical-align: top; border: none; padding-left: 1em;">
+      Outside the classroom, I love being active and exploring nature. I've been getting into bouldering and sport climbing, mostly indoors. Climbing challenges me to stay focused and push my limits, both mentally and physically.
 
--   Econometrics
+      I also enjoy running, apnea diving, and trying out new restaurants. These hobbies keep me grounded, adventurous, and open to discovery.
+    </td>
+  </tr>
+</table>
 
--   Intermediate Microeconomics
 
--   Intermediate Macroeconomics
-
--   Machine Learning
-
--   Linear Algebra
-
--   Multivariable Calculus II
-
--   International Economics
-
--   *In progress:* Probability, Real Analysis, and Growth
-
-## 🇳🇴 High School: UWCRCN
+## 🏫  UWC RCN: High School
 
 I attended the [UWC Red Cross Nordic](https://www.uwc.org/rcn) (UWCRCN), located in Flekke, Norway. UWC makes **education** a **force** to **unite people, nations and cultures** for **peace** and a **sustainable** **future.**
 

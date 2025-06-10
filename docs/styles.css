@@ -1,1 +1,36 @@
-/* css styles */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  background-color: #fff;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #2a2a2a;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+}
+
+.card p {
+  margin: 0.5rem 0;
+}
+
+a.btn {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: #0366d6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a.btn:hover {
+  background-color: #024caa;
+}
+

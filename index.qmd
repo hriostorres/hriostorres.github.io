@@ -12,6 +12,8 @@ about:
       href: mailto:hriostor@macalester.edu
 ---
 
-I am Hermogenes David Rios—Hermogenes is my first name, David is my middle name, and Rios is my last name. Hermogenes comes from a family tradition: it's passed down to the first-born child of each generation. I'm from Bolivia and am currently studying in the U.S. at Macalester College in Saint Paul, Minnesota. Learn more [about me](about.qmd) and my work.
+I am Hermogenes David Rios—Hermogenes is my first name, David is my middle name, and Rios is my last name. Yes, Hermogenes, like a Greek philosopher or maybe a rejected Harry Potter spell. I'm from Bolivia and am currently studying in the U.S. at Macalester College in Saint Paul, Minnesota. Learn more [about me](about.qmd) and my work.
+
+<br>
 
 Stay in touch:
