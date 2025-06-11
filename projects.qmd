@@ -1,14 +1,12 @@
 ---
 title: "Projects"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
 ---
-
-
-<div class="card">
-  <h3>Wage Disparity Research</h3>
-  <p><strong>Econometrics Research Project</strong></p>
-  <ul>
-    <li> Read a bit more about my wage disparities research where I utilized Mincer regressions and Blinder-Oaxaca decompositions</li>
-    <li>For this, I used ACS data (2012–2019, n = 500k) to investigate gender and citizenship-based inequality</li>
-  </ul>
-  <p><a href="metrics.qmd" class="btn">Read more</a></p>
-</div>

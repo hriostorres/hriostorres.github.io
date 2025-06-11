@@ -1,0 +1,42 @@
+---
+title: "2025 Bolivia Elections Website"
+author: David Rios
+date: 2025-06-02
+categories: [bolivia, website, r, research]
+image: "websitepp.png"
+format: html
+---
+
+## Overview
+
+I created a multilingual website—built using Quarto and hosted on GitHub Pages—to support voters as they navigate the upcoming Bolivia 2025 national elections.
+
+The site features:
+
+-   In-depth candidate profiles
+-   Summarized and official party platforms
+-   Contextual political analysis
+-   Interactive decision-support tools
+-   Availability in Spanish, Quechua, Aymara, Guaraní, English, and more — because democracy should speak everyone’s language.
+
+🌐 [Visit the website](https://hriostorres.github.io/elecciones.github.io/)
+
+::: callout-tip
+## Important:
+
+This page does not promote or support any particular candidate. Its sole purpose is to provide clear, verified, and accessible information to all Bolivians, regardless of background or political affiliation.
+:::
+
+This site was built with accessibility and civic empowerment in mind. Designed for both desktop and mobile users, the interface is clean and intuitive to encourage broader engagement from all sectors of society.
+
+## Author's Note
+
+With Bolivia facing an economic crisis, a growing parallel exchange rate, and deep political polarization across departments, the August 17th elections are more than a vote—they’re a turning point.
+
+This project aims to inform, clarify, and empower. There’s a lot of speculation about each candidate's platform. To help cut through the noise, I gathered and organized reliable, verifiable information into one publicly available platform.
+
+Each profile includes a summary of the candidate’s platform, as well as a link to their official government plan filed with the Tribunal Supremo Electoral.
+
+------------------------------------------------------------------------
+
+*This is a personal, nonpartisan project driven by the hope for a more informed, inclusive, and democratic Bolivia.*

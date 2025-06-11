@@ -1,0 +1,270 @@
+---
+title: "Unsupervised Learning: Clustering and PCA"
+subtitle: "Machine Learning Group Assingment"
+date: 04-01-2025
+author: "David Rios, Elena Ortiz, Fiona Godsill, and Lily Morgan"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    embed-resources: true
+    code-tools: true
+categories: [machine learning, statistics, r]
+image: "pca.png"
+---
+
+```{r}
+#| include: false
+# Load packages 
+library(tidyverse)
+
+
+
+# if your group needs any other packages, add them here
+library(factoextra)
+library(reshape2)
+library(broom)
+```
+
+This ML project applies unsupervised machine learning techniques—clustering and PCA—to analyze the musical features of Justin Bieber’s top hits!
+
+# Research Goals
+
+> Our goal for this project is to explore and summarize Justin Bieber’s most successful songs that have been played on our Belieber Nation radio station. Specifically, we aim to identify the musical traits and popularity trends that set his biggest hits apart. By examining patterns across his top tracks, we hope to understand better what resonates most with listeners and use that insight to make smarter, more targeted programming decisions in the future.
+
+# Data
+
+> Our training data focuses on the Billboard chart performance and musical features of Justin Bieber’s songs. We started with a larger dataset of 27 artists and filtered it down to just Bieber’s tracks to fit our project goal at the Belieber Nation radio station. Each song includes detailed features such as danceability, energy, and tempo. Other variables like duration (in milliseconds), loudness, and instrumentalness give us more insight into the sound and structure of each song. We also have two key indicators: Spotify popularity score and the number of weeks the song spent on the Billboard charts. All the data reflects Justin Bieber’s popularity across the United States, covering a time range that captures major milestones in his career. We are using this data to better understand what musical qualities define his biggest hits, to make smarter programming choices, and keep our beloved Beliebers tuning in.
+
+```{r}
+#| message: false
+#| warning: false
+#| include: false
+
+# read in data
+music <- read.csv("https://bcheggeseth.github.io/253_spring_2024/data/billboard.csv")
+
+# Check out artists with at least 40 songs
+music %>% 
+  count(performer) %>% 
+  filter(n >= 40) %>% 
+  select(performer)
+
+# Pick just one of these artists to study
+my_artist <- music %>% 
+  filter(performer == "Justin Bieber") %>% 
+  select(-performer) %>% 
+  group_by(song) %>%       # The last rows deal w songs that appear more than once
+  slice_sample(n = 1) %>% 
+  ungroup()
+
+# clean data, if necessary
+
+
+```
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+
+#Convert sonng to row name
+my_artist <- my_artist %>%
+column_to_rownames("song")
+
+#Arrange by popularity and pick top 10
+top_10_bieber <- my_artist %>%
+arrange(desc(spotify_popularity)) %>%
+head(10) %>%
+rownames_to_column("song")
+
+#Bar plot of most popular songs 
+ggplot(top_10_bieber, aes(x = reorder(song, spotify_popularity), y = spotify_popularity)) +
+geom_col(fill = "darkorchid4") +
+coord_flip() +
+labs(
+title = "Top 10 Justin Bieber Songs by Spotify Popularity",
+x = "Song",
+y = "Spotify Popularity Score"
+) +
+theme_minimal()
+```
+
+# Cluster Analysis
+
+## Implementation
+
+See code below for full details.
+
+<details>
+
+<summary>View Code</summary>
+
+```{r}
+#| message: false
+#| warning: false
+
+# Include all clustering code in here.
+# Make sure to include comments explaining what your code does.
+
+#Model building with 4 clusters 
+set.seed(253)
+k_4 <- kmeans(scale(my_artist), centers = 4)
+
+#Cluster output 
+cluster_data <- my_artist %>% 
+  mutate(kmeans_cluster_k = as.factor(k_4$cluster)) %>% 
+  group_by(kmeans_cluster_k) %>% 
+  summarize_all(mean)
+```
+
+</details>
+
+## Insights
+
+> We ran two clustering models to understand what contributes to the popularity of Justin Bieber’s songs: hierarchical and K-means clustering. We began by using the K-means clustering algorithm. We tried the elbow technique; however, the plot was too vague, and it was difficult to determine the best K from such a wide range of values. We then created a silhouette plot to determine the K that maximizes the average silhouette. The silhouette plot was optimal because it clearly indicated that 3 was the best number of clusters, and thus, this means that when we use 3 clusters, the within-cluster variance is small (all the pairs within the clusters are fairly close to one another). However, when we made 3 clusters, as the silhouette plot suggested, we found that the popularity variation across the clusters was minimal. No cluster stood out as most popular (values were all in the 60% range roughly). Next, we tried hand-tuning the algorithm to different numbers of clusters and after trial-and-error (using clusters of 2 up to 8), we found that when we used 4 clusters one of the groups stood out as most popular (77%, vs. the other groups which had 63%, 59%, 58% popularities respectively). Using 4 clusters makes sense because there are no clusters with too few data points, the K is close to the number that the silhouette plot suggested as well as it has one cluster that stands out in regards to popularity.
+
+> Looking into cluster 3, which had the highest percentage of popularity, we found several features that stood out within this group. The most popular cluster of Justin Bieber songs had the highest danceability, a higher proportion of songs in the minor key, the lowest instrumentalness, the lowest liveness, and the highest tempo. Cluster 4, the least popular group of songs, had the highest liveness, valence, loudness, and energy measure with a low tempo value. This indicates that although the songs have an upbeat tone, they are slower than the most popular songs. This could contribute to their lack of popularity. Cluster 2 is the third most popular group of songs. This cluster has the lowest valence measure by far, indicating that this group of songs is generally unhappy. Cluster 4 has similar energy to Cluster 3. This means that while the song’s mood is negative or depressing, it maintains high energy levels with a lot of activity or intensity. Cluster 1, the second most popular, is the only cluster with a high acousticness and low energy measure. Additionally, the songs generally are in a lower key and have lower danceability than the rest of Bieber’s songs. Overall, this group of songs is slower, calmer, and acoustic.
+
+> Then, we ran a hierarchical model. Our hierarchical model showed a lot of variation within clusters for the heat map which did not allow a lot of opportunities for interpretation. Also, if we had more than 2 clusters, the model would create a cluster with a single song. This once again limited interpretation. Ultimately, we chose to run a K-means clustering model. Overall, K-means allowed for more analysis to understand what traits contributed to Justin Bieber’s most popular songs.
+
+```{r}
+#| echo: false
+# put code for visualizations 
+
+#Silhouette plot to determine best K
+fviz_nbclust(scale(my_artist), kmeans, method='silhouette')
+
+#K-means4 with danceability
+my_artist %>% 
+  mutate(kmeans_cluster = as.factor(k_4$cluster)) %>%
+  ggplot(aes(x = danceability, y = spotify_popularity, color = kmeans_cluster)) + 
+  geom_point(size = 3) + 
+  theme(legend.position = "none") + 
+  labs(title = "K-means with K = 4, Danceability vs. Popularity", x= "Proportion of how suitable a track is for dancing", y= "Popularity") + 
+  theme_minimal()
+
+#Tempo and popularity association
+my_artist %>% 
+  ggplot(aes(x=tempo, y=spotify_popularity)) +
+  geom_point() +
+  geom_smooth(method = "lm", se= FALSE) +
+  labs(x="Tempo", y= "Popularity", title= "Justin Bieber Song Tempo and Popularity")
+```
+
+# Dimension Reduction
+
+## Implementation
+
+See code below for full details.
+
+<details>
+
+<summary>View Code</summary>
+
+```{r}
+#| message: false
+#| warning: false
+
+# Include all dimension reduction code in here.
+# Make sure to include comments explaining what your code does.
+
+#Remove outcomes
+my_artist_2 <- my_artist %>%
+select(where(is.numeric)) %>%
+select(-spotify_popularity, -billboard_weeks)
+
+pca_justin <- prcomp(my_artist_2, scale = TRUE, center = TRUE)
+```
+
+</details>
+
+## Insights
+
+> There is a wide variety of songs – some go viral on TikTok let’s say; hence, they become popular. Others are, although, rich in content and they are not as famous as one could expect. Thus, given the wide variety of predictors and the insights each gives us we applies a ML technique called Principal Component Analysis (PCA). There is a whole bunch of fancy math that goes behind PCA, but just keep in mind that PCA explores patterns in group structures in our columns. While doing this, it is hard to interpret but with the help of your Belieber wizards, we are going to help you disantagle this mysterty of JB’s hits. Let’s explore some graphs to help you understand PCAs.
+
+> 1.  Given that we want to know how many overall PCAs we should use, we first implement a graph of Cumulative % of variance explained (plot) versus the number of PCs. As you can see, if we only use 1 PC, we can only explain roughly 25% of the variability in JB’s most popular songs – this in nature is our strongest way to go as the variables that are being merged are correlated the most. Nonetheless, we may want to explain a bit more of the variability of the popular songs.
+
+> 2.  Now, let’s get our hands dirty! This circle plot (called a PCA variable plot) shows how much each musical feature contributes to the first PC (x-axis) and the second PC (y-axis). The main takeaway from this graph is that energy, loudness, and danceability are strongly aligned with PC1. This tells us that PC1 is capturing the “power” or “performance energy” of a song. On the other side, acousticness is pointing in the opposite direction, which means it’s negatively correlated with energy and loudness, the more acoustic a song is, the less energetic and loud it tends to be. PC2 appears to be shaped more by speechiness, duration, and key, which tell us that this component captures songs with longer durations or more spoken lyrical content. To sum all this up, PC1 separates songs by how upbeat and energetic they are, and PC2 adds a layer that reflects structure, vocal delivery, and complexity.
+
+> 3.  Don’t feel overwhelmed, we know that you want to explore the underlying reasons behind JB’s most popular songs and this requires attention to detail ;). This is our last plot, although PC1 and PC2 explain a good amount of the variability, we might want to consider more PCs, and I would suggest using 4 PCs, because we want to make sure to tackle little details of each song and be careful, but also we want to save you some money and save us the computation expense, we don’t want to overwhelm you, our beloved music manager, so we will use 4PCs, which each shapes the song with their variable as you can see. Note: if the variable bar is above 0 (pointing upwards) it means that it contributes positively and the magnitude of it depends on the height of it, and same if the bar points below 0.
+
+> So, you want to know why Justin Bieber is the daddy/king of pop? His most successful hits share 4 characteristics, each using their own style.
+
+> 1.  **High energy and loudness drive popularity:** Songs that are high in energy, loud, and very danceable dominate the strongest group (which in my ML analysis I call the first principal component). These songs tend to be the most commercially successful, think of tracks like "Sorry", "What Do You Mean?", "Baby," you name them. Hence, if you are on a low budget and have limited resources, I would suggest you focus on maintaining a strong and energetic vibe, which is key for the audience.
+
+> 2.  **Acoustic and softer songs are less mainstream:** On the other side, it is important that you as a manager consider the don'ts! Songs that have higher acousticness (more natural or unplugged feel) tend to move in the opposite direction. While appreciated by loyal fans, these songs are generally less popular in the broader market. Acoustic songs add variety but may not dominate charts unless heavily promoted.
+
+> 3.  **Speechiness and key variety add artistic depth:** Some songs with higher speechiness (more spoken lyrics or rhythmic delivery) and interesting changes in musical key form a second group. These often reflect tracks where Justin experiments with new sounds/storytelling formats (aka. "Love Yourself").
+
+> 4.  **Valence (happiness) matters:** Songs with very emotional or sad tones tend to be less popular unless balanced with other upbeat elements like tempo and energy. Even emotional songs need a strong hook or rhythm to maintain mass appeal.
+
+```{r}
+#| echo: false
+# put code for visualizations 
+
+# Cumulative % of variance explained (plot)
+pca_justin %>%
+tidy(matrix = "eigenvalues") %>%
+  rbind(0) %>%
+  ggplot(aes(y = cumulative, x = PC)) +
+  geom_point(size = 2) +
+  geom_line()
+
+# Loadings plot
+fviz_pca_var(pca_justin, repel = TRUE)
+
+# Bar plot
+melt(pca_justin$rotation[, 1:4]) %>%
+ggplot(aes(x = Var1, y = value, fill = Var1)) +
+geom_bar(stat = "identity") +
+facet_wrap(~ Var2) +
+labs(y = "loadings", x = "original features", fill = "original features")
+
+#Duration and popularity
+my_artist_2 <- my_artist %>%
+mutate(duration_min = duration_ms / (1000 * 60))
+my_artist_2 %>%
+ggplot(aes(x = duration_min, y = spotify_popularity)) + geom_point() + geom_smooth(method = "lm", se = FALSE) + theme_classic() + labs(title = " JB Song Duration vs. Spotify Popularity", x = "Song Duration, minutes", y = "Spotify Popularity")
+
+```
+
+# Conclusions
+
+> After diving deep into Justin Bieber’s chart-toppers, our analysis uncovered what gives his biggest hits their magic. Using unsupervised learning tools like K-means clustering and PCA, we spotted clear patterns: Bieber’s most successful tracks are high in energy, danceability, and tempo. Basically, if it makes you want to get up and dance, it probably did well on the charts. On the flip side, songs that were more acoustic, chill, or heavy on instrumentals were appreciated by die-hard fans but didn’t exactly dominate the Billboard. In short, the data confirms what your ears probably already know—Beliebers love a good beat.
+
+> While our models provided valuable insights, there are limitations to consider. First, some of our clusters showed minimal variation in popularity, making interpretation more challenging. Also, the dataset only includes measurable audio features and does not capture external factors that influence success, such as social media trends or collaborations. Finally, PCA helped reduce complexity but interpreted it more abstractly. Still, this analysis provides a data-driven lens on what makes a hit Bieber track, and we recommend focusing airtime on songs that fit the high-energy, danceable profile, especially when appealing to casual listeners or planning peak-hour playlists. Looking ahead, this kind of analysis isn’t just useful for understanding Bieber’s back catalog—it could help us predict the next big bop before it even drops. We could use the same approach to compare different artists or track how an artist’s sound evolves (hello genre-hopping era!). If we start combining this musical data with things like TikTok trends or skip rates, we might just crack the code for the perfect radio hit—and maybe even beat the charts to it. Who needs a crystal ball when you’ve got clustering algorithms?
+
+# Appendix
+
+```{r}
+#| eval: false
+
+# Heat maps: ordered by the id variable (not clustering)
+heatmap(scale(data.matrix(my_artist)), Colv = NA, Rowv = NA)
+
+#Make hierarchical model 
+hier_model <- hclust(dist(scale(my_artist)), method = "complete")
+
+# Heat maps: ordered by dendrogram / clustering
+heatmap(scale(data.matrix(my_artist)), Colv = NA)
+
+# Dendrogram (change font size w/ cex)
+fviz_dend(hier_model, horiz = TRUE, cex = .25)  
+
+# Assign each sample case to a cluster
+cluster_data_hier <- my_artist %>% 
+  mutate(hier_cluster_k = as.factor(cutree(hier_model, k = 2))) %>%
+  group_by(hier_cluster_k) %>%
+  summarize_all(mean)
+
+#Visualize cluster
+cluster_data_hier
+         
+# Visualize the clusters on the dendrogram (change font size w/ cex)
+fviz_dend(hier_model, k = 2, cex = .25)
+fviz_dend(hier_model, k = 2, horiz = TRUE, cex = .25) 
+
+#PCA 
+pca_justin$rotation[, 1:4]
+```
