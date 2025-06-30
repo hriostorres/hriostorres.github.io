@@ -67,7 +67,7 @@
     "href": "resume.html",
     "title": "Résumé: Online Version",
     "section": "",
-    "text": "📧 hriostor@macalester.edu | 🌐 LinkedIn\n\n\nEducation\nMacalester College, Saint Paul, MN\nMajors: Economics and Statistics | Minor: French\nRelevant Coursework: Econometrics, Machine Learning, Linear Algebra, Statistical Modeling\nHonors & Awards: Kofi Annan & UWC Davis Scholar, Flemming Scholar, Dean’s List (2023–2024)\n\n\n\nExperience\nMath Corps, St. Paul, MN\nCollege Instructor, May–July 2025\n- Taught math and coding in R and Python to 10 middle school students\n- Mentored 5 high school assistants and developed interactive, data-driven lessons\n- Used formative assessment and visualization to support computational thinking\nAmerican Statistical Association – DataFest\nWinner: Best Insight, March 2025\n- Analyzed commercial leasing trends (2018–2024) across 10 U.S. markets\n- Created R dashboards using census-merged data to guide office leasing decisions\nUniversity of Chicago – Becker Friedman Institute\nEDE Summer Fellow, May–June 2024\n- Selected as 1 of 45 fellows (4.5% acceptance rate)\n- Researched links between electricity access and human development using econometrics\n\n\n\nProjects\nSTATA: Intersecting Inequalities in the U.S. Labor Market\nJan–May 2025\n- Utilized a Mincer Earnings Function with 4 fixed effects and conducted 4 Blinder-Oaxaca Decompositions on ACS 2012–2019 data (500k observations) to quantify labor market discrimination against immigrant women\nR: Harvard T.H. Chan School of Public Health Workshop\nMarch 2025\n- Explored infectious disease dynamics through SIR (Susceptible-Infected-Recovered) simulations using R Studio - Analyzed outbreak scenarios, antimicrobial resistance, and forecasting techniques, integrating ML approaches\n\n\n\nLeadership\nUWC Bolivian National Committee (Treasurer)\nAug 2024–Present\n- Manage alumni donations and ensure financial oversight to support committee initiatives, and the selection process - Connect Bolivian UWC alumni with current students, enhancing their UWC experience\n\n\n\nSkills & Interests\nSkills: R, Python, STATA, MS Office, Google Suite, Slate\nLanguages: Spanish (Native), English (Fluent), French (Fluent)\nInterests: Rock climbing, skiing, hiking, ice skating, freediving, development, research, zumba"
+    "text": "St. Paul, MN\n📧 hriostor@macalester.edu | LinkedIn | Portfolio"
   },
   {
     "objectID": "posts/metrics/index.html",
@@ -124,5 +124,47 @@
     "title": "David Rios",
     "section": "",
     "text": "I am Hermogenes David Rios—Hermogenes is my first name, David is my middle name, and Rios is my last name. Yes, Hermogenes, like a Greek philosopher or maybe a rejected Harry Potter spell. I’m from Bolivia and am currently studying in the U.S. at Macalester College in Saint Paul, Minnesota. Learn more about me and my work.\nStay in touch:"
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Résumé: Online Version",
+    "section": "Education",
+    "text": "Education\nMacalester College, B.A. in Economics and Statistics; Minor in French\nSep 2023 – May 2027\nHonors: Full-Ride Scholarship (UWC Davis & Kofi Annan Scholar), Dean’s List\nRelevant Coursework: Econometrics, Machine Learning, Linear Algebra, International Economics, Statistical Modeling"
+  },
+  {
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Résumé: Online Version",
+    "section": "Experience",
+    "text": "Experience\nCollege Instructor, Math Corps – St. Paul, MN\nMay 2025 – July 2025\n\nTaught foundational algebra to 10 rising 8th–9th graders; mentored 5 high school students\nAdapted lessons to varied skill levels and fostering engagement through feedback and collaborative activities\nCo-led workshops in number theory, combinatorics, and the mathematics of images to public school students\n\nAcademic Year Fundraiser, Macalester Outreach Center – St. Paul, MN\nAug 2023 – Present\n- Supervised and trained a 20-member team that engaged 30,000+ alumni through multi-channel campaigns\n\nExplored donation data to tailor messaging, helping boost donor participation by 25%\n\nSummer Fellow, UChicago BFI – Expanding Diversity in Economics (EDE) Program – Chicago, IL\nMay 2024 – June 2024\n\nSelected as 1 of 45 fellows from nearly 1,000 applicants (4.5% acceptance rate)\nDelivered research on electricity access and human development to experts at Chicago Booth and Brookings"
+  },
+  {
+    "objectID": "resume.html#projects",
+    "href": "resume.html#projects",
+    "title": "Résumé: Online Version",
+    "section": "Projects",
+    "text": "Projects\nEconometrics Research (STATA): Immigration, Gender & Labor\nJan 2025 – May 2025\n\n\nQuantified labor market discrimination against Latina immigrants across industries using 500k census records\nWrote a clear, narrative-driven paper now accepted for publication in the Macalester Street Journal\n\nPublic Health Modeling Workshop (R) – Harvard T.H. Chan School of Public Health\nMar 2025\n\n\nAnalyzed outbreak scenarios, antimicrobial resistance, and forecasting techniques integrating ML approaches"
+  },
+  {
+    "objectID": "resume.html#leadership-awards",
+    "href": "resume.html#leadership-awards",
+    "title": "Résumé: Online Version",
+    "section": "Leadership & Awards",
+    "text": "Leadership & Awards\nTreasurer, Bolivian National Committee – United World Colleges\nAug 2024 – Present\n\n\nOversee donations from 300+ alumni, ensuring transparency and impact through monthly financial reports\nStrengthen alumni-student connections by organizing events and launching a mentorship platform\n\nData Fest Winner: “Best Insight” Award– American Statistical Association\nMar 2025\n\nLed strategy during 48-hour data challenge analyzing U.S. real estate trends with a cross-functional team\nBalanced technical depth with business relevance in presentation to judges from industry and academia"
+  },
+  {
+    "objectID": "resume.html#skills-interests",
+    "href": "resume.html#skills-interests",
+    "title": "Résumé: Online Version",
+    "section": "Skills & Interests",
+    "text": "Skills & Interests\nTechnical Skills: Excel (Advanced), STATA, R, Financial Modeling, Python (Intermediate)\nLanguages: Spanish (Native), English (Fluent), French (Fluent), Quechua (Fluent), Portuguese (Intermediate)\nActivities & Groups: Macalester Consulting Group, Volleyball Club, Latinx Student Union, First-Gen Students\nInterests: Rock climbing, skiing, tennis, freediving, Overcooked, Zumba, fiction writing, Google Maps reviews"
+  },
+  {
+    "objectID": "resume.html#hermogenes-david-rios",
+    "href": "resume.html#hermogenes-david-rios",
+    "title": "Résumé: Online Version",
+    "section": "",
+    "text": "St. Paul, MN\n📧 hriostor@macalester.edu | LinkedIn | Portfolio"
   }
 ]

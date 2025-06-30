@@ -1,62 +1,89 @@
 ---
 title: "Résumé: Online Version"
+format:
+  html:
+    toc: false
+    number-sections: false
+    colorlinks: true
 ---
 
-📧 [hriostor\@macalester.edu](mailto:hriostor@macalester.edu) \| 🌐 [LinkedIn](https://linkedin.com/in/hermogenesdavid)
+## Hermogenes David Rios
+
+St. Paul, MN\
+📧 [hriostor\@macalester.edu](mailto:hriostor@macalester.edu) \| [LinkedIn](https://linkedin.com/in/hermogenesdavid) \| [Portfolio](https://hriostorres.github.io)
+
+## Education
+
+**Macalester College**, B.A. in Economics and Statistics; Minor in French\
+*Sep 2023 – May 2027*\
+**Honors:** Full-Ride Scholarship (UWC Davis & Kofi Annan Scholar), Dean’s List\
+**Relevant Coursework:** Econometrics, Machine Learning, Linear Algebra, International Economics, Statistical Modeling
 
 ------------------------------------------------------------------------
 
-### Education
+## Experience
 
-**Macalester College**, Saint Paul, MN\
-**Majors:** Economics and Statistics \| **Minor:** French\
-**Relevant Coursework:** Econometrics, Machine Learning, Linear Algebra, Statistical Modeling\
-**Honors & Awards:** Kofi Annan & UWC Davis Scholar, Flemming Scholar, Dean’s List (2023–2024)
+**College Instructor**, Math Corps – St. Paul, MN\
+*May 2025 – July 2025*
 
-------------------------------------------------------------------------
+-   Taught foundational algebra to 10 rising 8th–9th graders; mentored 5 high school students
 
-### Experience
+-   Adapted lessons to varied skill levels and fostering engagement through feedback and collaborative activities
 
-**Math Corps**, St. Paul, MN\
-*College Instructor, May–July 2025*\
-- Taught math and coding in R and Python to 10 middle school students\
-- Mentored 5 high school assistants and developed interactive, data-driven lessons\
-- Used formative assessment and visualization to support computational thinking
+-   Co-led workshops in number theory, combinatorics, and the mathematics of images to public school students
 
-**American Statistical Association – DataFest**\
-*Winner: Best Insight, March 2025*\
-- Analyzed commercial leasing trends (2018–2024) across 10 U.S. markets\
-- Created R dashboards using census-merged data to guide office leasing decisions
+**Academic Year Fundraiser**, Macalester Outreach Center – St. Paul, MN\
+*Aug 2023 – Present*\
+- Supervised and trained a 20-member team that engaged 30,000+ alumni through multi-channel campaigns
 
-**University of Chicago – Becker Friedman Institute**\
-*EDE Summer Fellow, May–June 2024*\
-- Selected as 1 of 45 fellows (4.5% acceptance rate)\
-- Researched links between electricity access and human development using econometrics
+-   Explored donation data to tailor messaging, helping boost donor participation by 25%
+
+**Summer Fellow**, UChicago BFI – Expanding Diversity in Economics (EDE) Program – Chicago, IL\
+*May 2024 – June 2024*
+
+-   Selected as 1 of 45 fellows from nearly 1,000 applicants (4.5% acceptance rate)
+
+-   Delivered research on electricity access and human development to experts at Chicago Booth and Brookings
 
 ------------------------------------------------------------------------
 
-### Projects
+## Projects
 
-**STATA: Intersecting Inequalities in the U.S. Labor Market**\
-*Jan–May 2025*\
-- Utilized a Mincer Earnings Function with 4 fixed effects and conducted 4 Blinder-Oaxaca Decompositions on ACS 2012–2019 data (500k observations) to quantify labor market discrimination against immigrant women
+**Econometrics Research (STATA): Immigration, Gender & Labor**\
+*Jan 2025 – May 2025*\
 
-**R: Harvard T.H. Chan School of Public Health Workshop**\
-*March 2025*\
-- Explored infectious disease dynamics through SIR (Susceptible-Infected-Recovered) simulations using R Studio - Analyzed outbreak scenarios, antimicrobial resistance, and forecasting techniques, integrating ML approaches
+-   Quantified labor market discrimination against Latina immigrants across industries using 500k census records
 
-------------------------------------------------------------------------
+-   Wrote a clear, narrative-driven paper now accepted for publication in the Macalester Street Journal
 
-### Leadership
+**Public Health Modeling Workshop (R)** – Harvard T.H. Chan School of Public Health\
+*Mar 2025*\
 
-**UWC Bolivian National Committee (Treasurer)**\
-*Aug 2024–Present*\
-- Manage alumni donations and ensure financial oversight to support committee initiatives, and the selection process - Connect Bolivian UWC alumni with current students, enhancing their UWC experience
+-   Analyzed outbreak scenarios, antimicrobial resistance, and forecasting techniques integrating ML approaches
 
 ------------------------------------------------------------------------
 
-### Skills & Interests
+## Leadership & Awards
 
-**Skills:** R, Python, STATA, MS Office, Google Suite, Slate\
-**Languages:** Spanish (Native), English (Fluent), French (Fluent)\
-**Interests:** Rock climbing, skiing, hiking, ice skating, freediving, development, research, zumba
+**Treasurer**, Bolivian National Committee – United World Colleges\
+*Aug 2024 – Present*\
+
+-   Oversee donations from 300+ alumni, ensuring transparency and impact through monthly financial reports
+
+-   Strengthen alumni-student connections by organizing events and launching a mentorship platform
+
+**Data Fest Winner**: "Best Insight" Award– American Statistical Association\
+*Mar 2025*
+
+-   Led strategy during 48-hour data challenge analyzing U.S. real estate trends with a cross-functional team
+
+-   Balanced technical depth with business relevance in presentation to judges from industry and academia
+
+------------------------------------------------------------------------
+
+## Skills & Interests
+
+**Technical Skills:** Excel (Advanced), STATA, R, Financial Modeling, Python (Intermediate)\
+**Languages:** Spanish (Native), English (Fluent), French (Fluent), Quechua (Fluent), Portuguese (Intermediate)\
+**Activities & Groups:** Macalester Consulting Group, Volleyball Club, Latinx Student Union, First-Gen Students\
+**Interests:** Rock climbing, skiing, tennis, freediving, Overcooked, Zumba, fiction writing, Google Maps reviews
