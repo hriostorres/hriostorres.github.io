@@ -37,4 +37,13 @@ where $\mathbf{X}'_{i,s,t}$ includes education, experience, and English proficie
 
 -   Additionally, Naturalized citizens earn about 3.7% more than native-born citizens, likely due to positive selection and legal protections.
 
-> This paper is in the process of being published at *the Macalester Street Journal.*
+## Publication & Access
+
+This paper is published in the *Macalester Street Journal*:\
+**Equilibrium, Vol. 3 No. 1 (2025)**
+
+📖 **Read it on:**
+
+-   <a href="https://scholar.google.com/scholar?q=10.62543/msj.v3i1.90" target="_blank" title="View on Google Scholar" style="display: inline-flex; align-items: center; text-decoration: none; margin-right: 15px;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="Google Scholar Logo" width="24" height="24" style="margin-right: 8px;"/> [Google Scholar]{style="font-size: 1em;"} </a>
+
+-   <a href="https://macalesterstreet.org/index.php/journal/article/view/90" target="_blank" title= "View on MSJ website" style="display: inline-flex; align-items: center; text-decoration: none; margin-right: 15px;"> <img src="https://macalesterstreet.org/public/journals/1/cover_issue_5_en_US.png" alt="MSJ Logo" width="24" height="24" style="margin-right: 8px;"/> [MSJ Website]{style="font-size: 1em;"} </a>
