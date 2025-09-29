@@ -15,8 +15,6 @@ website:
         text: About
       - href: projects.qmd
         text: Projects
-      - href: resume.qmd
-        text: Résumé
       - icon: linkedin
         href: https://www.linkedin.com/in/hermogenesdavid/ 
       - icon: envelope
