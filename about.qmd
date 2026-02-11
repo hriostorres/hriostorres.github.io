@@ -6,11 +6,25 @@ css: styles.css
 
 ## 📍Macalester College
 
-At Macalester, I'm pursuing a double major in Economics and Statistics, along with a minor in French.
+At Macalester, I’m pursuing a double major in Economics and Statistics with a minor in French.
 
-As of now, I've served as a Teaching Assistant (TA) for Calculus II and Statistical Modeling. This upcoming semester, Fall 2025, I will be the TA for Intermediate Macroeconomics, and Machine Learning. As you may have perceived, I love teaching!
+I’ve served as a Preceptor for courses across the Mathematics, Statistics, and Economics departments:
 
-Additionally, I've participated in research and training programs such as the [Expanding Diversity in Economics](https://www.macalester.edu/news/2024/04/three-macalester-students-selected-for-university-of-chicagos-prestigious-economics-program/) (EDE) Program at the University of Chicago in the Summer of 2024 and the [Mathematical Modeling and Public Health Workshop](https://hsph.harvard.edu/epidemiology/news/mathematical-modeling-and-public-health-workshop/) at Harvard Chan School in March 2025.
+  - Fall 2024
+    - Applied Multivariable Calculus II
+  - Spring 2025
+    - Statistical Modelling
+  - Fall 2025
+    - Intermediate Macroeconomics
+    - Machine Learning
+  - Spring 2026 
+    - Econometrics
+    - Machine Learning
+
+As you might guess, I love teaching.
+
+
+I've also participated in research and training programs such as the [Expanding Diversity in Economics](https://www.macalester.edu/news/2024/04/three-macalester-students-selected-for-university-of-chicagos-prestigious-economics-program/) (EDE) Program at the University of Chicago (Summer of 2024), the [Mathematical Modeling and Public Health Workshop](https://hsph.harvard.edu/epidemiology/news/mathematical-modeling-and-public-health-workshop/) at Harvard Chan School (March 2025), and [SUMMIT@BOOTH](https://www.chicagobooth.edu/phd/admissions/events/summit-booth/summit-2025-cohort) hosted by Chicago Booth at the University of Chicago (November 2025).
 
 ### Hobbies
 
