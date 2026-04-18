@@ -11,7 +11,7 @@ website:
   google-analytics: G-JBCLMNEM0Z
   navbar:
     right:
-      - href: main.qmd
+      - href: Main.qmd
         text: Home
       - href: about.qmd
         text: About
