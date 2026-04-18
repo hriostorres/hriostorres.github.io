@@ -1,6 +1,6 @@
 ---
-title: "Final Report"
-author: "Bernarda Perez, David Rios-Torres, Nayla Trigueros, Yoselyn Rodriguez"
+title: "Final Report DS 112"
+author: "David Rios, Bernarda Perez, Nayla Trigueros, Yoselyn Rodriguez"
 date: 12-08-2025
 format: 
   html:
@@ -16,9 +16,9 @@ Most Americans never face the extensive sponsorship requirements necessary to se
 
 This dataset originates from the U.S. Department of Labor and was accessed through Kaggle, spanning 2020-2023. Given the dataset's size, we cleaned the data to focus on H-1B visas for U.S. employment, then drew a stratified random sample of 1% (\~33,000 observations) while preserving noisiness. We hypothesize that occupation type, geographical location, application timing, and wage levels will influence certification outcomes.
 
-## Data Cleaning, Wrangling and Discussion
+## Uploading Libraries
 
-```{r, warning=FALSE}
+```{r, warning=FALSE, output=FALSE}
 # Libraries
 library(tidyverse)
 library(lubridate)
@@ -27,44 +27,11 @@ library(plotly)
 library(leaflet)
 ```
 
-### Import Data
+### Importing the Data
 
-```{r, output=FALSE, warning=FALSE}
-# Downloading raw dataset 
-visas_raw <- read_csv("/Users/davidrios/Library/CloudStorage/Dropbox/hriostorres.gihub.io/data/visas_sample.csv")
-```
-
-### Major Data Cleaning
-
-```{r, output=FALSE, warning=FALSE}
-# We explored the visa types and we will only keep the H-1B 
-visas_raw %>%
-  group_by(VISA_CLASS) %>%
-  count() %>%
-  arrange(desc(n))
-
-# Keep only data on H-1B visas
-visas_raw <- visas_raw %>%
-  filter(VISA_CLASS == "H-1B") %>% 
-  filter(year(RECEIVED_DATE) >= 2020)
-
-# Taking a 1% stratified sample
-set.seed(112)
-visas <- visas_raw %>%
-  group_by(VISA_CLASS, CASE_STATUS) %>%
-  slice_sample(prop = 0.01) %>% 
-  ungroup()
-
-# Exporting this file as visas_sample
-write.csv(visas, "visas_sample.csv",
-          row.names = FALSE)
-
-# Uploading the 1%-sample dataset
-visas <- read_csv("visas_sample.csv")
-
-# Keep only desirable variables
-visas_raw <- visas_raw %>%
-  select(CASE_NUMBER, VISA_CLASS, CASE_STATUS, RECEIVED_DATE, DECISION_DATE, BEGIN_DATE, END_DATE, SOC_CODE, FULL_TIME_POSITION, EMPLOYER_CITY, EMPLOYER_STATE, PREVAILING_WAGE, PW_UNIT_OF_PAY, H_1B_DEPENDENT, AGENT_REPRESENTING_EMPLOYER, JOB_TITLE, EMPLOYER_POSTAL_CODE, EMPLOYER_COUNTRY)
+```{r, output=FALSE, warning=FALSE, message=FALSE}
+# Uploading the 1%-stratified sample
+visas <- read_csv("~/Library/CloudStorage/Dropbox/hriostorres.gihub.io/data/visas_sample.csv")
 
 # Aggregating our variables of interest
 visas <- visas %>%

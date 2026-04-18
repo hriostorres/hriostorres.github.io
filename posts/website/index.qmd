@@ -2,7 +2,7 @@
 title: "2025 Bolivia Elections Website"
 author: David Rios
 date: 2025-06-02
-categories: [bolivia, website, r, research]
+categories: [bolivia]
 image: "websitepp.png"
 format: html
 ---
