@@ -1,0 +1,20 @@
+---
+title: "David Rios"
+image: Hermo.jpeg
+about:
+  id: hero-heading
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/hermogenesdavid/
+    - icon: envelope
+      text: Contact me
+      href: mailto:hriostor@macalester.edu
+---
+
+## About me
+
+I am Hermogenes David Rios. I'm from Bolivia and currently studying Economics and Statistics at Macalester College in Saint Paul, Minnesota.
+
+My work sits at the intersection of data, policy, and inequality. I am particularly interested in macroeconomic modeling, labor markets, migration, and applied econometrics. More learn [about me](about.qmd):

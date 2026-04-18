@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
 
 
 website:
@@ -9,7 +11,7 @@ website:
   google-analytics: G-JBCLMNEM0Z
   navbar:
     right:
-      - href: index.qmd
+      - href: Main.qmd
         text: Home
       - href: about.qmd
         text: About
@@ -35,10 +37,9 @@ format:
       dark: darkly
     css: styles.css
     toc: true
-
-
-
-
+    
 editor: visual
+
+
 
 

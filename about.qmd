@@ -4,35 +4,36 @@ format: html
 css: styles.css
 ---
 
-## 📍Macalester College
+## Macalester College
 
-At Macalester, I’m pursuing a double major in Economics and Statistics with a minor in French.
+At Macalester, I’m pursuing a double major in Economics and Statistics with a minor in French. I’ve served as a Preceptor for courses across the Mathematics, Statistics, and Economics departments:
 
-I’ve served as a Preceptor for courses across the Mathematics, Statistics, and Economics departments:
+-   Fall 2026
+    -   Intermediate Macroeconomics
+-   Spring 2026
+    -   Econometrics
+    -   Machine Learning
+-   Fall 2025
+    -   Intermediate Macroeconomics
+    -   Machine Learning
+-   Spring 2025
+    -   Statistical Modelling
+-   Fall 2024
+    -   Applied Multivariable Calculus II
 
-  - Fall 2024
-    - Applied Multivariable Calculus II
-  - Spring 2025
-    - Statistical Modelling
-  - Fall 2025
-    - Intermediate Macroeconomics
-    - Machine Learning
-  - Spring 2026 
-    - Econometrics
-    - Machine Learning
+As you might guess, I love teaching!
 
-As you might guess, I love teaching.
+## Programs
 
-
-I've also participated in research and training programs such as the [Expanding Diversity in Economics](https://www.macalester.edu/news/2024/04/three-macalester-students-selected-for-university-of-chicagos-prestigious-economics-program/) (EDE) Program at the University of Chicago (Summer of 2024), the [Mathematical Modeling and Public Health Workshop](https://hsph.harvard.edu/epidemiology/news/mathematical-modeling-and-public-health-workshop/) at Harvard Chan School (March 2025), and [SUMMIT@BOOTH](https://www.chicagobooth.edu/phd/admissions/events/summit-booth/summit-2025-cohort) hosted by Chicago Booth at the University of Chicago (November 2025).
+I've also participated in research and training programs such as the [Expanding Diversity in Economics](https://www.macalester.edu/news/2024/04/three-macalester-students-selected-for-university-of-chicagos-prestigious-economics-program/) (EDE) Program at the University of Chicago (Summer of 2024), the [Mathematical Modeling and Public Health Workshop](https://hsph.harvard.edu/epidemiology/news/mathematical-modeling-and-public-health-workshop/) at Harvard Chan School (March 2025), and [SUMMIT\@BOOTH](https://www.chicagobooth.edu/phd/admissions/events/summit-booth/summit-2025-cohort) hosted by Chicago Booth at the University of Chicago (November 2025).
 
 ### Hobbies
 
 |  |  |
 |------------------------------------|------------------------------------|
-| ![V5-V7 \@Vertical Endeavors](v6.jpg){width="20cm"} | Outside the classroom, I love being active and exploring nature. I've been getting into bouldering and sport climbing, mostly indoors. Climbing challenges me to stay focused and push my limits, both mentally and physically. I also enjoy running, apnea diving, and trying out new restaurants. These hobbies keep me grounded, adventurous, and open to discovery. |
+| ![V5-V7 \@Vertical Endeavors](v6.jpg){width="20cm"} | Outside the classroom, I like being active and exploring nature. I've been climbing for around 2 years! Climbing challenges me to stay focused and push my limits, both mentally and physically. I also enjoy running, apnea diving, and trying out new restaurants. |
 
-## 🏫 UWC RCN: High School
+## United World Colleges
 
 I attended the [UWC Red Cross Nordic](https://www.uwc.org/rcn) (UWCRCN), located in Flekke, Norway. UWC makes education a force to unite people, nations and cultures for peace and a sustainable future.
 
