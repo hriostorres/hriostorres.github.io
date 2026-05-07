@@ -7,7 +7,7 @@ project:
 
 website:
   title: "David Rios"
-  favicon: "Hermo.jpeg"
+  favicon: "logo.jpeg"
   google-analytics: G-JBCLMNEM0Z
   navbar:
     right:
