@@ -1,0 +1,149 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "AI Usage in the US\n\n\n\n\n\n\ndata science\n\nr\n\n\n\nInteractive data science project analyzing AI adoption, workforce composition, and wage premiums across U.S. industries.\n\n\n\n\n\nMay 7, 2026\n\n\nDavid Rios, Katherine Manuel, Isauro Reyes\n\n\n\n\n\n\n\n\n\n\n\n\n2025 Bolivia Elections Website\n\n\n\n\n\n\nbolivia\n\n\n\n\n\n\n\n\n\nJun 2, 2025\n\n\nDavid Rios\n\n\n\n\n\n\n\n\n\n\n\n\nWage Disparities Research\n\n\n\n\n\n\neconometrics\n\nresearch\n\nstata\n\nr\n\n\n\n\n\n\n\n\n\nMay 5, 2025\n\n\nDavid Rios\n\n\n\n\n\n\n\n\n\n\n\n\nUnsupervised Learning: Clustering and PCA\n\n\nMachine Learning Group Assingment\n\n\n\nmachine learning\n\n\n\n\n\n\n\n\n\nApr 1, 2025\n\n\nDavid Rios, Elena Ortiz, Fiona Godsill, and Lily Morgan\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/stats253/index.html",
+    "href": "posts/stats253/index.html",
+    "title": "Unsupervised Learning: Clustering and PCA",
+    "section": "",
+    "text": "This ML project applies unsupervised machine learning techniques—clustering and PCA—to analyze the musical features of Justin Bieber’s top hits!"
+  },
+  {
+    "objectID": "posts/stats253/index.html#implementation",
+    "href": "posts/stats253/index.html#implementation",
+    "title": "Unsupervised Learning: Clustering and PCA",
+    "section": "Implementation",
+    "text": "Implementation\nSee code below for full details.\n\n\nView Code\n\n\n# Include all clustering code in here.\n# Make sure to include comments explaining what your code does.\n\n#Model building with 4 clusters \nset.seed(253)\nk_4 &lt;- kmeans(scale(my_artist), centers = 4)\n\n#Cluster output \ncluster_data &lt;- my_artist %&gt;% \n  mutate(kmeans_cluster_k = as.factor(k_4$cluster)) %&gt;% \n  group_by(kmeans_cluster_k) %&gt;% \n  summarize_all(mean)"
+  },
+  {
+    "objectID": "posts/stats253/index.html#insights",
+    "href": "posts/stats253/index.html#insights",
+    "title": "Unsupervised Learning: Clustering and PCA",
+    "section": "Insights",
+    "text": "Insights\n\nWe ran two clustering models to understand what contributes to the popularity of Justin Bieber’s songs: hierarchical and K-means clustering. We began by using the K-means clustering algorithm. We tried the elbow technique; however, the plot was too vague, and it was difficult to determine the best K from such a wide range of values. We then created a silhouette plot to determine the K that maximizes the average silhouette. The silhouette plot was optimal because it clearly indicated that 3 was the best number of clusters, and thus, this means that when we use 3 clusters, the within-cluster variance is small (all the pairs within the clusters are fairly close to one another). However, when we made 3 clusters, as the silhouette plot suggested, we found that the popularity variation across the clusters was minimal. No cluster stood out as most popular (values were all in the 60% range roughly). Next, we tried hand-tuning the algorithm to different numbers of clusters and after trial-and-error (using clusters of 2 up to 8), we found that when we used 4 clusters one of the groups stood out as most popular (77%, vs. the other groups which had 63%, 59%, 58% popularities respectively). Using 4 clusters makes sense because there are no clusters with too few data points, the K is close to the number that the silhouette plot suggested as well as it has one cluster that stands out in regards to popularity.\n\n\nLooking into cluster 3, which had the highest percentage of popularity, we found several features that stood out within this group. The most popular cluster of Justin Bieber songs had the highest danceability, a higher proportion of songs in the minor key, the lowest instrumentalness, the lowest liveness, and the highest tempo. Cluster 4, the least popular group of songs, had the highest liveness, valence, loudness, and energy measure with a low tempo value. This indicates that although the songs have an upbeat tone, they are slower than the most popular songs. This could contribute to their lack of popularity. Cluster 2 is the third most popular group of songs. This cluster has the lowest valence measure by far, indicating that this group of songs is generally unhappy. Cluster 4 has similar energy to Cluster 3. This means that while the song’s mood is negative or depressing, it maintains high energy levels with a lot of activity or intensity. Cluster 1, the second most popular, is the only cluster with a high acousticness and low energy measure. Additionally, the songs generally are in a lower key and have lower danceability than the rest of Bieber’s songs. Overall, this group of songs is slower, calmer, and acoustic.\n\n\nThen, we ran a hierarchical model. Our hierarchical model showed a lot of variation within clusters for the heat map which did not allow a lot of opportunities for interpretation. Also, if we had more than 2 clusters, the model would create a cluster with a single song. This once again limited interpretation. Ultimately, we chose to run a K-means clustering model. Overall, K-means allowed for more analysis to understand what traits contributed to Justin Bieber’s most popular songs.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n`geom_smooth()` using formula = 'y ~ x'"
+  },
+  {
+    "objectID": "posts/stats253/index.html#implementation-1",
+    "href": "posts/stats253/index.html#implementation-1",
+    "title": "Unsupervised Learning: Clustering and PCA",
+    "section": "Implementation",
+    "text": "Implementation\nSee code below for full details.\n\n\nView Code\n\n\n# Include all dimension reduction code in here.\n# Make sure to include comments explaining what your code does.\n\n#Remove outcomes\nmy_artist_2 &lt;- my_artist %&gt;%\nselect(where(is.numeric)) %&gt;%\nselect(-spotify_popularity, -billboard_weeks)\n\npca_justin &lt;- prcomp(my_artist_2, scale = TRUE, center = TRUE)"
+  },
+  {
+    "objectID": "posts/stats253/index.html#insights-1",
+    "href": "posts/stats253/index.html#insights-1",
+    "title": "Unsupervised Learning: Clustering and PCA",
+    "section": "Insights",
+    "text": "Insights\n\nThere is a wide variety of songs – some go viral on TikTok let’s say; hence, they become popular. Others are, although, rich in content and they are not as famous as one could expect. Thus, given the wide variety of predictors and the insights each gives us we applies a ML technique called Principal Component Analysis (PCA). There is a whole bunch of fancy math that goes behind PCA, but just keep in mind that PCA explores patterns in group structures in our columns. While doing this, it is hard to interpret but with the help of your Belieber wizards, we are going to help you disantagle this mysterty of JB’s hits. Let’s explore some graphs to help you understand PCAs.\n\n\n\nGiven that we want to know how many overall PCAs we should use, we first implement a graph of Cumulative % of variance explained (plot) versus the number of PCs. As you can see, if we only use 1 PC, we can only explain roughly 25% of the variability in JB’s most popular songs – this in nature is our strongest way to go as the variables that are being merged are correlated the most. Nonetheless, we may want to explain a bit more of the variability of the popular songs.\n\n\n\n\nNow, let’s get our hands dirty! This circle plot (called a PCA variable plot) shows how much each musical feature contributes to the first PC (x-axis) and the second PC (y-axis). The main takeaway from this graph is that energy, loudness, and danceability are strongly aligned with PC1. This tells us that PC1 is capturing the “power” or “performance energy” of a song. On the other side, acousticness is pointing in the opposite direction, which means it’s negatively correlated with energy and loudness, the more acoustic a song is, the less energetic and loud it tends to be. PC2 appears to be shaped more by speechiness, duration, and key, which tell us that this component captures songs with longer durations or more spoken lyrical content. To sum all this up, PC1 separates songs by how upbeat and energetic they are, and PC2 adds a layer that reflects structure, vocal delivery, and complexity.\n\n\n\n\nDon’t feel overwhelmed, we know that you want to explore the underlying reasons behind JB’s most popular songs and this requires attention to detail ;). This is our last plot, although PC1 and PC2 explain a good amount of the variability, we might want to consider more PCs, and I would suggest using 4 PCs, because we want to make sure to tackle little details of each song and be careful, but also we want to save you some money and save us the computation expense, we don’t want to overwhelm you, our beloved music manager, so we will use 4PCs, which each shapes the song with their variable as you can see. Note: if the variable bar is above 0 (pointing upwards) it means that it contributes positively and the magnitude of it depends on the height of it, and same if the bar points below 0.\n\n\n\nSo, you want to know why Justin Bieber is the daddy/king of pop? His most successful hits share 4 characteristics, each using their own style.\n\n\n\nHigh energy and loudness drive popularity: Songs that are high in energy, loud, and very danceable dominate the strongest group (which in my ML analysis I call the first principal component). These songs tend to be the most commercially successful, think of tracks like “Sorry”, “What Do You Mean?”, “Baby,” you name them. Hence, if you are on a low budget and have limited resources, I would suggest you focus on maintaining a strong and energetic vibe, which is key for the audience.\n\n\n\n\nAcoustic and softer songs are less mainstream: On the other side, it is important that you as a manager consider the don’ts! Songs that have higher acousticness (more natural or unplugged feel) tend to move in the opposite direction. While appreciated by loyal fans, these songs are generally less popular in the broader market. Acoustic songs add variety but may not dominate charts unless heavily promoted.\n\n\n\n\nSpeechiness and key variety add artistic depth: Some songs with higher speechiness (more spoken lyrics or rhythmic delivery) and interesting changes in musical key form a second group. These often reflect tracks where Justin experiments with new sounds/storytelling formats (aka. “Love Yourself”).\n\n\n\n\nValence (happiness) matters: Songs with very emotional or sad tones tend to be less popular unless balanced with other upbeat elements like tempo and energy. Even emotional songs need a strong hook or rhythm to maintain mass appeal.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n`geom_smooth()` using formula = 'y ~ x'"
+  },
+  {
+    "objectID": "posts/ai_usage/ai_usage.html",
+    "href": "posts/ai_usage/ai_usage.html",
+    "title": "AI Usage in the US",
+    "section": "",
+    "text": "🌐 Visit the website"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "At Macalester, I’m pursuing a double major in Economics and Statistics with a minor in French. I’ve served as a Preceptor for courses across the Mathematics, Statistics, and Economics departments:\n\n\n\n\n\n\n\n\nSemester\nDepartment\nCourse\n\n\n\n\nFall 2026\nEconomics\nIntermediate Macroeconomics\n\n\nSpring 2026\nEcon / Stats\nEconometrics, Machine Learning\n\n\nFall 2025\nEcon / Stats\nIntermediate Macroeconomics, Machine Learning\n\n\nSpring 2025\nStatistics\nStatistical Modelling\n\n\nFall 2024\nMathematics\nApplied Multivariable Calculus II\n\n\n\nAs you might guess, I love teaching!"
+  },
+  {
+    "objectID": "about.html#macalester-college",
+    "href": "about.html#macalester-college",
+    "title": "About",
+    "section": "",
+    "text": "At Macalester, I’m pursuing a double major in Economics and Statistics with a minor in French. I’ve served as a Preceptor for courses across the Mathematics, Statistics, and Economics departments:\n\n\n\n\n\n\n\n\nSemester\nDepartment\nCourse\n\n\n\n\nFall 2026\nEconomics\nIntermediate Macroeconomics\n\n\nSpring 2026\nEcon / Stats\nEconometrics, Machine Learning\n\n\nFall 2025\nEcon / Stats\nIntermediate Macroeconomics, Machine Learning\n\n\nSpring 2025\nStatistics\nStatistical Modelling\n\n\nFall 2024\nMathematics\nApplied Multivariable Calculus II\n\n\n\nAs you might guess, I love teaching!"
+  },
+  {
+    "objectID": "about.html#programs",
+    "href": "about.html#programs",
+    "title": "About",
+    "section": "Programs",
+    "text": "Programs\nI have participated in research and training programs such as the Expanding Diversity in Economics (EDE) Program at the University of Chicago (Summer of 2024), the Mathematical Modeling and Public Health Workshop at Harvard Chan School (March 2025), and SUMMIT@BOOTH hosted by Chicago Booth at the University of Chicago (November 2025).\n\nHobbies\n\n\n\n\n\n\n\n\nOutside the classroom, I like being active and exploring nature. I’ve been climbing for around 2 years! Climbing challenges me to stay focused and push my limits, both mentally and physically. I also enjoy running, apnea diving, and trying out new restaurants."
+  },
+  {
+    "objectID": "about.html#united-world-colleges",
+    "href": "about.html#united-world-colleges",
+    "title": "About",
+    "section": "United World Colleges",
+    "text": "United World Colleges\nI attended the UWC Red Cross Nordic (UWCRCN), located in Flekke, Norway. UWC makes education a force to unite people, nations and cultures for peace and a sustainable future.\nWhile in Norway, I pursued the International Baccalaureate (IB) and had the honor of representing the UWC movement and my school at the Nobel Peace Prize Ceremony in December 2022. Beyond academics, I spent my time hiking, diving, and growing—personally and intellectually."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "David Rios",
+    "section": "",
+    "text": "I am Hermogenes David Rios. I’m from Bolivia and currently studying Economics and Statistics at Macalester College in Saint Paul, Minnesota.\nMy work sits at the intersection of data, policy, and inequality. I am particularly interested in macroeconomic modeling, labor markets, migration, and applied econometrics. Learn more about me:"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "David Rios",
+    "section": "",
+    "text": "I am Hermogenes David Rios. I’m from Bolivia and currently studying Economics and Statistics at Macalester College in Saint Paul, Minnesota.\nMy work sits at the intersection of data, policy, and inequality. I am particularly interested in macroeconomic modeling, labor markets, migration, and applied econometrics. Learn more about me:"
+  },
+  {
+    "objectID": "posts/metrics/index.html",
+    "href": "posts/metrics/index.html",
+    "title": "Wage Disparities Research",
+    "section": "",
+    "text": "In my Econometrics class, I researched wage disparities based on gender and citizenship status in the U.S. under the supervision of Prof. Amy Damon.\nThis study used the ACS Data from 2012-2019. My research focused on foreign-born workers in the agriculture, construction, and service sectors—industries where immigrant labor is most concentrated as seen in the figure below.\n\nFig. 1: Ratio of Foreign-Born to Citizen Workers by Industry.\nSource: own calculations using the ACS Data."
+  },
+  {
+    "objectID": "posts/metrics/index.html#description",
+    "href": "posts/metrics/index.html#description",
+    "title": "Wage Disparities Research",
+    "section": "",
+    "text": "In my Econometrics class, I researched wage disparities based on gender and citizenship status in the U.S. under the supervision of Prof. Amy Damon.\nThis study used the ACS Data from 2012-2019. My research focused on foreign-born workers in the agriculture, construction, and service sectors—industries where immigrant labor is most concentrated as seen in the figure below.\n\nFig. 1: Ratio of Foreign-Born to Citizen Workers by Industry.\nSource: own calculations using the ACS Data."
+  },
+  {
+    "objectID": "posts/metrics/index.html#empirical-strategy",
+    "href": "posts/metrics/index.html#empirical-strategy",
+    "title": "Wage Disparities Research",
+    "section": "Empirical Strategy",
+    "text": "Empirical Strategy\nI utilized a Mincer earnings regression (see equation below) and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects.\n\\[\n\\begin{align}\n\\ln(wage_{i,s,t}) &= \\beta_0 + \\beta_1 \\, \\textit{Citizen}_{i,s,t} + \\beta_2 \\, \\textit{Sex}_{i,s,t} + \\beta_3 \\, (\\textit{Citizen} \\times \\textit{Sex})_{i,s,t} + \\mathbf{X}'_{i,s,t} \\beta_4 \\\\\n&\\quad  + \\sum_{s=1}^{S} \\gamma_s D_{s,i} + \\sum_{t=1}^{T} \\tau_t D_{t,i} + \\sum_{j=1}^{J} \\theta_j D_{j,i} + \\sum_{k=1}^{K} \\delta_k D_{k,i} + \\epsilon_{i,s,t}\n\\end{align}\n\\]\nwhere \\(\\mathbf{X}'_{i,s,t}\\) includes education, experience, and English proficiency, and fixed effects control for geography, year, industry, and birthplace."
+  },
+  {
+    "objectID": "posts/metrics/index.html#results",
+    "href": "posts/metrics/index.html#results",
+    "title": "Wage Disparities Research",
+    "section": "Results?",
+    "text": "Results?\n\nFemales earn approximately 32.7% less than males, primarily due to intangible factors such as employer bias and statistical discrimination.\nThe analysis further reveals that non-citizen women face an additional 7.9% wage penalty beyond the independent effects of gender and citizenship alone.\nAdditionally, Naturalized citizens earn about 3.7% more than native-born citizens, likely due to positive selection and legal protections."
+  },
+  {
+    "objectID": "posts/metrics/index.html#publication-access",
+    "href": "posts/metrics/index.html#publication-access",
+    "title": "Wage Disparities Research",
+    "section": "Publication & Access",
+    "text": "Publication & Access\nThis paper is published in the Macalester Street Journal:\nEquilibrium, Vol. 3 No. 1 (2025)\n📖 Read it on:\n\n  Google Scholar \n  MSJ Website \nFull paper attached below:"
+  },
+  {
+    "objectID": "posts/website/index.html",
+    "href": "posts/website/index.html",
+    "title": "2025 Bolivia Elections Website",
+    "section": "",
+    "text": "I created a multilingual website—built using Quarto and hosted on GitHub Pages—to support voters as they navigate the upcoming Bolivia 2025 national elections.\nThe site features:\n\nIn-depth candidate profiles\nSummarized and official party platforms\nContextual political analysis\nInteractive decision-support tools\nAvailability in Spanish, Quechua, Aymara, Guaraní, English, and more — because democracy should speak everyone’s language.\n\n🌐 Visit the website\n\n\n\n\n\n\nTipImportant:\n\n\n\nThis page does not promote or support any particular candidate. Its sole purpose is to provide clear, verified, and accessible information to all Bolivians, regardless of background or political affiliation.\n\n\nThis site was built with accessibility and civic empowerment in mind. Designed for both desktop and mobile users, the interface is clean and intuitive to encourage broader engagement from all sectors of society."
+  },
+  {
+    "objectID": "posts/website/index.html#overview",
+    "href": "posts/website/index.html#overview",
+    "title": "2025 Bolivia Elections Website",
+    "section": "",
+    "text": "I created a multilingual website—built using Quarto and hosted on GitHub Pages—to support voters as they navigate the upcoming Bolivia 2025 national elections.\nThe site features:\n\nIn-depth candidate profiles\nSummarized and official party platforms\nContextual political analysis\nInteractive decision-support tools\nAvailability in Spanish, Quechua, Aymara, Guaraní, English, and more — because democracy should speak everyone’s language.\n\n🌐 Visit the website\n\n\n\n\n\n\nTipImportant:\n\n\n\nThis page does not promote or support any particular candidate. Its sole purpose is to provide clear, verified, and accessible information to all Bolivians, regardless of background or political affiliation.\n\n\nThis site was built with accessibility and civic empowerment in mind. Designed for both desktop and mobile users, the interface is clean and intuitive to encourage broader engagement from all sectors of society."
+  },
+  {
+    "objectID": "posts/website/index.html#authors-note",
+    "href": "posts/website/index.html#authors-note",
+    "title": "2025 Bolivia Elections Website",
+    "section": "Author’s Note",
+    "text": "Author’s Note\nWith Bolivia facing an economic crisis, a growing parallel exchange rate, and deep political polarization across departments, the August 17th elections are more than a vote—they’re a turning point.\nThis project aims to inform, clarify, and empower. There’s a lot of speculation about each candidate’s platform. To help cut through the noise, I gathered and organized reliable, verifiable information into one publicly available platform.\nEach profile includes a summary of the candidate’s platform, as well as a link to their official government plan filed with the Tribunal Supremo Electoral.\n\nThis is a personal, nonpartisan project driven by the hope for a more informed, inclusive, and democratic Bolivia."
+  }
+]

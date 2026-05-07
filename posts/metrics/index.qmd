@@ -48,7 +48,8 @@ This paper is published in the *Macalester Street Journal*:\
 
 -   <a href="https://macalesterstreet.org/index.php/journal/article/view/90" target="_blank" title= "View on MSJ website" style="display: inline-flex; align-items: center; text-decoration: none; margin-right: 15px;"> <img src="https://macalesterstreet.org/public/journals/1/cover_issue_5_en_US.png" alt="MSJ Logo" width="24" height="24" style="margin-right: 8px;"/> [MSJ Website]{style="font-size: 1em;"} </a>
 
-  - Full paper attached below:
+-   Full paper attached below:
 
+<iframe src="Econometrics_Paper_Final.pdf" width="100%" height="600px">
 
-<iframe src="Econometrics_Paper_Final.pdf" width="100%" height="600px"></iframe>
+</iframe>
