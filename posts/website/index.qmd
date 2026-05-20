@@ -13,11 +13,11 @@ I created a multilingual website—built using Quarto and hosted on GitHub Pages
 
 The site features:
 
--   In-depth candidate profiles
--   Summarized and official party platforms
--   Contextual political analysis
--   Interactive decision-support tools
--   Availability in Spanish, Quechua, Aymara, Guaraní, English, and more — because democracy should speak everyone’s language.
+- In-depth candidate profiles
+- Summarized and official party platforms
+- Contextual political analysis
+- Interactive decision-support tools
+- Availability in Spanish, Quechua, Aymara, Guaraní, English, and more — because democracy should speak everyone’s language.
 
 🌐 [Visit the website](https://hriostorres.github.io/elecciones.github.io/)
 
