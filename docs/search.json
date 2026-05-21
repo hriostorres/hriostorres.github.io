@@ -109,7 +109,7 @@
     "href": "posts/metrics/index.html#empirical-strategy",
     "title": "Wage Disparities Research",
     "section": "Empirical Strategy",
-    "text": "Empirical Strategy\nI utilized a Mincer earnings regression (see equation below) and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects.\n\\[\n\\begin{align}\n\\ln(wage_{i,s,t}) &= \\beta_0 + \\beta_1 \\, \\textit{Citizen}_{i,s,t} + \\beta_2 \\, \\textit{Sex}_{i,s,t} + \\beta_3 \\, (\\textit{Citizen} \\times \\textit{Sex})_{i,s,t} + \\mathbf{X}'_{i,s,t} \\beta_4 \\\\\n&\\quad  + \\sum_{s=1}^{S} \\gamma_s D_{s,i} + \\sum_{t=1}^{T} \\tau_t D_{t,i} + \\sum_{j=1}^{J} \\theta_j D_{j,i} + \\sum_{k=1}^{K} \\delta_k D_{k,i} + \\epsilon_{i,s,t}\n\\end{align}\n\\]\nwhere \\(\\mathbf{X}'_{i,s,t}\\) includes education, experience, and English proficiency, and fixed effects control for geography, year, industry, and birthplace."
+    "text": "Empirical Strategy\nI utilized a Mincer earnings regression (see equation below) and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects.\n\\[\n\\begin{align}\n\\ln(wage_{i,s,t}) = \\;& \\hat{\\beta}_0 + \\hat{\\beta}_1\\, Citizen_{i,s,t}\n    + \\hat{\\beta}_2\\, Sex_{i,s,t}\n    + \\hat{\\beta}_3\\,(Citizen \\times Sex)_{i,s,t}\n    + \\mathbf{X}'_{i,s,t}\\,\\hat{\\beta}_4 \\\\[4pt]\n    &+ \\sum_{s=1}^{S} \\hat{\\gamma}_s\\, D_{s,i}\n    + \\sum_{t=1}^{T} \\hat{\\tau}_t\\, D_{t,i}\n    + \\sum_{j=1}^{J} \\hat{\\theta}_j\\, D_{j,i}\n    + \\sum_{k=1}^{K} \\hat{\\delta}_k\\, D_{k,i}\n    + \\epsilon_{i,s,t}\n\\end{align}\n\\]\nwhere \\(\\mathbf{X}'_{i,s,t}\\) includes education, experience, and English proficiency, and fixed effects control for geography, year, industry, and birthplace."
   },
   {
     "objectID": "posts/metrics/index.html#results",
@@ -123,7 +123,7 @@
     "href": "posts/metrics/index.html#publication-access",
     "title": "Wage Disparities Research",
     "section": "Publication & Access",
-    "text": "Publication & Access\nThis paper is published in the Macalester Street Journal:\nEquilibrium, Vol. 3 No. 1 (2025)\n📖 Read it on:\n\n  Google Scholar \n  MSJ Website \nFull paper attached below:"
+    "text": "Publication & Access\nThis paper is published in the Macalester Street Journal:\nEquilibrium, Vol. 3 No. 1 (2025)\n📖 Read it on:\n\n  Google Scholar \n  MSJ Website"
   },
   {
     "objectID": "posts/website/index.html",
