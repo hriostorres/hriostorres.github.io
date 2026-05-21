@@ -1,15 +1,27 @@
 ---
-title: "About"
+title: ""
 format: html
 css: styles.css
 ---
 
+## Recent Experiences
+
+**Research Assistant** \| University of Chicago, via PREDOC \| Summer 2026
+
+- RCT measuring whether a three-week course improves digital habits and misinformation discernment among college students in Punjab, India.
+
+- Observational study on how mobile phone expansion affects gender-related attitudes and behaviors in sub-Saharan Africa, exploiting exogenous variation in phone coverage from lightning strikes.
+
+**Data Science Intern** \| Metropolitan Council, St. Paul, MN \| Jan 2026–May2026\
+
+- Analyzing travel behavior data from 5,000+ households to model transportation disparities for the Imagine 2050 regional policy plan.
+
 ## Macalester College
 
-At Macalester, I’m pursuing a double major in Economics and Statistics with a minor in French. I’ve served as a Preceptor for courses across the Mathematics, Statistics, and Economics departments:
+At Macalester, I’m pursuing a double major in Economics and Statistics. I’ve served as a Preceptor for courses across the Mathematics, Statistics, and Economics departments:
 
 | Semester        | Department   | Course                                        |
-|:----------------|:-------------|:----------------------------------------------|
+|:-----------------|:-----------------|:------------------------------------|
 | **Fall 2026**   | Economics    | Intermediate Macroeconomics                   |
 | **Spring 2026** | Econ / Stats | Econometrics, Machine Learning                |
 | **Fall 2025**   | Econ / Stats | Intermediate Macroeconomics, Machine Learning |
@@ -25,11 +37,9 @@ I have participated in research and training programs such as the [Expanding Div
 ### Hobbies
 
 |  |  |
-|----|----|
+|------------------------------------|------------------------------------|
 | ![V5-V7 \@Vertical Endeavors](v6.jpg){width="20cm"} | Outside the classroom, I like being active and exploring nature. I've been climbing for around 2 years! Climbing challenges me to stay focused and push my limits, both mentally and physically. I also enjoy running, apnea diving, and trying out new restaurants. |
 
 ## United World Colleges
 
-I attended the [UWC Red Cross Nordic](https://www.uwc.org/rcn) (UWCRCN), located in Flekke, Norway. UWC makes education a force to unite people, nations and cultures for peace and a sustainable future.
-
-While in Norway, I pursued the International Baccalaureate (IB) and had the honor of representing the UWC movement and my school at [the Nobel Peace Prize Ceremony in December 2022](https://uwcrcn.no/nobel-peace-prize_2022/). Beyond academics, I spent my time hiking, diving, and growing—personally and intellectually.
+I attended the [UWC Red Cross Nordic](https://www.uwc.org/rcn) (UWCRCN), located in Flekke, Norway. UWC makes education a force to unite people, nations and cultures for peace and a sustainable future. While in Norway, I pursued the International Baccalaureate (IB) and had the honor of representing the UWC movement and my school at [the Nobel Peace Prize Ceremony in December 2022](https://uwcrcn.no/nobel-peace-prize_2022/). Beyond academics, I spent my time hiking, diving, and growing—personally and intellectually.

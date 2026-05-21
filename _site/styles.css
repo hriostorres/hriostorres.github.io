@@ -1,0 +1,30 @@
+.circular-image {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.columns {
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Remove default title spacing */
+.quarto-title { display: none; }
+
+.columns {
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.content h2 {
+  border-bottom: none !important;
+}
+
+main h2 {
+  border-bottom: none !important;
+}
