@@ -22,8 +22,15 @@ I utilized a Mincer earnings regression (see equation below) and Blinder-Oaxaca 
 
 $$
 \begin{align}
-\ln(wage_{i,s,t}) &= \beta_0 + \beta_1 \, \textit{Citizen}_{i,s,t} + \beta_2 \, \textit{Sex}_{i,s,t} + \beta_3 \, (\textit{Citizen} \times \textit{Sex})_{i,s,t} + \mathbf{X}'_{i,s,t} \beta_4 \\
-&\quad  + \sum_{s=1}^{S} \gamma_s D_{s,i} + \sum_{t=1}^{T} \tau_t D_{t,i} + \sum_{j=1}^{J} \theta_j D_{j,i} + \sum_{k=1}^{K} \delta_k D_{k,i} + \epsilon_{i,s,t}
+ \ln(wage_{i,s,t}) = \;& \hat{\beta}_0 + \hat{\beta}_1\, Citizen_{i,s,t}
+    + \hat{\beta}_2\, Sex_{i,s,t}
+    + \hat{\beta}_3\,(Citizen \times Sex)_{i,s,t}
+    + \mathbf{X}'_{i,s,t}\,\hat{\beta}_4 \\[4pt]
+    &+ \sum_{s=1}^{S} \hat{\gamma}_s\, D_{s,i}
+    + \sum_{t=1}^{T} \hat{\tau}_t\, D_{t,i}
+    + \sum_{j=1}^{J} \hat{\theta}_j\, D_{j,i}
+    + \sum_{k=1}^{K} \hat{\delta}_k\, D_{k,i}
+    + \epsilon_{i,s,t}
 \end{align}
 $$
 
