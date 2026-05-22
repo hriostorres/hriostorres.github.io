@@ -6,52 +6,42 @@ format:
     css: styles.css
 ---
 
-:::: {.columns}
-
+::::: columns
 ::: {.column width="5%" style="text-align: center; padding-top: 2rem; border-right: 2px solid #dee2e6; padding-right: 2rem; min-height: 100vh;"}
-
 ![](Hermo.jpeg){style="width: 260px; height: 260px; border-radius: 50%; object-fit: cover;"}
 
-<a href="https://www.linkedin.com/in/hermogenesdavid/" target="_blank"><i class="bi bi-linkedin"></i></a>
-&nbsp;
-<a href="mailto:hriostor@macalester.edu"><i class="bi bi-envelope"></i></a>
-&nbsp;
-<a href="https://github.com/hriostorres" target="_blank"><i class="bi bi-github"></i></a>
+<a href="https://www.linkedin.com/in/hermogenesdavid/" target="_blank"><i class="bi bi-linkedin"></i></a>   <a href="mailto:hriostor@macalester.edu"><i class="bi bi-envelope"></i></a>   <a href="https://github.com/hriostorres" target="_blank"><i class="bi bi-github"></i></a>
+
 <p style="font-size: 0.8rem; color: gray; margin-top: 0.5rem;">
-  <i class="bi bi-book"></i> B.A. Economics & Statistics at Macalester College<br>
-  </p>
+
+<i class="bi bi-book"></i> B.A. Economics & Statistics at Macalester College<br>
+
+</p>
+
 <p style="font-size: 0.8rem; color: gray; margin-top: 0.5rem;">
-  <i class="bi bi-geo-alt"></i> 1600 Grand Ave, St. Paul, MN 55105
+
+<i class="bi bi-geo-alt"></i> 1600 Grand Ave, St. Paul, MN 55105
+
 </p>
 :::
 
 ::: {.column width="95%" style="padding-top: 2rem; padding-left: 3rem;"}
+### David Rios
 
-## David Rios
+I am Hermogenes David Rios, a rising senior studying Economics and Statistics at [Macalester College](https://www.macalester.edu) in Saint Paul, Minnesota. My work sits at the intersection of data, policy, and inequality, spanning labor markets, digital technology, and transportation equity. Learn more [about me](./about.html).
 
-I am Hermogenes David Rios, a rising senior studying Economics and Statistics at
-[Macalester College](https://www.macalester.edu) in Saint Paul, Minnesota. My work
-sits at the intersection of data, policy, and inequality, spanning labor markets,
-digital technology, and transportation equity. Learn more [about me](./about.html).
+### Publications
 
+[**"Inequalities in the U.S. Labor Market"**](/posts/metrics/): quantified labor market disparities using regression analysis on 500K+ census records. Published in the *Macalester Street Journal: Equilibrium*, Vol. 3 (2025).
 
-## Publications
+### Highlightss
 
-**"Inequalities in the U.S. Labor Market"** — [Read the paper](/posts/metrics/) 
-Quantified labor market disparities using regression analysis on 500K+ census records.
-Published in the *Macalester Street Journal: Equilibrium*, Vol. 3 (2025).
+**Live It Fund Grant** — Awarded \$2,000 to launch *Camino a la U* in Bolivia, increasing university admission exam scores by 48%.
 
-## Recognition
+**DataFest "Best Insight" Award** — American Statistical Association, March 2025. Led a team analyzing U.S. real estate trends in a 48-hour data challenge.
 
-**Live It Fund Grant** — Awarded $2,000 to launch *Camino a la U* in Bolivia,
-increasing university admission exam scores by 48%.
+### Skills
 
-**DataFest "Best Insight" Award** — American Statistical Association, March 2025.
-Led a team analyzing U.S. real estate trends in a 48-hour data challenge.
-
-## Skills
-
-R, Python, STATA, LaTeX, Excel · Econometrics · Causal Inference · Machine Learning
+R Studio, STATA, Python, LaTeX, Econometrics, Machine Learning
 :::
-
-::::
+:::::

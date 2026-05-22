@@ -16,9 +16,9 @@ css: styles.css
 
 - Analyzing travel behavior data from 5,000+ households to model transportation disparities for the Imagine 2050 regional policy plan.
 
-## Macalester College
+## Teaching
 
-At Macalester, I’m pursuing a double major in Economics and Statistics. I’ve served as a Preceptor for courses across the Mathematics, Statistics, and Economics departments:
+At Macalester, I’ve served as a Preceptor for courses across the Mathematics, Statistics, and Economics departments:
 
 | Semester        | Department   | Course                                        |
 |:-----------------|:-----------------|:------------------------------------|
@@ -29,6 +29,7 @@ At Macalester, I’m pursuing a double major in Economics and Statistics. I’ve
 | **Fall 2024**   | Mathematics  | Applied Multivariable Calculus II             |
 
 As you might guess, I love teaching!
+
 
 ## Programs
 
