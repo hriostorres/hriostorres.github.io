@@ -71,3 +71,8 @@ main h2 {
 .photo-item:hover .photo-caption {
   opacity: 1;
 }
+
+.page-columns {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
