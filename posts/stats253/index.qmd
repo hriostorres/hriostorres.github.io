@@ -1,6 +1,6 @@
 ---
 title: "Unsupervised Learning: Clustering and PCA"
-subtitle: "Machine Learning Group Assingment"
+subtitle: "Machine Learning Group Assignment"
 date: 04-01-2025
 author: "David Rios, Elena Ortiz, Fiona Godsill, and Lily Morgan"
 format:

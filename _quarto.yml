@@ -14,11 +14,11 @@ website:
       - href: index.qmd
         text: Home
       - href: about.qmd
-        text: About
+        text: Research
       - href: projects.qmd
         text: Projects
       - href: photos.qmd
-        text: Moments
+        text: Personal
       - icon: linkedin
         href: https://www.linkedin.com/in/hermogenesdavid/ 
       - icon: envelope
