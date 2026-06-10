@@ -6,17 +6,20 @@ css: styles.css
 
 ## Research
 
-**Research Assistant** \| University of Chicago, via PREDOC \| Summer 2026
-
 I am working on three research projects this summer:
+
+
+**Research Assistant** \| University of Chicago, via PREDOC \| Summer 2026
 
 - **Self-Command and Screen-Time: Evidence from an Educational Intervention** (with Mridul Joshi, Jalnidh Kaur and Lena Song) — *Conditionally accepted at the Journal of Development Economics based on pre-results review.* A randomized controlled trial evaluating a digital empowerment intervention for college students in Punjab, India. 
 
-- **Health Impacts of the Hennepin Energy Recovery Center (HERC)** — Evaluating the true causal impact of HERC, a trash incinerator in the Twin Cities, on health outcomes in surrounding communities. *(more details soon.)*
-
 - **Mobile Phones and Gender Attitudes in Sub-Saharan Africa** — Observational study of how mobile phone expansion affects gender-related attitudes and behaviors, exploiting exogenous variation in phone coverage from lightning strikes. *(more details soon.)*
 
-## Working Papers
+**Research Assistant** \| Macalester College, via MSCS Department \| Summer 2026
+
+- **Health Impacts of the Hennepin Energy Recovery Center (HERC)** — Evaluating the true causal impact of HERC, a trash incinerator in the Twin Cities, on health outcomes in surrounding communities. *(more details soon.)*
+
+## Papers
 
 [**Inequalities in the U.S. Labor Market**](/posts/metrics/) — Econometrics research quantifying wage disparities by gender and citizenship status using a Mincer earnings regression and Blinder-Oaxaca decomposition on 500K+ ACS records (2012–2019). Published in the *Macalester Street Journal: Equilibrium*, Vol. 3 (2025). See the [full project page](/posts/metrics/) for more information.
 
@@ -37,7 +40,6 @@ I am working on three research projects this summer:
 - Researched TV network–cable provider disputes in a mock damages case, analyzing channel blackout trends and writing a summary memo.
 
 
-
 ## Teaching
 
 At Macalester, I've served as a Preceptor for courses across the Mathematics, Statistics, and Economics departments:
@@ -53,10 +55,8 @@ At Macalester, I've served as a Preceptor for courses across the Mathematics, St
 As you might guess, I love teaching!
 
 
-## Programs
+## Leadership Experiences
 
-I have participated in research and training programs such as the [Expanding Diversity in Economics](https://www.macalester.edu/news/2024/04/three-macalester-students-selected-for-university-of-chicagos-prestigious-economics-program/) (EDE) Program at the University of Chicago (Summer of 2024), the [Mathematical Modeling and Public Health Workshop](https://hsph.harvard.edu/epidemiology/news/mathematical-modeling-and-public-health-workshop/) at Harvard Chan School (March 2025), and [SUMMIT\@BOOTH](https://www.chicagobooth.edu/phd/admissions/events/summit-booth/summit-2025-cohort) hosted by Chicago Booth at the University of Chicago (November 2025).
+I have participated in research and training programs such as the [Expanding Diversity in Economics](https://www.macalester.edu/news/2024/04/three-macalester-students-selected-for-university-of-chicagos-prestigious-economics-program/) (EDE) Program at the University of Chicago (Summer 2024), the [Mathematical Modeling and Public Health Workshop](https://hsph.harvard.edu/epidemiology/news/mathematical-modeling-and-public-health-workshop/) at Harvard Chan School (March 2025), and [SUMMIT@BOOTH](https://www.chicagobooth.edu/phd/admissions/events/summit-booth/summit-2025-cohort) hosted by Chicago Booth at the University of Chicago (November 2025).
 
-## United World Colleges
-
-I attended the [UWC Red Cross Nordic](https://www.uwc.org/rcn) (UWCRCN), located in Flekke, Norway. While in Norway, I pursued the International Baccalaureate (IB) and had the honor of representing the UWC movement and my school at [the Nobel Peace Prize Ceremony in December 2022](https://uwcrcn.no/nobel-peace-prize_2022/). Beyond academics, I spent my time hiking, diving, and growing—personally and intellectually.
+Prior to college, I completed the International Baccalaureate (IB) at [UWC Red Cross Nordic](https://www.uwc.org/rcn) in Flekke, Norway, where I lived and studied alongside students from around the world. During my time there, I represented both the UWC movement and my school at [the Nobel Peace Prize Ceremony](https://uwcrcn.no/nobel-peace-prize_2022/) in Oslo in December 2022. Beyond academics, I spent my time hiking, diving, and growing—personally and intellectually.

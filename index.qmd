@@ -7,25 +7,28 @@ format:
 ---
 
 ::::: columns
-::: {.column width="5%" style="text-align: center; padding-top: 3rem; border-right: 2px solid #dee2e6; padding-right: 3rem; min-height: 80vh;"}
+
+::: {.column width="5%" style="text-align: center; padding-top: 3rem; border-right: 2px solid #dee2e6; padding-right: 3rem; min-height: 78vh;"}
 
 ![](Hermo.jpeg){style="width: 260px; height: 260px; border-radius: 50%; object-fit: cover;"}
 
-<a href="https://www.linkedin.com/in/hermogenesdavid/" target="_blank"><i class="bi bi-linkedin"></i></a>   <a href="mailto:hriostor@macalester.edu"><i class="bi bi-envelope"></i></a>   <a href="https://github.com/hriostorres" target="_blank"><i class="bi bi-github"></i></a>
+<a href="https://www.linkedin.com/in/hermogenesdavid/" target="_blank"><i class="bi bi-linkedin"></i></a>
+&nbsp;
+<a href="mailto:hriostor@macalester.edu"><i class="bi bi-envelope"></i></a>
+&nbsp;
+<a href="https://github.com/hriostorres" target="_blank"><i class="bi bi-github"></i></a>
 
-<p style="font-size: 0.8rem; color: gray; margin-top: 0.5rem;">
-
-<i class="bi bi-book"></i> B.A. Economics & Statistics at Macalester College<br>
-
+<p style="font-size: 0.8rem; color: gray; margin-top: 0.5rem; margin-bottom: 0.25rem;">
+<i class="bi bi-book"></i> B.A. Economics &amp; Statistics at Macalester College
 </p>
 
-<p style="font-size: 0.8rem; color: gray; margin-top: 0.5rem;">
-
+<p style="font-size: 0.8rem; color: gray; margin-top: 0; margin-bottom: 0;">
 <i class="bi bi-geo-alt"></i> 1600 Grand Ave, St. Paul, MN 55105
-
 </p>
+
 :::
-::: {.column width="95%" style="padding-top: 0.5rem; padding-left: 2rem; padding-bottom: 0;"}
+
+::: {.column width="95%" style="padding-top: 0.5rem; padding-left: 2rem; padding-bottom: 0; margin-bottom: 0;"}
 
 ### David Rios
 
@@ -41,8 +44,11 @@ I am Hermogenes David Rios, a rising senior studying Economics and Statistics at
 
 **DataFest "Best Insight" Award:** Led a team analyzing U.S. real estate trends in a 48-hour data challenge hosted by the American Statistical Association (2025).
 
-### Skills
-
+<h3 style="margin-bottom: 0.15rem;">Skills</h3>
+<p style="margin-bottom: -5rem;">
 R Studio, STATA, Python, LaTeX, Econometrics, Machine Learning
+</p>
+
 :::
+
 :::::

@@ -53,14 +53,14 @@
     "href": "index.html",
     "title": "David Rios",
     "section": "",
-    "text": "B.A. Economics & Statistics at Macalester College\n\n\n 1600 Grand Ave, St. Paul, MN 55105\n\n\n\nDavid Rios\nI am Hermogenes David Rios, a rising senior studying Economics and Statistics at Macalester College in Saint Paul, Minnesota. Learn more about me.\n\n\nPublications\n“Inequalities in the U.S. Labor Market”: Quantified labor market disparities using regression analysis on 500K+ census records. Published in the Macalester Street Journal: Equilibrium, Vol. 3 (2025).\n\n\nHighlights\nLive It Fund Grant: Awarded $2,000 to launch Camino a la U in Bolivia, increasing university admission exam scores by 48%.\nDataFest “Best Insight” Award: Led a team analyzing U.S. real estate trends in a 48-hour data challenge hosted by the American Statistical Association (2025).\n\n\nSkills\nR Studio, STATA, Python, LaTeX, Econometrics, Machine Learning"
+    "text": "B.A. Economics & Statistics at Macalester College\n\n\n 1600 Grand Ave, St. Paul, MN 55105\n\n\n\nDavid Rios\nI am Hermogenes David Rios, a rising senior studying Economics and Statistics at Macalester College in Saint Paul, Minnesota. Learn more about me.\n\n\nPublications\n“Inequalities in the U.S. Labor Market”: Quantified labor market disparities using regression analysis on 500K+ census records. Published in the Macalester Street Journal: Equilibrium, Vol. 3 (2025).\n\n\nHighlights\nLive It Fund Grant: Awarded $2,000 to launch Camino a la U in Bolivia, increasing university admission exam scores by 48%.\nDataFest “Best Insight” Award: Led a team analyzing U.S. real estate trends in a 48-hour data challenge hosted by the American Statistical Association (2025).\n\nSkills\n\n\nR Studio, STATA, Python, LaTeX, Econometrics, Machine Learning"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "David Rios",
     "section": "",
-    "text": "Research Assistant | University of Chicago, via PREDOC | Summer 2026\nI am working on three research projects this summer:\n\nSelf-Command and Screen-Time: Evidence from an Educational Intervention (with Mridul Joshi, Jalnidh Kaur and Lena Song) — Conditionally accepted at the Journal of Development Economics based on pre-results review. A randomized controlled trial evaluating a digital empowerment intervention for college students in Punjab, India.\nHealth Impacts of the Hennepin Energy Recovery Center (HERC) — Evaluating the true causal impact of HERC, a trash incinerator in the Twin Cities, on health outcomes in surrounding communities. (more details soon.)\nMobile Phones and Gender Attitudes in Sub-Saharan Africa — Observational study of how mobile phone expansion affects gender-related attitudes and behaviors, exploiting exogenous variation in phone coverage from lightning strikes. (more details soon.)"
+    "text": "I am working on three research projects this summer:\nResearch Assistant | University of Chicago, via PREDOC | Summer 2026\n\nSelf-Command and Screen-Time: Evidence from an Educational Intervention (with Mridul Joshi, Jalnidh Kaur and Lena Song) — Conditionally accepted at the Journal of Development Economics based on pre-results review. A randomized controlled trial evaluating a digital empowerment intervention for college students in Punjab, India.\nMobile Phones and Gender Attitudes in Sub-Saharan Africa — Observational study of how mobile phone expansion affects gender-related attitudes and behaviors, exploiting exogenous variation in phone coverage from lightning strikes. (more details soon.)\n\nResearch Assistant | Macalester College, via MSCS Department | Summer 2026\n\nHealth Impacts of the Hennepin Energy Recovery Center (HERC) — Evaluating the true causal impact of HERC, a trash incinerator in the Twin Cities, on health outcomes in surrounding communities. (more details soon.)"
   },
   {
     "objectID": "about.html#recent-experiences",
@@ -158,7 +158,7 @@
     "href": "about.html#research",
     "title": "David Rios",
     "section": "",
-    "text": "Research Assistant | University of Chicago, via PREDOC | Summer 2026\nI am working on three research projects this summer:\n\nSelf-Command and Screen-Time: Evidence from an Educational Intervention (with Mridul Joshi, Jalnidh Kaur and Lena Song) — Conditionally accepted at the Journal of Development Economics based on pre-results review. A randomized controlled trial evaluating a digital empowerment intervention for college students in Punjab, India.\nHealth Impacts of the Hennepin Energy Recovery Center (HERC) — Evaluating the true causal impact of HERC, a trash incinerator in the Twin Cities, on health outcomes in surrounding communities. (more details soon.)\nMobile Phones and Gender Attitudes in Sub-Saharan Africa — Observational study of how mobile phone expansion affects gender-related attitudes and behaviors, exploiting exogenous variation in phone coverage from lightning strikes. (more details soon.)"
+    "text": "I am working on three research projects this summer:\nResearch Assistant | University of Chicago, via PREDOC | Summer 2026\n\nSelf-Command and Screen-Time: Evidence from an Educational Intervention (with Mridul Joshi, Jalnidh Kaur and Lena Song) — Conditionally accepted at the Journal of Development Economics based on pre-results review. A randomized controlled trial evaluating a digital empowerment intervention for college students in Punjab, India.\nMobile Phones and Gender Attitudes in Sub-Saharan Africa — Observational study of how mobile phone expansion affects gender-related attitudes and behaviors, exploiting exogenous variation in phone coverage from lightning strikes. (more details soon.)\n\nResearch Assistant | Macalester College, via MSCS Department | Summer 2026\n\nHealth Impacts of the Hennepin Energy Recovery Center (HERC) — Evaluating the true causal impact of HERC, a trash incinerator in the Twin Cities, on health outcomes in surrounding communities. (more details soon.)"
   },
   {
     "objectID": "about.html#working-papers-presentations",
@@ -180,5 +180,19 @@
     "title": "David Rios",
     "section": "Working Papers",
     "text": "Working Papers\nInequalities in the U.S. Labor Market — Econometrics research quantifying wage disparities by gender and citizenship status using a Mincer earnings regression and Blinder-Oaxaca decomposition on 500K+ ACS records (2012–2019). Published in the Macalester Street Journal: Equilibrium, Vol. 3 (2025). See the full project page for more information.\n\nI will be presenting this paper at the PREDOC Research Conference at the Booth School of Business, University of Chicago, in July 2026."
+  },
+  {
+    "objectID": "about.html#papers",
+    "href": "about.html#papers",
+    "title": "David Rios",
+    "section": "Papers",
+    "text": "Papers\nInequalities in the U.S. Labor Market — Econometrics research quantifying wage disparities by gender and citizenship status using a Mincer earnings regression and Blinder-Oaxaca decomposition on 500K+ ACS records (2012–2019). Published in the Macalester Street Journal: Equilibrium, Vol. 3 (2025). See the full project page for more information.\n\nI will be presenting this paper at the PREDOC Research Conference at the Booth School of Business, University of Chicago, in July 2026."
+  },
+  {
+    "objectID": "about.html#leadership-experiences",
+    "href": "about.html#leadership-experiences",
+    "title": "David Rios",
+    "section": "Leadership Experiences",
+    "text": "Leadership Experiences\nI have participated in research and training programs such as the Expanding Diversity in Economics (EDE) Program at the University of Chicago (Summer 2024), the Mathematical Modeling and Public Health Workshop at Harvard Chan School (March 2025), and SUMMIT@BOOTH hosted by Chicago Booth at the University of Chicago (November 2025).\nPrior to college, I completed the International Baccalaureate (IB) at UWC Red Cross Nordic in Flekke, Norway, where I lived and studied alongside students from around the world. During my time there, I represented both the UWC movement and my school at the Nobel Peace Prize Ceremony in Oslo in December 2022. Beyond academics, I spent my time hiking, diving, and growing—personally and intellectually."
   }
 ]
