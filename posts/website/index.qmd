@@ -9,7 +9,7 @@ format: html
 
 ## Overview
 
-I created a multilingual website—built using Quarto and hosted on GitHub Pages—to support voters as they navigate the upcoming Bolivia 2025 national elections.
+I created a multilingual website to support voters as they navigate the upcoming Bolivia 2025 national elections.
 
 The site features:
 

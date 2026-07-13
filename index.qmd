@@ -30,23 +30,20 @@ format:
 
 ::: {.column width="95%" style="padding-top: 0.5rem; padding-left: 2rem; padding-bottom: 0; margin-bottom: 0;"}
 
-### David Rios
+### Hermogenes David Rios
 
-I am Hermogenes David Rios, a rising senior studying Economics and Statistics at [Macalester College](https://www.macalester.edu) in Saint Paul, Minnesota. Learn more [about me](./about.html).
+I am Hermogenes David Rios, a rising senior studying Economics and Statistics at [Macalester College](https://www.macalester.edu) in Saint Paul, Minnesota. I am drawn to work that uses data and economics to understand how policy shapes education and labor market opportunity. Learn more [about me](./experience.html).
 
-### Publications
-
-[**"Inequalities in the U.S. Labor Market":**](/posts/metrics/) Quantified labor market disparities using regression analysis on 500K+ census records. Published in the *Macalester Street Journal: Equilibrium*, Vol. 3 (2025).
 
 ### Highlights
 
-**Live It Fund Grant:** Awarded \$2,000 to launch *Camino a la U* in Bolivia, increasing university admission exam scores by 48%.
+[**Founder of *Camino a la U*:**](/posts/camino/) In January 2026, I received a \$2,000 Live It Fund grant from Macalester's [Entrepreneurship and Innovation Department](https://www.macalester.edu/entrepreneurship-and-innovation/turning-vision-into-action-live-it-fund-j-term-2026-projects/) to found *Camino a la U*, a university-access program for low-income students in Santa Cruz, Bolivia. I designed the selection process and organized five teachers to coach students through admission essays and entrance exams, raising average admission-exam scores by 52 percentage points (from 32% to 84%).
 
-**DataFest "Best Insight" Award:** Led a team analyzing U.S. real estate trends in a 48-hour data challenge hosted by the American Statistical Association (2025).
+[**Author of "Inequalities in the U.S. Labor Market":**](/posts/metrics/) Quantified labor market disparities using regression analysis on 500K+ census records. Published in the *Macalester Street Journal: Equilibrium*, Vol. 3 (2025).
 
 <h3 style="margin-bottom: 0.15rem;">Skills</h3>
 <p style="margin-bottom: -5rem;">
-R Studio, STATA, Python, LaTeX, Econometrics, Machine Learning
+R, Stata, Python, LaTeX, Econometrics, Machine Learning
 </p>
 
 :::

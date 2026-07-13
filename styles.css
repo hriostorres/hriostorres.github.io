@@ -34,3 +34,43 @@ a.btn:hover {
   background-color: #024caa;
 }
 
+/* Content links: no underline, indicated by color only */
+main a:not(.btn) {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+main a:not(.btn):hover {
+  color: #024caa;
+  text-decoration: none;
+}
+
+body.quarto-dark main a:not(.btn) {
+  color: #6ea8fe;
+}
+
+body.quarto-dark main a:not(.btn):hover {
+  color: #9ec5fe;
+}
+
+/* Project listing cards: only the post title reads as a link */
+main .quarto-post a:not(.btn) {
+  color: inherit;
+}
+
+main .quarto-post .listing-title a {
+  color: #0366d6;
+}
+
+main .quarto-post .listing-title a:hover {
+  color: #024caa;
+}
+
+body.quarto-dark main .quarto-post .listing-title a {
+  color: #6ea8fe;
+}
+
+body.quarto-dark main .quarto-post .listing-title a:hover {
+  color: #9ec5fe;
+}
+

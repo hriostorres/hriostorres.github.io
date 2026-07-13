@@ -6,15 +6,15 @@ project:
 
 
 website:
-  title: "David Rios"
+  title: "Hermogenes David Rios"
   favicon: "logo_hr.png"
   google-analytics: G-JBCLMNEM0Z
   navbar:
     right:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: Research
+      - href: experience.qmd
+        text: Experience
       - href: projects.qmd
         text: Projects
       - href: photos.qmd

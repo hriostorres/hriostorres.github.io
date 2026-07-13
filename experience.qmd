@@ -1,0 +1,69 @@
+---
+title: ""
+format: html
+css: styles.css
+---
+
+## Research
+
+I am working on three research projects this summer:
+
+
+**Data Scientist** \| University of Chicago, via PREDOC \| March 2026–Present
+
+- **Self-Command and Screen-Time: Evidence from an Educational Intervention** (with Mridul Joshi, Jalnidh Kaur and Lena Song) — *Conditionally accepted at the Journal of Development Economics based on pre-results review.* A randomized controlled trial evaluating a digital empowerment intervention for college students in Punjab, India. I work on making the trial's analysis meet top economics journals' reproducibility standards and on developing the study's research hypotheses by synthesizing more than 20 cross-disciplinary papers on digital wellness.
+
+- **Mobile Phones and Gender Attitudes in Sub-Saharan Africa** — Observational study of how mobile phone expansion affects gender-related attitudes and behaviors, exploiting exogenous variation in phone coverage from lightning strikes. *(more details soon.)*
+
+**Research Assistant** \| Macalester College, via MSCS Department \| Summer 2026
+
+- **Health Impacts of the Hennepin Energy Recovery Center (HERC)** — (with Prof. Leslie Myint) Estimating the causal impact of HERC, a municipal waste incinerator in the Twin Cities, on asthma and cancer outcomes in nearby communities ahead of the facility's 2027 closure debate. I integrated four government datasets at the census-tract level to estimate localized pollution exposure and apply causal inference methods in R, evaluating the robustness of findings through sensitivity analyses and alternative specifications. The project aims to provide rigorous evidence to inform ongoing public discussions about HERC's future. For background on the broader policy debate, see the [Zero Burn Coalition](https://www.zeroburncoalition.org/).
+
+
+## Publications
+
+[**Inequalities in the U.S. Labor Market**](/posts/metrics/) — Econometrics research quantifying wage disparities by gender and citizenship status using a Mincer earnings regression and Blinder-Oaxaca decomposition on 500K+ ACS records (2012–2019). Published in the *Macalester Street Journal: Equilibrium*, Vol. 3 (2025). See the [full project page](/posts/metrics/) for more information.
+
+- I will be presenting this paper at the **PREDOC Research Conference** at the Booth School of Business, University of Chicago, in **July 2026**.
+
+## Industry Experience
+
+**Data Analyst** \| Metropolitan Council, St. Paul, MN \| Jan 2026–May 2026
+
+- Modeled regional transit demand to optimize service timing, accessibility, and network usage by analyzing Travel Behavior Inventory data from 5,000+ households in R.
+
+- Advised executive leadership on the travel trends shaping the *Imagine 2050* regional plan by presenting a strategic deck and defending recommendations in live Q&A with senior planners.
+
+**Technical Lead** \| Data Science Final Project, Macalester College \| Jan 2026–May 2026
+
+- Led a 3-person team analyzing [AI adoption, wage premiums, and payroll growth across U.S. industries](https://mac-stat212-s26.github.io/project-economics-and-ds/), architecting the codebase and building the Census Bureau ABS data pipeline that powered the team's analyses and public-facing website.
+
+**Extern** \| Analysis Group, Boston, MA \| Aug 2025
+
+- Quantified economic damages in a TV network contract dispute by modeling counterfactual viewership in Stata, isolating the blackout's true impact from a pre-existing ratings decline.
+
+- Distilled the damages estimates into a client-ready memo to guide the case team's litigation strategy.
+
+
+## Teaching
+
+At Macalester, I've served as a Preceptor for courses across the Mathematics, Statistics, and Economics departments:
+
+| Semester        | Department   | Course                                        |
+|:-----------------|:-----------------|:------------------------------------|
+| **Fall 2026**   | Economics    | Intermediate Macroeconomics                   |
+| **Spring 2026** | Econ & Stats | Econometrics, Machine Learning                |
+| **Fall 2025**   | Econ & Stats | Intermediate Macroeconomics, Machine Learning |
+| **Spring 2025** | Statistics   | Statistical Modelling                         |
+| **Fall 2024**   | Mathematics  | Applied Multivariable Calculus II             |
+
+As you might guess, I love teaching!
+
+In the summer of 2025, I was also a Math Instructor for [Math Corps at Macalester College](https://mathcorps.org/locations/stpaul/), a program whose mission I deeply believe in: empowering children from under-served communities through mathematics, mentorship, and a sense of family. I'm thankful to [Prof. Will Mitchell](https://sites.google.com/macalester.edu/willmitchell/home?pli=1), Katie Beutel, and [Getiria Onsongo](https://getiria-onsongo.com/) for that experience.
+
+
+## Leadership
+
+I have participated in research and training programs such as the [Expanding Diversity in Economics](https://www.macalester.edu/news/2024/04/three-macalester-students-selected-for-university-of-chicagos-prestigious-economics-program/) (EDE) Program at the University of Chicago (Summer 2024), the [Mathematical Modeling and Public Health Workshop](https://hsph.harvard.edu/epidemiology/news/mathematical-modeling-and-public-health-workshop/) at Harvard Chan School (March 2025), and [SUMMIT@BOOTH](https://www.chicagobooth.edu/phd/admissions/events/summit-booth/summit-2025-cohort) hosted by Chicago Booth at the University of Chicago (November 2025).
+
+Prior to college, I completed the International Baccalaureate (IB) at [UWC Red Cross Nordic](https://www.uwc.org/rcn) in Flekke, Norway, where I lived and studied alongside students from around the world. During my time there, I represented both the UWC movement and my school at [the Nobel Peace Prize Ceremony](https://uwcrcn.no/nobel-peace-prize_2022/) in Oslo in December 2022. Beyond academics, I spent my time hiking, diving, and growing—personally and intellectually.

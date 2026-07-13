@@ -6,44 +6,51 @@ toc: false
 ---
 
 ```{=html}
-<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:6px;">
-  <div style="position:relative; overflow:hidden; height:220px;">
-    <img src="v6.jpg" style="width:100%; height:100%; object-fit:cover;">
-    <div style="position:absolute; inset:0; background:rgba(255,255,255,0.55); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">Bouldering — Vertical Endeavors, MN</div>
+<style>
+.photo-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; }
+.photo-grid .tile { position:relative; overflow:hidden; height:220px; }
+.photo-grid .tile img { display:block; width:100%; height:100%; object-fit:cover; filter:grayscale(100%); transition:filter 0.3s; }
+.photo-grid .tile .caption { position:absolute; inset:0; background:rgba(40,40,40,0.6); color:#fff; display:flex; align-items:center; justify-content:center; text-align:center; padding:0 12px; opacity:1; transition:opacity 0.3s; }
+.photo-grid .tile:hover img { filter:none; }
+.photo-grid .tile:hover .caption { opacity:0; }
+</style>
+
+<div class="photo-grid">
+  <div class="tile">
+    <img src="photos/climbing.jpg">
+    <div class="caption">V5–V6 Problem at the St. Paul Bouldering Project</div>
   </div>
-  <div style="position:relative; overflow:hidden; height:220px;">
-    <img src="photos/IMG_0646.jpg" style="width:100%; height:100%; object-fit:cover;">
-    <div style="position:absolute; inset:0; background:rgba(255,255,255,0.55); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">Codo de los Andes — Bolivia</div>
+  <div class="tile">
+    <img src="photos/IMG_0646.jpg">
+    <div class="caption">Codo de los Andes in Santa Cruz, Bolivia</div>
   </div>
-  <div style="position:relative; overflow:hidden; height:220px;">
-    <img src="photos/IMG_1777.jpg" style="width:100%; height:100%; object-fit:cover;">
-    <div style="position:absolute; inset:0; background:rgba(255,255,255,0.55); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">Monserrate — Bogotá, Colombia</div>
+  <div class="tile">
+    <img src="photos/IMG_1777.jpg">
+    <div class="caption">Monserrate in Bogotá, Colombia</div>
   </div>
-  <div style="position:relative; overflow:hidden; height:220px;">
-    <img src="photos/IMG_3213.jpg" style="width:100%; height:100%; object-fit:cover;">
-    <div style="position:absolute; inset:0; background:rgba(255,255,255,0.55); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">Miraflores — Lima, Perú</div>
+  <div class="tile">
+    <img src="photos/IMG_3213.jpg">
+    <div class="caption">Miraflores in Lima, Perú</div>
   </div>
-  <div style="position:relative; overflow:hidden; height:220px;">
-    <img src="photos/IMG_4585.jpg" style="width:100%; height:100%; object-fit:cover;">
-    <div style="position:absolute; inset:0; background:rgba(255,255,255,0.55); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">Chicago Skyline — Lake Michigan</div>
+  <div class="tile">
+    <img src="photos/IMG_4585.jpg">
+    <div class="caption">Chicago Skyline from Lake Michigan</div>
   </div>
-  <div style="position:relative; overflow:hidden; height:220px;">
-    <img src="photos/IMG_5707.jpg" style="width:100%; height:100%; object-fit:cover;">
-    <div style="position:absolute; inset:0; background:rgba(255,255,255,0.55); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">Palacio Real — Madrid, Spain</div>
+  <div class="tile">
+    <img src="photos/IMG_5707.jpg">
+    <div class="caption">Palacio Real in Madrid, Spain</div>
   </div>
-  <div style="position:relative; overflow:hidden; height:220px;">
-    <img src="photos/IMG_8016.jpg" style="width:100%; height:100%; object-fit:cover;">
-    <div style="position:absolute; inset:0; background:rgba(255,255,255,0.55); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">Aurora Borealis — Flekke, Norway</div>
+  <div class="tile">
+    <img src="photos/IMG_8016.jpg">
+    <div class="caption">Aurora Borealis over Flekke, Norway</div>
   </div>
-  <div style="position:relative; overflow:hidden; height:220px;">
-    <img src="photos/IMG_8755.jpg" style="width:100%; height:100%; object-fit:cover;">
-    <div style="position:absolute; inset:0; background:rgba(255,255,255,0.55); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">Split Rock Lighthouse — Duluth, MN</div>
+  <div class="tile">
+    <img src="photos/IMG_8755.jpg">
+    <div class="caption">Split Rock Lighthouse near Duluth, MN</div>
   </div>
-  <div style="position:relative; overflow:hidden; height:220px;">
-    <img src="photos/IMG_3006.jpg" style="width:100%; height:100%; object-fit:cover;">
-    <div style="position:absolute; inset:0; background:rgba(255,255,255,0.55); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">Old Main — Macalester College</div>
+  <div class="tile">
+    <img src="photos/IMG_3006.jpg">
+    <div class="caption">Old Main at Macalester College</div>
   </div>
 </div>
 ```
-
-

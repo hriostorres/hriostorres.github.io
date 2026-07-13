@@ -4,7 +4,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "AI Usage in the US\n\n\n\n\n\n\ndata science\n\nr\n\n\n\nInteractive data science project analyzing AI adoption, workforce composition, and wage premiums across U.S. industries.\n\n\n\n\n\nMay 7, 2026\n\n\nDavid Rios, Katherine Manuel, Isauro Reyes\n\n\n\n\n\n\n\n\n\n\n\n\n2025 Bolivia Elections Website\n\n\n\n\n\n\nbolivia\n\n\n\n\n\n\n\n\n\nJun 2, 2025\n\n\nDavid Rios\n\n\n\n\n\n\n\n\n\n\n\n\nWage Disparities Research\n\n\n\n\n\n\neconometrics\n\nresearch\n\nstata\n\nr\n\n\n\n\n\n\n\n\n\nMay 5, 2025\n\n\nDavid Rios\n\n\n\n\n\n\n\n\n\n\n\n\nUnsupervised Learning: Clustering and PCA\n\n\nMachine Learning Group Assignment\n\n\n\nmachine learning\n\n\n\n\n\n\n\n\n\nApr 1, 2025\n\n\nDavid Rios, Elena Ortiz, Fiona Godsill, and Lily Morgan\n\n\n\n\n\nNo matching items"
+    "text": "AI Usage in the US\n\n\n\n\n\n\ndata science\n\nr\n\n\n\nInteractive data science project analyzing AI adoption, workforce composition, and wage premiums across U.S. industries.\n\n\n\n\n\nMay 7, 2026\n\n\nDavid Rios, Katherine Manuel, Isauro Reyes\n\n\n\n\n\n\n\n\n\n\n\n\nCamino a la U\n\n\n\n\n\n\neducation\n\nbolivia\n\n\n\nA free university-access program for low-income students in Santa Cruz, Bolivia — funded by Macalester’s Live It Fund.\n\n\n\n\n\nJan 15, 2026\n\n\nDavid Rios\n\n\n\n\n\n\n\n\n\n\n\n\n2025 Bolivia Elections Website\n\n\n\n\n\n\nbolivia\n\n\n\n\n\n\n\n\n\nJun 2, 2025\n\n\nDavid Rios\n\n\n\n\n\n\n\n\n\n\n\n\nWage Disparities Research\n\n\n\n\n\n\neconometrics\n\nresearch\n\nstata\n\nr\n\n\n\n\n\n\n\n\n\nMay 5, 2025\n\n\nDavid Rios\n\n\n\n\n\n\n\n\n\n\n\n\nUnsupervised Learning: Clustering and PCA\n\n\nMachine Learning Group Assignment\n\n\n\nmachine learning\n\n\n\n\n\n\n\n\n\nApr 1, 2025\n\n\nDavid Rios, Elena Ortiz, Fiona Godsill, and Lily Morgan\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/stats253/index.html",
@@ -42,60 +42,123 @@
     "text": "Insights\n\nThere is a wide variety of songs – some go viral on TikTok let’s say; hence, they become popular. Others are, although, rich in content and they are not as famous as one could expect. Thus, given the wide variety of predictors and the insights each gives us we applies a ML technique called Principal Component Analysis (PCA). There is a whole bunch of fancy math that goes behind PCA, but just keep in mind that PCA explores patterns in group structures in our columns. While doing this, it is hard to interpret but with the help of your Belieber wizards, we are going to help you disantagle this mysterty of JB’s hits. Let’s explore some graphs to help you understand PCAs.\n\n\n\nGiven that we want to know how many overall PCAs we should use, we first implement a graph of Cumulative % of variance explained (plot) versus the number of PCs. As you can see, if we only use 1 PC, we can only explain roughly 25% of the variability in JB’s most popular songs – this in nature is our strongest way to go as the variables that are being merged are correlated the most. Nonetheless, we may want to explain a bit more of the variability of the popular songs.\n\n\n\n\nNow, let’s get our hands dirty! This circle plot (called a PCA variable plot) shows how much each musical feature contributes to the first PC (x-axis) and the second PC (y-axis). The main takeaway from this graph is that energy, loudness, and danceability are strongly aligned with PC1. This tells us that PC1 is capturing the “power” or “performance energy” of a song. On the other side, acousticness is pointing in the opposite direction, which means it’s negatively correlated with energy and loudness, the more acoustic a song is, the less energetic and loud it tends to be. PC2 appears to be shaped more by speechiness, duration, and key, which tell us that this component captures songs with longer durations or more spoken lyrical content. To sum all this up, PC1 separates songs by how upbeat and energetic they are, and PC2 adds a layer that reflects structure, vocal delivery, and complexity.\n\n\n\n\nDon’t feel overwhelmed, we know that you want to explore the underlying reasons behind JB’s most popular songs and this requires attention to detail ;). This is our last plot, although PC1 and PC2 explain a good amount of the variability, we might want to consider more PCs, and I would suggest using 4 PCs, because we want to make sure to tackle little details of each song and be careful, but also we want to save you some money and save us the computation expense, we don’t want to overwhelm you, our beloved music manager, so we will use 4PCs, which each shapes the song with their variable as you can see. Note: if the variable bar is above 0 (pointing upwards) it means that it contributes positively and the magnitude of it depends on the height of it, and same if the bar points below 0.\n\n\n\nSo, you want to know why Justin Bieber is the daddy/king of pop? His most successful hits share 4 characteristics, each using their own style.\n\n\n\nHigh energy and loudness drive popularity: Songs that are high in energy, loud, and very danceable dominate the strongest group (which in my ML analysis I call the first principal component). These songs tend to be the most commercially successful, think of tracks like “Sorry”, “What Do You Mean?”, “Baby,” you name them. Hence, if you are on a low budget and have limited resources, I would suggest you focus on maintaining a strong and energetic vibe, which is key for the audience.\n\n\n\n\nAcoustic and softer songs are less mainstream: On the other side, it is important that you as a manager consider the don’ts! Songs that have higher acousticness (more natural or unplugged feel) tend to move in the opposite direction. While appreciated by loyal fans, these songs are generally less popular in the broader market. Acoustic songs add variety but may not dominate charts unless heavily promoted.\n\n\n\n\nSpeechiness and key variety add artistic depth: Some songs with higher speechiness (more spoken lyrics or rhythmic delivery) and interesting changes in musical key form a second group. These often reflect tracks where Justin experiments with new sounds/storytelling formats (aka. “Love Yourself”).\n\n\n\n\nValence (happiness) matters: Songs with very emotional or sad tones tend to be less popular unless balanced with other upbeat elements like tempo and energy. Even emotional songs need a strong hook or rhythm to maintain mass appeal.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n`geom_smooth()` using formula = 'y ~ x'"
   },
   {
-    "objectID": "posts/ai_usage/ai_usage.html",
-    "href": "posts/ai_usage/ai_usage.html",
-    "title": "AI Usage in the US",
+    "objectID": "posts/camino/index.html",
+    "href": "posts/camino/index.html",
+    "title": "Camino a la U",
     "section": "",
-    "text": "🌐 Visit the website"
+    "text": "Camino a la U came from my own experience navigating scholarships and applications with very little guidance. I wanted to make the path clearer for students who were just as capable as I was, but who lacked the information, mentorship, and financial resources."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "David Rios",
+    "objectID": "posts/camino/index.html#why-i-started-this",
+    "href": "posts/camino/index.html#why-i-started-this",
+    "title": "Camino a la U",
     "section": "",
-    "text": "B.A. Economics & Statistics at Macalester College\n\n\n 1600 Grand Ave, St. Paul, MN 55105\n\n\n\nDavid Rios\nI am Hermogenes David Rios, a rising senior studying Economics and Statistics at Macalester College in Saint Paul, Minnesota. Learn more about me.\n\n\nPublications\n“Inequalities in the U.S. Labor Market”: Quantified labor market disparities using regression analysis on 500K+ census records. Published in the Macalester Street Journal: Equilibrium, Vol. 3 (2025).\n\n\nHighlights\nLive It Fund Grant: Awarded $2,000 to launch Camino a la U in Bolivia, increasing university admission exam scores by 48%.\nDataFest “Best Insight” Award: Led a team analyzing U.S. real estate trends in a 48-hour data challenge hosted by the American Statistical Association (2025).\n\nSkills\n\n\nR Studio, STATA, Python, LaTeX, Econometrics, Machine Learning"
+    "text": "Camino a la U came from my own experience navigating scholarships and applications with very little guidance. I wanted to make the path clearer for students who were just as capable as I was, but who lacked the information, mentorship, and financial resources."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "David Rios",
-    "section": "",
-    "text": "I am working on three research projects this summer:\nResearch Assistant | University of Chicago, via PREDOC | Summer 2026\n\nSelf-Command and Screen-Time: Evidence from an Educational Intervention (with Mridul Joshi, Jalnidh Kaur and Lena Song) — Conditionally accepted at the Journal of Development Economics based on pre-results review. A randomized controlled trial evaluating a digital empowerment intervention for college students in Punjab, India.\nMobile Phones and Gender Attitudes in Sub-Saharan Africa — Observational study of how mobile phone expansion affects gender-related attitudes and behaviors, exploiting exogenous variation in phone coverage from lightning strikes. (more details soon.)\n\nResearch Assistant | Macalester College, via MSCS Department | Summer 2026\n\nHealth Impacts of the Hennepin Energy Recovery Center (HERC) — Evaluating the true causal impact of HERC, a trash incinerator in the Twin Cities, on health outcomes in surrounding communities. (more details soon.)"
+    "objectID": "posts/camino/index.html#the-problem",
+    "href": "posts/camino/index.html#the-problem",
+    "title": "Camino a la U",
+    "section": "The Problem",
+    "text": "The Problem\nTo enter a public university in Bolivia, students must pass a single high-stakes entrance exam. There is no holistic review. Every year, 25,000–27,000 students in Santa Cruz take the PSA/CUP admission exam, competing for only about 100 spots per major.\nThe students who pass are rarely just the most capable. They are the ones who can afford preparation courses that bridge the gap between what public schools teach and what the exam demands. A prep course costs around 700 bolivianos (100 USD), roughly 22% of a family’s monthly income. Access to college becomes access to test prep."
   },
   {
-    "objectID": "about.html#recent-experiences",
-    "href": "about.html#recent-experiences",
-    "title": "David Rios",
-    "section": "",
-    "text": "Research Assistant | University of Chicago, via PREDOC | Summer 2026\n\nRCT measuring whether a three-week course improves digital habits and misinformation discernment among college students in Punjab, India.\n\nthe project is called: Self-Command and Screen-Time: Evidence from an Educational Intervention (with Jalnidh Kaur and Lena Song) Conditionally accepted at the Journal of Development Economics based on pre-results review Show summary This study evaluates a digital empowerment intervention designed to improve how college students in India engage with smartphones and social media. Using a randomized controlled trial, we test both a high-touch classroom course and a low-touch text message version. The intervention addresses self-control problems and habit formation, introduces commitment devices, and builds skills for identifying misinformation. We combine survey data, administrative records, and high-frequency smartphone tracking to estimate effects on mental health, academic outcomes, and digital behavior.\nThis is another research that will happen soon in august of this year: - Observational study on how mobile phone expansion affects gender-related attitudes and behaviors in sub-Saharan Africa, exploiting exogenous variation in phone coverage from lightning strikes.\nData Science Intern | Metropolitan Council, St. Paul, MN | Jan 2026–May2026\n\n\nAnalyzing travel behavior data from 5,000+ households to model transportation disparities for the Imagine 2050 regional policy plan."
+    "objectID": "posts/camino/index.html#what-we-did",
+    "href": "posts/camino/index.html#what-we-did",
+    "title": "Camino a la U",
+    "section": "What We Did",
+    "text": "What We Did\nIn December 2025 and January 2026, I went back home to Santa Cruz to run the program’s first cohort, backed by a $2,000 Live It Fund grant from Macalester’s Entrepreneurship and Innovation Department:\n\nSelected 25 students from a pool of more than 200 applicants.\nCoordinated five teachers from my old school, Hnos. Cavanis, and secured approval from the school’s principal and the state department of education.\nBuilt the curriculum around real exam-style questions, which I had been collecting and studying since November.\nCovered every barrier the grant could reach: school materials, refreshments, and transportation for students who needed it."
   },
   {
-    "objectID": "about.html#teaching",
-    "href": "about.html#teaching",
-    "title": "David Rios",
-    "section": "Teaching",
-    "text": "Teaching\nAt Macalester, I’ve served as a Preceptor for courses across the Mathematics, Statistics, and Economics departments:\n\n\n\n\n\n\n\n\nSemester\nDepartment\nCourse\n\n\n\n\nFall 2026\nEconomics\nIntermediate Macroeconomics\n\n\nSpring 2026\nEcon / Stats\nEconometrics, Machine Learning\n\n\nFall 2025\nEcon / Stats\nIntermediate Macroeconomics, Machine Learning\n\n\nSpring 2025\nStatistics\nStatistical Modelling\n\n\nFall 2024\nMathematics\nApplied Multivariable Calculus II\n\n\n\nAs you might guess, I love teaching!"
+    "objectID": "posts/camino/index.html#the-results",
+    "href": "posts/camino/index.html#the-results",
+    "title": "Camino a la U",
+    "section": "The Results",
+    "text": "The Results\nStudents took two quizzes every week, plus three cumulative exams covering all the material:\n\n\n\n\nPre-Test\nMid-Term\nFinal Test\n\n\n\n\nAverage score\n32.3%\n42.3%\n84.2%\n\n\n\nBy the end of the program, the cohort’s average score had climbed 52 percentage points — from 32% on the diagnostic to 84% on the final — on the kind of exam where a few points decide who gets a seat."
   },
   {
-    "objectID": "about.html#programs",
-    "href": "about.html#programs",
-    "title": "David Rios",
-    "section": "Programs",
-    "text": "Programs\nI have participated in research and training programs such as the Expanding Diversity in Economics (EDE) Program at the University of Chicago (Summer of 2024), the Mathematical Modeling and Public Health Workshop at Harvard Chan School (March 2025), and SUMMIT@BOOTH hosted by Chicago Booth at the University of Chicago (November 2025)."
+    "objectID": "posts/camino/index.html#in-the-classroom",
+    "href": "posts/camino/index.html#in-the-classroom",
+    "title": "Camino a la U",
+    "section": "In the Classroom",
+    "text": "In the Classroom\n\n\n\n  \n    \n      \n      \n        Factorization day: working through exam-style drills.Photo shared with the students' consent.\n      \n    \n    \n      \n      \n        A student takes on a diagnostic problem at the board.Photo shared with the students' consent.\n      \n    \n    \n      \n      \n        The first Camino a la U cohort at Hnos. Cavanis.Photo shared with the students' consent.\n      \n    \n  \n  \n    \n    Previous\n  \n  \n    \n    Next"
   },
   {
-    "objectID": "about.html#united-world-colleges",
-    "href": "about.html#united-world-colleges",
-    "title": "David Rios",
-    "section": "United World Colleges",
-    "text": "United World Colleges\nI attended the UWC Red Cross Nordic (UWCRCN), located in Flekke, Norway. While in Norway, I pursued the International Baccalaureate (IB) and had the honor of representing the UWC movement and my school at the Nobel Peace Prize Ceremony in December 2022. Beyond academics, I spent my time hiking, diving, and growing—personally and intellectually."
+    "objectID": "posts/camino/index.html#free-prep-for-everyone",
+    "href": "posts/camino/index.html#free-prep-for-everyone",
+    "title": "Camino a la U",
+    "section": "Free Prep for Everyone",
+    "text": "Free Prep for Everyone\nTo make the project sustainable beyond the cohort, I recorded the questions students missed most often, and the mistakes behind them, and published everything as a free YouTube playlist. I plan to keep adding videos so that any student, anywhere, can practice and improve their chances of getting in."
+  },
+  {
+    "objectID": "posts/camino/index.html#the-long-game",
+    "href": "posts/camino/index.html#the-long-game",
+    "title": "Camino a la U",
+    "section": "The Long Game",
+    "text": "The Long Game\nThe long-term goal is not to grant access to the 25 students in my cohort, or to whoever finds my videos. It is to remove the barrier itself, so that no one has to decide who gets to pursue higher education, and financing is never the limitation.\n\nEducation was my path to freedom, and I want others to find theirs."
   },
   {
     "objectID": "photos.html",
     "href": "photos.html",
     "title": "Through My Lens",
     "section": "",
-    "text": "Bouldering — Vertical Endeavors, MN\n  \n  \n    \n    Codo de los Andes — Bolivia\n  \n  \n    \n    Monserrate — Bogotá, Colombia\n  \n  \n    \n    Miraflores — Lima, Perú\n  \n  \n    \n    Chicago Skyline — Lake Michigan\n  \n  \n    \n    Palacio Real — Madrid, Spain\n  \n  \n    \n    Aurora Borealis — Flekke, Norway\n  \n  \n    \n    Split Rock Lighthouse — Duluth, MN\n  \n  \n    \n    Old Main — Macalester College"
+    "text": "V5–V6 Problem at the St. Paul Bouldering Project\n  \n  \n    \n    Codo de los Andes in Santa Cruz, Bolivia\n  \n  \n    \n    Monserrate in Bogotá, Colombia\n  \n  \n    \n    Miraflores in Lima, Perú\n  \n  \n    \n    Chicago Skyline from Lake Michigan\n  \n  \n    \n    Palacio Real in Madrid, Spain\n  \n  \n    \n    Aurora Borealis over Flekke, Norway\n  \n  \n    \n    Split Rock Lighthouse near Duluth, MN\n  \n  \n    \n    Old Main at Macalester College"
+  },
+  {
+    "objectID": "experience.html",
+    "href": "experience.html",
+    "title": "Hermogenes David Rios",
+    "section": "",
+    "text": "I am working on three research projects this summer:\nData Scientist | University of Chicago, via PREDOC | March 2026–Present\n\nSelf-Command and Screen-Time: Evidence from an Educational Intervention (with Mridul Joshi, Jalnidh Kaur and Lena Song) — Conditionally accepted at the Journal of Development Economics based on pre-results review. A randomized controlled trial evaluating a digital empowerment intervention for college students in Punjab, India. I work on making the trial’s analysis meet top economics journals’ reproducibility standards and on developing the study’s research hypotheses by synthesizing more than 20 cross-disciplinary papers on digital wellness.\nMobile Phones and Gender Attitudes in Sub-Saharan Africa — Observational study of how mobile phone expansion affects gender-related attitudes and behaviors, exploiting exogenous variation in phone coverage from lightning strikes. (more details soon.)\n\nResearch Assistant | Macalester College, via MSCS Department | Summer 2026\n\nHealth Impacts of the Hennepin Energy Recovery Center (HERC) — (with Prof. Leslie Myint) Estimating the causal impact of HERC, a municipal waste incinerator in the Twin Cities, on asthma and cancer outcomes in nearby communities ahead of the facility’s 2027 closure debate. I integrated four government datasets at the census-tract level to estimate localized pollution exposure and apply causal inference methods in R, evaluating the robustness of findings through sensitivity analyses and alternative specifications. The project aims to provide rigorous evidence to inform ongoing public discussions about HERC’s future.For background on the broader policy debate, see the Zero Burn Coalition."
+  },
+  {
+    "objectID": "experience.html#research",
+    "href": "experience.html#research",
+    "title": "Hermogenes David Rios",
+    "section": "",
+    "text": "I am working on three research projects this summer:\nData Scientist | University of Chicago, via PREDOC | March 2026–Present\n\nSelf-Command and Screen-Time: Evidence from an Educational Intervention (with Mridul Joshi, Jalnidh Kaur and Lena Song) — Conditionally accepted at the Journal of Development Economics based on pre-results review. A randomized controlled trial evaluating a digital empowerment intervention for college students in Punjab, India. I work on making the trial’s analysis meet top economics journals’ reproducibility standards and on developing the study’s research hypotheses by synthesizing more than 20 cross-disciplinary papers on digital wellness.\nMobile Phones and Gender Attitudes in Sub-Saharan Africa — Observational study of how mobile phone expansion affects gender-related attitudes and behaviors, exploiting exogenous variation in phone coverage from lightning strikes. (more details soon.)\n\nResearch Assistant | Macalester College, via MSCS Department | Summer 2026\n\nHealth Impacts of the Hennepin Energy Recovery Center (HERC) — (with Prof. Leslie Myint) Estimating the causal impact of HERC, a municipal waste incinerator in the Twin Cities, on asthma and cancer outcomes in nearby communities ahead of the facility’s 2027 closure debate. I integrated four government datasets at the census-tract level to estimate localized pollution exposure and apply causal inference methods in R, evaluating the robustness of findings through sensitivity analyses and alternative specifications. The project aims to provide rigorous evidence to inform ongoing public discussions about HERC’s future.For background on the broader policy debate, see the Zero Burn Coalition."
+  },
+  {
+    "objectID": "experience.html#publications",
+    "href": "experience.html#publications",
+    "title": "Hermogenes David Rios",
+    "section": "Publications",
+    "text": "Publications\nInequalities in the U.S. Labor Market — Econometrics research quantifying wage disparities by gender and citizenship status using a Mincer earnings regression and Blinder-Oaxaca decomposition on 500K+ ACS records (2012–2019). Published in the Macalester Street Journal: Equilibrium, Vol. 3 (2025). See the full project page for more information.\n\nI will be presenting this paper at the PREDOC Research Conference at the Booth School of Business, University of Chicago, in July 2026."
+  },
+  {
+    "objectID": "experience.html#industry-experience",
+    "href": "experience.html#industry-experience",
+    "title": "Hermogenes David Rios",
+    "section": "Industry Experience",
+    "text": "Industry Experience\nData Analyst | Metropolitan Council, St. Paul, MN | Jan 2026–May 2026\n\nModeled regional transit demand to optimize service timing, accessibility, and network usage by analyzing Travel Behavior Inventory data from 5,000+ households in R.\nAdvised executive leadership on the travel trends shaping the Imagine 2050 regional plan by presenting a strategic deck and defending recommendations in live Q&A with senior planners.\n\nTechnical Lead | Data Science Final Project, Macalester College | Jan 2026–May 2026\n\nLed a 3-person team analyzing AI adoption, wage premiums, and payroll growth across U.S. industries, architecting the codebase and building the Census Bureau ABS data pipeline that powered the team’s analyses and public-facing website.\n\nExtern | Analysis Group, Boston, MA | Aug 2025\n\nQuantified economic damages in a TV network contract dispute by modeling counterfactual viewership in Stata, isolating the blackout’s true impact from a pre-existing ratings decline.\nDistilled the damages estimates into a client-ready memo to guide the case team’s litigation strategy."
+  },
+  {
+    "objectID": "experience.html#teaching",
+    "href": "experience.html#teaching",
+    "title": "Hermogenes David Rios",
+    "section": "Teaching",
+    "text": "Teaching\nAt Macalester, I’ve served as a Preceptor for courses across the Mathematics, Statistics, and Economics departments:\n\n\n\n\n\n\n\n\nSemester\nDepartment\nCourse\n\n\n\n\nFall 2026\nEconomics\nIntermediate Macroeconomics\n\n\nSpring 2026\nEcon & Stats\nEconometrics, Machine Learning\n\n\nFall 2025\nEcon & Stats\nIntermediate Macroeconomics, Machine Learning\n\n\nSpring 2025\nStatistics\nStatistical Modelling\n\n\nFall 2024\nMathematics\nApplied Multivariable Calculus II\n\n\n\nAs you might guess, I love teaching!\nIn the summer of 2025, I was also a Math Instructor for Math Corps at Macalester College, a program whose mission I deeply believe in: empowering children from under-served communities through mathematics, mentorship, and a sense of family. I’m thankful to Prof. Will Mitchell, Katie Beutel, and Getiria Onsongo for that experience."
+  },
+  {
+    "objectID": "experience.html#leadership-experiences",
+    "href": "experience.html#leadership-experiences",
+    "title": "Hermogenes David Rios",
+    "section": "Leadership Experiences",
+    "text": "Leadership Experiences\nI have participated in research and training programs such as the Expanding Diversity in Economics (EDE) Program at the University of Chicago (Summer 2024), the Mathematical Modeling and Public Health Workshop at Harvard Chan School (March 2025), and SUMMIT@BOOTH hosted by Chicago Booth at the University of Chicago (November 2025).\nPrior to college, I completed the International Baccalaureate (IB) at UWC Red Cross Nordic in Flekke, Norway, where I lived and studied alongside students from around the world. During my time there, I represented both the UWC movement and my school at the Nobel Peace Prize Ceremony in Oslo in December 2022. Beyond academics, I spent my time hiking, diving, and growing—personally and intellectually."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hermogenes David Rios",
+    "section": "",
+    "text": "B.A. Economics & Statistics at Macalester College\n\n\n 1600 Grand Ave, St. Paul, MN 55105\n\n\n\nHermogenes David Rios\nI am Hermogenes David Rios, a rising senior studying Economics and Statistics at Macalester College in Saint Paul, Minnesota. I am drawn to work that uses data and economics to understand how policy shapes education and labor market opportunity. Learn more about me.\n\n\nHighlights\nFounder of Camino a la U: In January 2026, I received a $2,000 Live It Fund grant from Macalester’s Entrepreneurship and Innovation Department to found Camino a la U, a university-access program for low-income students in Santa Cruz, Bolivia. I designed the selection process and organized five teachers to coach students through admission essays and entrance exams, raising average admission-exam scores by 52 percentage points (from 32% to 84%).\nAuthor of “Inequalities in the U.S. Labor Market”: Quantified labor market disparities using regression analysis on 500K+ census records. Published in the Macalester Street Journal: Equilibrium, Vol. 3 (2025).\n\nSkills\n\n\nR, Stata, Python, LaTeX, Econometrics, Machine Learning"
+  },
+  {
+    "objectID": "posts/ai_usage/ai_usage.html",
+    "href": "posts/ai_usage/ai_usage.html",
+    "title": "AI Usage in the US",
+    "section": "",
+    "text": "🌐 Visit the website"
   },
   {
     "objectID": "posts/metrics/index.html",
@@ -137,14 +200,14 @@
     "href": "posts/website/index.html",
     "title": "2025 Bolivia Elections Website",
     "section": "",
-    "text": "I created a multilingual website—built using Quarto and hosted on GitHub Pages—to support voters as they navigate the upcoming Bolivia 2025 national elections.\nThe site features:\n\nIn-depth candidate profiles\nSummarized and official party platforms\nContextual political analysis\nInteractive decision-support tools\nAvailability in Spanish, Quechua, Aymara, Guaraní, English, and more — because democracy should speak everyone’s language.\n\n🌐 Visit the website\n\n\n\n\n\n\nTipImportant:\n\n\n\nThis page does not promote or support any particular candidate. Its sole purpose is to provide clear, verified, and accessible information to all Bolivians, regardless of background or political affiliation.\n\n\nThis site was built with accessibility and civic empowerment in mind. Designed for both desktop and mobile users, the interface is clean and intuitive to encourage broader engagement from all sectors of society."
+    "text": "I created a multilingual website to support voters as they navigate the upcoming Bolivia 2025 national elections.\nThe site features:\n\nIn-depth candidate profiles\nSummarized and official party platforms\nContextual political analysis\nInteractive decision-support tools\nAvailability in Spanish, Quechua, Aymara, Guaraní, English, and more — because democracy should speak everyone’s language.\n\n🌐 Visit the website\n\n\n\n\n\n\nTipImportant:\n\n\n\nThis page does not promote or support any particular candidate. Its sole purpose is to provide clear, verified, and accessible information to all Bolivians, regardless of background or political affiliation.\n\n\nThis site was built with accessibility and civic empowerment in mind. Designed for both desktop and mobile users, the interface is clean and intuitive to encourage broader engagement from all sectors of society."
   },
   {
     "objectID": "posts/website/index.html#overview",
     "href": "posts/website/index.html#overview",
     "title": "2025 Bolivia Elections Website",
     "section": "",
-    "text": "I created a multilingual website—built using Quarto and hosted on GitHub Pages—to support voters as they navigate the upcoming Bolivia 2025 national elections.\nThe site features:\n\nIn-depth candidate profiles\nSummarized and official party platforms\nContextual political analysis\nInteractive decision-support tools\nAvailability in Spanish, Quechua, Aymara, Guaraní, English, and more — because democracy should speak everyone’s language.\n\n🌐 Visit the website\n\n\n\n\n\n\nTipImportant:\n\n\n\nThis page does not promote or support any particular candidate. Its sole purpose is to provide clear, verified, and accessible information to all Bolivians, regardless of background or political affiliation.\n\n\nThis site was built with accessibility and civic empowerment in mind. Designed for both desktop and mobile users, the interface is clean and intuitive to encourage broader engagement from all sectors of society."
+    "text": "I created a multilingual website to support voters as they navigate the upcoming Bolivia 2025 national elections.\nThe site features:\n\nIn-depth candidate profiles\nSummarized and official party platforms\nContextual political analysis\nInteractive decision-support tools\nAvailability in Spanish, Quechua, Aymara, Guaraní, English, and more — because democracy should speak everyone’s language.\n\n🌐 Visit the website\n\n\n\n\n\n\nTipImportant:\n\n\n\nThis page does not promote or support any particular candidate. Its sole purpose is to provide clear, verified, and accessible information to all Bolivians, regardless of background or political affiliation.\n\n\nThis site was built with accessibility and civic empowerment in mind. Designed for both desktop and mobile users, the interface is clean and intuitive to encourage broader engagement from all sectors of society."
   },
   {
     "objectID": "posts/website/index.html#authors-note",
@@ -152,47 +215,5 @@
     "title": "2025 Bolivia Elections Website",
     "section": "Author’s Note",
     "text": "Author’s Note\nWith Bolivia facing an economic crisis, a growing parallel exchange rate, and deep political polarization across departments, the August 17th elections are more than a vote—they’re a turning point.\nThis project aims to inform, clarify, and empower. There’s a lot of speculation about each candidate’s platform. To help cut through the noise, I gathered and organized reliable, verifiable information into one publicly available platform.\nEach profile includes a summary of the candidate’s platform, as well as a link to their official government plan filed with the Tribunal Supremo Electoral.\n\nThis is a personal, nonpartisan project driven by the hope for a more informed, inclusive, and democratic Bolivia."
-  },
-  {
-    "objectID": "about.html#research",
-    "href": "about.html#research",
-    "title": "David Rios",
-    "section": "",
-    "text": "I am working on three research projects this summer:\nResearch Assistant | University of Chicago, via PREDOC | Summer 2026\n\nSelf-Command and Screen-Time: Evidence from an Educational Intervention (with Mridul Joshi, Jalnidh Kaur and Lena Song) — Conditionally accepted at the Journal of Development Economics based on pre-results review. A randomized controlled trial evaluating a digital empowerment intervention for college students in Punjab, India.\nMobile Phones and Gender Attitudes in Sub-Saharan Africa — Observational study of how mobile phone expansion affects gender-related attitudes and behaviors, exploiting exogenous variation in phone coverage from lightning strikes. (more details soon.)\n\nResearch Assistant | Macalester College, via MSCS Department | Summer 2026\n\nHealth Impacts of the Hennepin Energy Recovery Center (HERC) — Evaluating the true causal impact of HERC, a trash incinerator in the Twin Cities, on health outcomes in surrounding communities. (more details soon.)"
-  },
-  {
-    "objectID": "about.html#working-papers-presentations",
-    "href": "about.html#working-papers-presentations",
-    "title": "David Rios",
-    "section": "Working Papers & Presentations",
-    "text": "Working Papers & Presentations\nInequalities in the U.S. Labor Market — Econometrics research quantifying wage disparities by gender and citizenship status using a Mincer earnings regression and Blinder-Oaxaca decomposition on 500K+ ACS records (2012–2019). Published in the Macalester Street Journal: Equilibrium, Vol. 3 (2025). See the full project page for a detailed explanation.\n\nI will be presenting this paper at the PREDOC Research Conference at the Booth School of Business, University of Chicago, in July 2026."
-  },
-  {
-    "objectID": "about.html#industry-experience",
-    "href": "about.html#industry-experience",
-    "title": "David Rios",
-    "section": "Industry Experience",
-    "text": "Industry Experience\nData Science Intern | Metropolitan Council, St. Paul, MN | Jan 2026–May 2026\n\nAnalyze Travel Behavior Inventory data from 5,000+ households with the Transportation Research team, developing R scripts to model travel disparities for the Imagine 2050 Transportation Policy Plan.\n\nTechnical Lead | Data Science Final Project, Macalester College | Jan 2026–May 2026\n\nLed API extraction, data pipeline, and code architecture for a team analyzing AI adoption, wage premiums, and payroll growth across U.S. industries using Census Bureau ABS data and a Random Forest model.\n\nExtern | Analysis Group, Boston, MA | Aug 2025\n\nResearched TV network–cable provider disputes in a mock damages case, analyzing channel blackout trends and writing a summary memo."
-  },
-  {
-    "objectID": "about.html#working-papers",
-    "href": "about.html#working-papers",
-    "title": "David Rios",
-    "section": "Working Papers",
-    "text": "Working Papers\nInequalities in the U.S. Labor Market — Econometrics research quantifying wage disparities by gender and citizenship status using a Mincer earnings regression and Blinder-Oaxaca decomposition on 500K+ ACS records (2012–2019). Published in the Macalester Street Journal: Equilibrium, Vol. 3 (2025). See the full project page for more information.\n\nI will be presenting this paper at the PREDOC Research Conference at the Booth School of Business, University of Chicago, in July 2026."
-  },
-  {
-    "objectID": "about.html#papers",
-    "href": "about.html#papers",
-    "title": "David Rios",
-    "section": "Papers",
-    "text": "Papers\nInequalities in the U.S. Labor Market — Econometrics research quantifying wage disparities by gender and citizenship status using a Mincer earnings regression and Blinder-Oaxaca decomposition on 500K+ ACS records (2012–2019). Published in the Macalester Street Journal: Equilibrium, Vol. 3 (2025). See the full project page for more information.\n\nI will be presenting this paper at the PREDOC Research Conference at the Booth School of Business, University of Chicago, in July 2026."
-  },
-  {
-    "objectID": "about.html#leadership-experiences",
-    "href": "about.html#leadership-experiences",
-    "title": "David Rios",
-    "section": "Leadership Experiences",
-    "text": "Leadership Experiences\nI have participated in research and training programs such as the Expanding Diversity in Economics (EDE) Program at the University of Chicago (Summer 2024), the Mathematical Modeling and Public Health Workshop at Harvard Chan School (March 2025), and SUMMIT@BOOTH hosted by Chicago Booth at the University of Chicago (November 2025).\nPrior to college, I completed the International Baccalaureate (IB) at UWC Red Cross Nordic in Flekke, Norway, where I lived and studied alongside students from around the world. During my time there, I represented both the UWC movement and my school at the Nobel Peace Prize Ceremony in Oslo in December 2022. Beyond academics, I spent my time hiking, diving, and growing—personally and intellectually."
   }
 ]
