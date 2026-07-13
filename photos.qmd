@@ -18,7 +18,7 @@ toc: false
 <div class="photo-grid">
   <div class="tile">
     <img src="photos/climbing.jpg">
-    <div class="caption">V5–V6 Problem at the St. Paul Bouldering Project</div>
+    <div class="caption">V5–V6 Route at the St. Paul Bouldering Project</div>
   </div>
   <div class="tile">
     <img src="photos/IMG_0646.jpg">
