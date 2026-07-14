@@ -9,7 +9,7 @@ css: styles.css
 I am working on three research projects this summer:
 
 
-**Data Scientist** \| University of Chicago, via PREDOC \| March 2026–Present
+**Data Scientist** \| University of Chicago, via PREDOC \| April 2026–Present
 
 - **Self-Command and Screen-Time: Evidence from an Educational Intervention** (with Mridul Joshi, Jalnidh Kaur and Lena Song) — *Conditionally accepted at the Journal of Development Economics based on pre-results review.* A randomized controlled trial evaluating a digital empowerment intervention for college students in Punjab, India. I work on making the trial's analysis meet top economics journals' reproducibility standards and on developing the study's research hypotheses by synthesizing more than 20 cross-disciplinary papers on digital wellness.
 
