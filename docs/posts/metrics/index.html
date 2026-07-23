@@ -25,7 +25,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -44,12 +63,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-6033a600180109c3731f6a886c29932c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-5685cd926c25366c96d9f1407e584118.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-6033a600180109c3731f6a886c29932c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a35bc03f1e2f430db05a1405b12fe5d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-7ecacad2203a841610095ae3c51bd915.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -120,7 +137,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -262,10 +279,8 @@ window.Quarto = {
         changeGiscusTheme();
       }
     };
-    const authorPrefersDark = false;
+    const authorPrefersDark = true;
     const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
     // Dark / light mode switch
     window.quartoToggleColorScheme = () => {
@@ -341,11 +356,12 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
+  <ul class="collapse">
   <li><a href="#description" id="toc-description" class="nav-link active" data-scroll-target="#description">Description</a></li>
   <li><a href="#empirical-strategy" id="toc-empirical-strategy" class="nav-link" data-scroll-target="#empirical-strategy">Empirical Strategy</a></li>
-  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results?</a></li>
-  <li><a href="#publication-access" id="toc-publication-access" class="nav-link" data-scroll-target="#publication-access">Publication &amp; Access</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#takeaways" id="toc-takeaways" class="nav-link" data-scroll-target="#takeaways">Takeaways</a></li>
+  <li><a href="#selected-references" id="toc-selected-references" class="nav-link" data-scroll-target="#selected-references">Selected References</a></li>
   </ul>
 </nav>
     </div>
@@ -390,50 +406,207 @@ window.Quarto = {
 </header>
 
 
+<p>This is an executive summary of my research. The full paper is available <a href="Rios_Wage_Disparities_Paper.pdf">here</a>, along with the <a href="Rios_Wage_Disparities_Poster.pdf">conference poster I made</a> when I presented at the 2026 PREDOC Conference at UChicago Booth.</p>
 <section id="description" class="level2">
 <h2 class="anchored" data-anchor-id="description">Description</h2>
-<p>In my Econometrics class, I researched wage disparities based on gender and citizenship status in the U.S. under the supervision of Prof.&nbsp;Amy Damon.</p>
-<p>This study used the ACS Data from 2012-2019. My research focused on foreign-born workers in the agriculture, construction, and service sectors—industries where immigrant labor is most concentrated as seen in the figure below.</p>
+<p>In my Econometrics class, I researched wage disparities by gender and citizenship status in the U.S. labor market. My central question: <strong>how do citizenship status and sex <em>jointly</em> shape wage disparities in the U.S. labor market?</strong></p>
+<p>The study uses pooled American Community Survey (ACS) data from 2012–2019. The final sample contains <strong>526,832 workers across 118 PUMA–state geographies</strong>, with wages expressed in constant 2015 dollars. Citizenship is disaggregated into three groups: native-born citizens (85.2% of the sample), naturalized citizens (8.3%), and non-citizens (6.6%).</p>
+<p>Three strands of literature try to explain immigrant–native wage gaps: <strong>human capital</strong>, where gaps are attributed to English proficiency, education, and the systematic devaluation of foreign credentials <span class="citation" data-cites="chiswick1978 borjas1994 blau_kahn2015">(<a href="#ref-chiswick1978" role="doc-biblioref">Chiswick 1978</a>; <a href="#ref-borjas1994" role="doc-biblioref">Borjas 1994</a>; <a href="#ref-blau_kahn2015" role="doc-biblioref">Blau and Kahn 2015</a>)</span>; <strong>occupational segregation</strong>, where immigrants cluster in low-wage, labor-intensive industries <span class="citation" data-cites="borjas2018 garg2004">(<a href="#ref-borjas2018" role="doc-biblioref">Borjas 2018</a>; <a href="#ref-garg2004" role="doc-biblioref">Garg 2004</a>)</span>; and <strong>discrimination</strong>, where employer bias and colorism depress wages beyond any productivity difference <span class="citation" data-cites="hersch2011 oreopoulos2011">(<a href="#ref-hersch2011" role="doc-biblioref">Hersch 2011</a>; <a href="#ref-oreopoulos2011" role="doc-biblioref">Oreopoulos 2011</a>)</span>. These literatures treat immigrants as a uniform group. Almost none examine how citizenship and gender <em>interact,</em> the “double jeopardy” that intersectionality theory predicts <span class="citation" data-cites="browne_misra2003">(<a href="#ref-browne_misra2003" role="doc-biblioref">Browne and Misra 2003</a>)</span>; which is precisely the gap this paper fills.</p>
 <blockquote class="blockquote">
-<p><img src="wage1.png" class="img-fluid"><strong>Fig. 1:</strong> Ratio of Foreign-Born to Citizen Workers by Industry.</p>
+<p><img src="industry_ratio.png" class="img-fluid"><strong>Fig. 1:</strong> Ratio of Foreign-Born to Citizen Workers by Industry. Both naturalized and non-citizen workers are disproportionately represented in labor-intensive, lower-wage industries.</p>
+<p><strong>Source:</strong> own calculations using the ACS Data.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><img src="income_dist.png" class="img-fluid"><strong>Fig. 2:</strong> Income Group Distribution by Gender, Citizenship, and Education. Even among workers holding a bachelor’s degree or higher, non-citizen women remain concentrated in the low-income bracket, while native-born men show the most favorable distribution.</p>
 <p><strong>Source:</strong> own calculations using the ACS Data.</p>
 </blockquote>
 </section>
 <section id="empirical-strategy" class="level2">
 <h2 class="anchored" data-anchor-id="empirical-strategy">Empirical Strategy</h2>
-<p>I utilized a Mincer earnings regression (see equation below) and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects.</p>
+<p>I use two complementary approaches: a modified Mincer earnings regression to estimate conditional wage differentials, and a Blinder–Oaxaca decomposition to attribute the raw gaps to characteristics versus returns.</p>
 <p><span class="math display">\[
-\begin{align}
-\ln(wage_{i,s,t}) = \;&amp; \hat{\beta}_0 + \hat{\beta}_1\, Citizen_{i,s,t}
-    + \hat{\beta}_2\, Sex_{i,s,t}
-    + \hat{\beta}_3\,(Citizen \times Sex)_{i,s,t}
-    + \mathbf{X}'_{i,s,t}\,\hat{\beta}_4 \\[4pt]
-    &amp;+ \sum_{s=1}^{S} \hat{\gamma}_s\, D_{s,i}
-    + \sum_{t=1}^{T} \hat{\tau}_t\, D_{t,i}
-    + \sum_{j=1}^{J} \hat{\theta}_j\, D_{j,i}
-    + \sum_{k=1}^{K} \hat{\delta}_k\, D_{k,i}
-    + \epsilon_{i,s,t}
-\end{align}
+\begin{aligned}
+\ln(wage_{i,s,t}) = \;&amp; \beta_0 + \beta_1\, Nat_{i,s,t} + \beta_2\, NonCit_{i,s,t} + \beta_3\, Female_{i,s,t} \\[4pt]
+&amp;+ \beta_4\,(Nat \times Female)_{i,s,t} + \beta_5\,(NonCit \times Female)_{i,s,t} \\[4pt]
+&amp;+ \mathbf{Z}'_{i,s,t}\,\boldsymbol{\gamma}
++ \alpha_s + \tau_t + \theta_{j(i)} + \psi_{b(i)} + \varepsilon_{i,s,t}
+\end{aligned}
 \]</span></p>
-<p>where <span class="math inline">\(\mathbf{X}'_{i,s,t}\)</span> includes education, experience, and English proficiency, and fixed effects control for geography, year, industry, and birthplace.</p>
+<p>where <span class="math inline">\(\mathbf{Z}\)</span> is a vector of controls (education group, centered age and its square, English proficiency, number of resident children, and race), and <span class="math inline">\(\alpha_s, \tau_t, \theta_{j}, \psi_{b}\)</span> are fixed effects for PUMA–state geography, year, industry, and birthplace region. Native-born citizens and men are the reference groups, and standard errors are clustered on the 118 PUMA–state geographies.</p>
+<p>The coefficient of interest is <span class="math inline">\(\beta_5\)</span>: the <strong>additional</strong> wage gap faced by non-citizen women, over and above the separate gender and citizenship terms.</p>
+<p>I then apply a two-fold Blinder–Oaxaca decomposition with pooled reference coefficients to four contrasts. This splits each raw gap into an <strong>explained</strong> component (differences in observable characteristics, valued at pooled returns) and an <strong>unexplained</strong> component (differences in the <em>returns</em> to those characteristics). The unexplained share is commonly read as a proxy for discrimination, though it also absorbs unobserved productivity differences — so I treat it as an upper bound rather than a point estimate.</p>
 </section>
 <section id="results" class="level2">
-<h2 class="anchored" data-anchor-id="results">Results?</h2>
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<section id="mincer-regression" class="level3">
+<h3 class="anchored" data-anchor-id="mincer-regression">Mincer regression</h3>
+<table class="caption-top table">
+<caption><strong>Table 1:</strong> Effect of Gender and Citizenship on Log Wages. N = 526,832. *** p&lt;0.01, ** p&lt;0.05. Model 1 has no controls; Model 2 adds human capital and demographic controls; Model 3 adds year, industry, birthplace, and geography fixed effects.</caption>
+<colgroup>
+<col style="width: 21%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Variable</th>
+<th style="text-align: center;">Model 1</th>
+<th style="text-align: center;">Model 2</th>
+<th style="text-align: center;">Model 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Naturalized Citizen</td>
+<td style="text-align: center;">0.148***</td>
+<td style="text-align: center;">0.042***</td>
+<td style="text-align: center;">0.045**</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Non-Citizen</td>
+<td style="text-align: center;">−0.247***</td>
+<td style="text-align: center;">−0.018</td>
+<td style="text-align: center;">−0.020</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Female</td>
+<td style="text-align: center;">−0.403***</td>
+<td style="text-align: center;">−0.437***</td>
+<td style="text-align: center;">−0.359***</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Naturalized × Female</td>
+<td style="text-align: center;">0.019</td>
+<td style="text-align: center;">0.043**</td>
+<td style="text-align: center;">0.023</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Non-Citizen × Female</strong></td>
+<td style="text-align: center;"><strong>−0.040**</strong></td>
+<td style="text-align: center;"><strong>−0.042***</strong></td>
+<td style="text-align: center;"><strong>−0.048***</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Controls</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fixed Effects</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">X</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(R^2\)</span></td>
+<td style="text-align: center;">0.038</td>
+<td style="text-align: center;">0.339</td>
+<td style="text-align: center;">0.390</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li><p>Females earn approximately 32.7% less than males, primarily due to intangible factors such as employer bias and statistical discrimination.</p></li>
-<li><p>The analysis further reveals that non-citizen women face an additional 7.9% wage penalty beyond the independent effects of gender and citizenship alone.</p></li>
-<li><p>Additionally, Naturalized citizens earn about 3.7% more than native-born citizens, likely due to positive selection and legal protections.</p></li>
+<li><p><strong>Women earn approximately 30% less than men</strong> in the preferred specification (Model 3), conditional on human capital, race, industry, and location. Notably, the gender penalty <em>widens</em> once controls are added. Women in the sample hold slightly better observable characteristics than men, so comparing equally credentialed workers enlarges the gap.</p></li>
+<li><p><strong>Non-citizen women face an additional 4.7% penalty</strong> beyond the effects of gender and citizenship alone (p&lt;0.01).</p></li>
+<li><p><strong>Naturalized citizens earn about 4.6% more</strong> than native-born citizens, consistent with legal status mitigating. The raw 22% non-citizen penalty, by contrast, <strong>disappears</strong> once human capital and race controls are introduced, suggesting citizenship gaps operate mainly through human capital rather than unequal pay.</p></li>
+<li><p>Racial stratification operates alongside, not instead of, citizenship and gender: conditional on everything else, Black workers earn 18.2% less than observationally similar White workers, American Indian/Alaska Native workers 9.5% less, Hispanic/Latino workers 6.7% less, and Asian/Pacific Islander workers 4.9% less.</p></li>
 </ul>
 </section>
-<section id="publication-access" class="level2">
-<h2 class="anchored" data-anchor-id="publication-access">Publication &amp; Access</h2>
-<p>This paper is published in the <em>Macalester Street Journal</em>:<br>
-<strong>Equilibrium, Vol. 3 No.&nbsp;1 (2025)</strong></p>
-<p>📖 <strong>Read it on:</strong></p>
+<section id="blinderoaxaca-decomposition" class="level3">
+<h3 class="anchored" data-anchor-id="blinderoaxaca-decomposition">Blinder–Oaxaca decomposition</h3>
+<table class="caption-top table">
+<caption><strong>Table 2:</strong> Two-fold Blinder–Oaxaca decompositions, pooled reference. Gaps are in log points; “NC” denotes non-citizen. *** p&lt;0.01, ** p&lt;0.05.</caption>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Contrast</th>
+<th style="text-align: center;">Total Gap</th>
+<th style="text-align: center;">Explained</th>
+<th style="text-align: center;">Unexplained</th>
+<th style="text-align: center;">% Unexplained</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Male vs.&nbsp;Female</td>
+<td style="text-align: center;">0.397***</td>
+<td style="text-align: center;">0.031***</td>
+<td style="text-align: center;">0.366***</td>
+<td style="text-align: center;">92.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Citizen vs.&nbsp;Non-Citizen</td>
+<td style="text-align: center;">0.243***</td>
+<td style="text-align: center;">0.208***</td>
+<td style="text-align: center;">0.035**</td>
+<td style="text-align: center;">14.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NC Female vs.&nbsp;Citizen Female</td>
+<td style="text-align: center;">−0.302***</td>
+<td style="text-align: center;">−0.219***</td>
+<td style="text-align: center;">−0.084***</td>
+<td style="text-align: center;">27.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NC Female vs.&nbsp;NC Male</td>
+<td style="text-align: center;">−0.443***</td>
+<td style="text-align: center;">−0.025**</td>
+<td style="text-align: center;">−0.417***</td>
+<td style="text-align: center;">94.3</td>
+</tr>
+</tbody>
+</table>
+<p>The main finding is that <strong>the gender and citizenship gaps have opposite anatomies</strong>:</p>
 <ul>
-<li><p><a href="https://scholar.google.com/scholar?q=10.62543/msj.v3i1.90" target="_blank" title="View on Google Scholar" style="display: inline-flex; align-items: center; text-decoration: none; margin-right: 15px;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="Google Scholar Logo" width="24" height="24" style="margin-right: 8px;"> <span style="font-size: 1em;">Google Scholar</span> </a></p></li>
-<li><p><a href="https://macalesterstreet.org/index.php/journal/article/view/90" target="_blank" title="View on MSJ website" style="display: inline-flex; align-items: center; text-decoration: none; margin-right: 15px;"> <img src="https://macalesterstreet.org/public/journals/1/cover_issue_5_en_US.png" alt="MSJ Logo" width="24" height="24" style="margin-right: 8px;"> <span style="font-size: 1em;">MSJ Website</span> </a></p></li>
+<li><p>The <strong>gender gap is 92.1% unexplained.</strong> The explained component is small (0.031) only because two forces offset: women’s industry composition works against them, while their <em>advantage</em> in educational attainment pushes the other way. Within the unexplained portion, the largest identifiable contributor is the return to children: a fatherhood premium coexisting with a motherhood penalty.</p></li>
+<li><p>The <strong>citizenship gap is 85.7% explained</strong>, mostly driven by English proficiency and educational attainment.</p></li>
+<li><p>Relative to citizen women, non-citizen women earn about 26% less, roughly 72% of which reflects lower English proficiency and education, but a significant 27.7% reflects <strong>lower returns</strong> to the characteristics they do hold, direct evidence of credential devaluation. Most strikingly, relative to non-citizen men, non-citizen women earn about <strong>36% less and 94.3% of it is unexplained</strong>, even though their observable characteristics are, on net, nearly identical.</p></li>
 </ul>
+</section>
+</section>
+<section id="takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="takeaways">Takeaways</h2>
+<p>Citizenship gaps are largely <strong>structural</strong>, rooted in human capital; gender gaps are largely <strong>unexplained</strong>, consistent with employer bias and statistical discrimination. Where the two intersect, non-citizen women face a compounded penalty that survives every control I can throw at it.</p>
+<p>The policy implication is that improving access to human capital, while necessary, is not sufficient. Structural reforms must also dismantle the biases embedded in labor market institutions.</p>
+<p>A caveat: because the data are pooled cross-sections, these estimates should be read as conditional associations rather than causal effects, and the “unexplained” component is an upper bound on discrimination rather than a direct measure of it.</p>
+</section>
+<section id="selected-references" class="level2">
+<h2 class="anchored" data-anchor-id="selected-references">Selected References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-blau_kahn2015" class="csl-entry" role="listitem">
+Blau, Francine D., and Lawrence M. Kahn. 2015. <span>“Immigration and the Distribution of Incomes.”</span> In <em>Handbook on the Economics of International Migration</em>, edited by Barry R. Chiswick and Paul W. Miller. Elsevier.
+</div>
+<div id="ref-borjas1994" class="csl-entry" role="listitem">
+Borjas, George J. 1994. <span>“The Economics of Immigration.”</span> <em>Journal of Economic Literature</em> 32 (4): 1667–717.
+</div>
+<div id="ref-borjas2018" class="csl-entry" role="listitem">
+Borjas, George J. 2018. <span>“The New Immigrant in the <span>American</span> Economy.”</span> In <em>Interdisciplinary Perspectives on the New Immigration</em>, edited by M. M. Suárez-Orozco, C. Suárez-Orozco, and D. Qin-Hilliard. Taylor &amp; Francis.
+</div>
+<div id="ref-browne_misra2003" class="csl-entry" role="listitem">
+Browne, Irene, and Joya Misra. 2003. <span>“The Intersection of Gender and Race in the Labor Market.”</span> <em>Annual Review of Sociology</em> 29: 487–513. <a href="https://doi.org/10.1146/annurev.soc.29.010202.100016">https://doi.org/10.1146/annurev.soc.29.010202.100016</a>.
+</div>
+<div id="ref-chiswick1978" class="csl-entry" role="listitem">
+Chiswick, Barry R. 1978. <span>“The Effect of <span>Americanization</span> on the Earnings of Foreign-Born Men.”</span> <em>Journal of Political Economy</em> 86 (5): 897–921.
+</div>
+<div id="ref-garg2004" class="csl-entry" role="listitem">
+Garg, Meera. 2004. <span>“Wage Differentials for Immigrant Women in the <span>United States</span>: The Heightened Effect of Ethnic and Gender Interaction.”</span> <em>The Park Place Economist</em> 12 (1): 87–100.
+</div>
+<div id="ref-hersch2011" class="csl-entry" role="listitem">
+Hersch, Joni. 2011. <span>“The Persistence of Skin Color Discrimination for Immigrants.”</span> <em>Social Science Research</em>, ahead of print. <a href="https://doi.org/10.1016/j.ssresearch.2010.12.006">https://doi.org/10.1016/j.ssresearch.2010.12.006</a>.
+</div>
+<div id="ref-oreopoulos2011" class="csl-entry" role="listitem">
+Oreopoulos, Philip. 2011. <span>“Why Do Skilled Immigrants Struggle in the Labor Market? A Field Experiment with Thirteen Thousand Resumes.”</span> <em>American Economic Journal: Economic Policy</em> 3 (4): 148–71. <a href="https://doi.org/10.1257/pol.3.4.148">https://doi.org/10.1257/pol.3.4.148</a>.
+</div>
+</div>
 
 
 </section>

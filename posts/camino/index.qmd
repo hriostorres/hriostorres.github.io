@@ -62,7 +62,7 @@ By the end of the program, the cohort's average score had climbed 52 percentage 
     <div class="carousel-item active">
       <img src="camino-1.jpg" alt="Students working through factorization exercises on the whiteboard">
       <div class="carousel-caption">
-        <p>Factorization day: working through exam-style drills.<br><small>Photo shared with the students' consent.</small></p>
+        <p>Factorization day!<br><small>Photo shared with the students' consent.</small></p>
       </div>
     </div>
     <div class="carousel-item">

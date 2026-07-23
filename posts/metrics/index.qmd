@@ -3,54 +3,103 @@ title: "Wage Disparities Research"
 author: David Rios
 date: 05-05-2025
 categories: [econometrics, research, stata, r]
+bibliography: references.bib
 image: "wagepp.png"
+format:
+  html:
+    toc: true
+    toc-depth: 2
 ---
+
+This is an executive summary of my research. The full paper is available [here](Rios_Wage_Disparities_Paper.pdf), along with the [conference poster I made](Rios_Wage_Disparities_Poster.pdf) when I presented at the 2026 PREDOC Conference at UChicago Booth.
 
 ## Description
 
-In my Econometrics class, I researched wage disparities based on gender and citizenship status in the U.S. under the supervision of Prof. Amy Damon.
+In my Econometrics class, I researched wage disparities by gender and citizenship status in the U.S. labor market. My central question: **how do citizenship status and sex *jointly* shape wage disparities in the U.S. labor market?**
 
-This study used the ACS Data from 2012-2019. My research focused on foreign-born workers in the agriculture, construction, and service sectors—industries where immigrant labor is most concentrated as seen in the figure below.
+The study uses pooled American Community Survey (ACS) data from 2012–2019. The final sample contains **526,832 workers across 118 PUMA–state geographies**, with wages expressed in constant 2015 dollars. Citizenship is disaggregated into three groups: native-born citizens (85.2% of the sample), naturalized citizens (8.3%), and non-citizens (6.6%).
 
-> ![](wage1.png)**Fig. 1:** Ratio of Foreign-Born to Citizen Workers by Industry.
+Three strands of literature try to explain immigrant–native wage gaps: **human capital**, where gaps are attributed to English proficiency, education, and the systematic devaluation of foreign credentials [@chiswick1978; @borjas1994; @blau_kahn2015]; **occupational segregation**, where immigrants cluster in low-wage, labor-intensive industries [@borjas2018; @garg2004]; and **discrimination**, where employer bias and colorism depress wages beyond any productivity difference [@hersch2011; @oreopoulos2011]. These literatures treat immigrants as a uniform group. Almost none examine how citizenship and gender *interact,* the "double jeopardy" that intersectionality theory predicts [@browne_misra2003]; which is precisely the gap this paper fills.
+
+> ![](industry_ratio.png)**Fig. 1:** Ratio of Foreign-Born to Citizen Workers by Industry. Both naturalized and non-citizen workers are disproportionately represented in labor-intensive, lower-wage industries.
+>
+> **Source:** own calculations using the ACS Data.
+
+> ![](income_dist.png)**Fig. 2:** Income Group Distribution by Gender, Citizenship, and Education. Even among workers holding a bachelor's degree or higher, non-citizen women remain concentrated in the low-income bracket, while native-born men show the most favorable distribution.
 >
 > **Source:** own calculations using the ACS Data.
 
 ## Empirical Strategy
 
-I utilized a Mincer earnings regression (see equation below) and Blinder-Oaxaca decomposition to estimate wage differentials while controlling for human capital characteristics, sociodemographic factors, and industry and geographic fixed effects.
+I use two complementary approaches: a modified Mincer earnings regression to estimate conditional wage differentials, and a Blinder–Oaxaca decomposition to attribute the raw gaps to characteristics versus returns.
 
 $$
-\begin{align}
- \ln(wage_{i,s,t}) = \;& \hat{\beta}_0 + \hat{\beta}_1\, Citizen_{i,s,t}
-    + \hat{\beta}_2\, Sex_{i,s,t}
-    + \hat{\beta}_3\,(Citizen \times Sex)_{i,s,t}
-    + \mathbf{X}'_{i,s,t}\,\hat{\beta}_4 \\[4pt]
-    &+ \sum_{s=1}^{S} \hat{\gamma}_s\, D_{s,i}
-    + \sum_{t=1}^{T} \hat{\tau}_t\, D_{t,i}
-    + \sum_{j=1}^{J} \hat{\theta}_j\, D_{j,i}
-    + \sum_{k=1}^{K} \hat{\delta}_k\, D_{k,i}
-    + \epsilon_{i,s,t}
-\end{align}
+\begin{aligned}
+\ln(wage_{i,s,t}) = \;& \beta_0 + \beta_1\, Nat_{i,s,t} + \beta_2\, NonCit_{i,s,t} + \beta_3\, Female_{i,s,t} \\[4pt]
+&+ \beta_4\,(Nat \times Female)_{i,s,t} + \beta_5\,(NonCit \times Female)_{i,s,t} \\[4pt]
+&+ \mathbf{Z}'_{i,s,t}\,\boldsymbol{\gamma}
++ \alpha_s + \tau_t + \theta_{j(i)} + \psi_{b(i)} + \varepsilon_{i,s,t}
+\end{aligned}
 $$
 
-where $\mathbf{X}'_{i,s,t}$ includes education, experience, and English proficiency, and fixed effects control for geography, year, industry, and birthplace.
+where $\mathbf{Z}$ is a vector of controls (education group, centered age and its square, English proficiency, number of resident children, and race), and $\alpha_s, \tau_t, \theta_{j}, \psi_{b}$ are fixed effects for PUMA–state geography, year, industry, and birthplace region. Native-born citizens and men are the reference groups, and standard errors are clustered on the 118 PUMA–state geographies.
 
-## Results?
+The coefficient of interest is $\beta_5$: the **additional** wage gap faced by non-citizen women, over and above the separate gender and citizenship terms.
 
--   Females earn approximately 32.7% less than males, primarily due to intangible factors such as employer bias and statistical discrimination.
+I then apply a two-fold Blinder–Oaxaca decomposition with pooled reference coefficients to four contrasts. This splits each raw gap into an **explained** component (differences in observable characteristics, valued at pooled returns) and an **unexplained** component (differences in the *returns* to those characteristics). The unexplained share is commonly read as a proxy for discrimination, though it also absorbs unobserved productivity differences — so I treat it as an upper bound rather than a point estimate.
 
--   The analysis further reveals that non-citizen women face an additional 7.9% wage penalty beyond the independent effects of gender and citizenship alone.
+## Results
 
--   Additionally, Naturalized citizens earn about 3.7% more than native-born citizens, likely due to positive selection and legal protections.
+### Mincer regression
 
-## Publication & Access
+| Variable | Model 1 | Model 2 | Model 3 |
+|:---|:---:|:---:|:---:|
+| Naturalized Citizen | 0.148\*\*\* | 0.042\*\*\* | 0.045\*\* |
+| Non-Citizen | −0.247\*\*\* | −0.018 | −0.020 |
+| Female | −0.403\*\*\* | −0.437\*\*\* | −0.359\*\*\* |
+| Naturalized × Female | 0.019 | 0.043\*\* | 0.023 |
+| **Non-Citizen × Female** | **−0.040\*\*** | **−0.042\*\*\*** | **−0.048\*\*\*** |
+| Controls | | X | X |
+| Fixed Effects | | | X |
+| $R^2$ | 0.038 | 0.339 | 0.390 |
 
-This paper is published in the *Macalester Street Journal*:\
-**Equilibrium, Vol. 3 No. 1 (2025)**
+: **Table 1:** Effect of Gender and Citizenship on Log Wages. N = 526,832. \*\*\* p<0.01, \*\* p<0.05. Model 1 has no controls; Model 2 adds human capital and demographic controls; Model 3 adds year, industry, birthplace, and geography fixed effects.
 
-📖 **Read it on:**
+- **Women earn approximately 30% less than men** in the preferred specification (Model 3), conditional on human capital, race, industry, and location. Notably, the gender penalty *widens* once controls are added. Women in the sample hold slightly better observable characteristics than men, so comparing equally credentialed workers enlarges the gap.
 
--   <a href="https://scholar.google.com/scholar?q=10.62543/msj.v3i1.90" target="_blank" title="View on Google Scholar" style="display: inline-flex; align-items: center; text-decoration: none; margin-right: 15px;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="Google Scholar Logo" width="24" height="24" style="margin-right: 8px;"/> [Google Scholar]{style="font-size: 1em;"} </a>
+- **Non-citizen women face an additional 4.7% penalty** beyond the effects of gender and citizenship alone (p<0.01).
 
--   <a href="https://macalesterstreet.org/index.php/journal/article/view/90" target="_blank" title= "View on MSJ website" style="display: inline-flex; align-items: center; text-decoration: none; margin-right: 15px;"> <img src="https://macalesterstreet.org/public/journals/1/cover_issue_5_en_US.png" alt="MSJ Logo" width="24" height="24" style="margin-right: 8px;"/> [MSJ Website]{style="font-size: 1em;"} </a>
+- **Naturalized citizens earn about 4.6% more** than native-born citizens, consistent with legal status mitigating. The raw 22% non-citizen penalty, by contrast, **disappears** once human capital and race controls are introduced, suggesting citizenship gaps operate mainly through human capital rather than unequal pay.
+
+- Racial stratification operates alongside, not instead of, citizenship and gender: conditional on everything else, Black workers earn 18.2% less than observationally similar White workers, American Indian/Alaska Native workers 9.5% less, Hispanic/Latino workers 6.7% less, and Asian/Pacific Islander workers 4.9% less.
+
+### Blinder–Oaxaca decomposition
+
+| Contrast | Total Gap | Explained | Unexplained | % Unexplained |
+|:---|:---:|:---:|:---:|:---:|
+| Male vs. Female | 0.397\*\*\* | 0.031\*\*\* | 0.366\*\*\* | 92.1 |
+| Citizen vs. Non-Citizen | 0.243\*\*\* | 0.208\*\*\* | 0.035\*\* | 14.3 |
+| NC Female vs. Citizen Female | −0.302\*\*\* | −0.219\*\*\* | −0.084\*\*\* | 27.7 |
+| NC Female vs. NC Male | −0.443\*\*\* | −0.025\*\* | −0.417\*\*\* | 94.3 |
+
+: **Table 2:** Two-fold Blinder–Oaxaca decompositions, pooled reference. Gaps are in log points; "NC" denotes non-citizen. \*\*\* p<0.01, \*\* p<0.05.
+
+The main finding is that **the gender and citizenship gaps have opposite anatomies**:
+
+- The **gender gap is 92.1% unexplained.** The explained component is small (0.031) only because two forces offset: women's industry composition works against them, while their *advantage* in educational attainment pushes the other way. Within the unexplained portion, the largest identifiable contributor is the return to children: a fatherhood premium coexisting with a motherhood penalty.
+
+- The **citizenship gap is 85.7% explained**, mostly driven by English proficiency and educational attainment.
+
+- Relative to citizen women, non-citizen women earn about 26% less, roughly 72% of which reflects lower English proficiency and education, but a significant 27.7% reflects **lower returns** to the characteristics they do hold, direct evidence of credential devaluation. Most strikingly, relative to non-citizen men, non-citizen women earn about **36% less and 94.3% of it is unexplained**, even though their observable characteristics are, on net, nearly identical.
+
+## Takeaways
+
+Citizenship gaps are largely **structural**, rooted in human capital; gender gaps are largely **unexplained**, consistent with employer bias and statistical discrimination. Where the two intersect, non-citizen women face a compounded penalty that survives every control I can throw at it.
+
+The policy implication is that improving access to human capital, while necessary, is not sufficient. Structural reforms must also dismantle the biases embedded in labor market institutions.
+
+A caveat: because the data are pooled cross-sections, these estimates should be read as conditional associations rather than causal effects, and the "unexplained" component is an upper bound on discrimination rather than a direct measure of it.
+
+## Selected References
+::: {#refs}
+:::

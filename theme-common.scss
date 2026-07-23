@@ -1,0 +1,14 @@
+/*-- scss:defaults --*/
+// Shared by BOTH the light and dark themes.
+
+$navbar-bg: #2C3E50;
+$navbar-fg: #FFFFFF;
+$navbar-hl: #18BC9C;
+
+
+/*-- scss:rules --*/
+.navbar-brand,
+.navbar-brand .navbar-title,
+.navbar-title {
+  font-weight: 700;
+}

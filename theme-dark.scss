@@ -1,0 +1,27 @@
+/*-- scss:defaults --*/
+
+// Background and text colors
+$body-bg: #181818;
+$body-color: #e0e0e0;
+$link-color: #5bb75b;
+
+// Code blocks & borders
+$border-color: #333;
+
+
+/*-- scss:rules --*/
+.card {
+  background-color: #222;
+  border-color: $border-color;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+  color: $body-color;
+}
+
+// Blockquotes are used for figure + caption blocks in the posts
+blockquote {
+  border-left-color: $link-color;
+  color: $body-color;
+}
