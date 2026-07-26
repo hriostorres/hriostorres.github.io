@@ -434,79 +434,12 @@ window.Quarto = {
 \]</span></p>
 <p>where <span class="math inline">\(\mathbf{Z}\)</span> is a vector of controls (education group, centered age and its square, English proficiency, number of resident children, and race), and <span class="math inline">\(\alpha_s, \tau_t, \theta_{j}, \psi_{b}\)</span> are fixed effects for PUMA–state geography, year, industry, and birthplace region. Native-born citizens and men are the reference groups, and standard errors are clustered on the 118 PUMA–state geographies.</p>
 <p>The coefficient of interest is <span class="math inline">\(\beta_5\)</span>: the <strong>additional</strong> wage gap faced by non-citizen women, over and above the separate gender and citizenship terms.</p>
-<p>I then apply a two-fold Blinder–Oaxaca decomposition with pooled reference coefficients to four contrasts. This splits each raw gap into an <strong>explained</strong> component (differences in observable characteristics, valued at pooled returns) and an <strong>unexplained</strong> component (differences in the <em>returns</em> to those characteristics). The unexplained share is commonly read as a proxy for discrimination, though it also absorbs unobserved productivity differences — so I treat it as an upper bound rather than a point estimate.</p>
+<p>I then apply a two-fold Blinder–Oaxaca decomposition with pooled reference coefficients to four contrasts. This splits each raw gap into an <strong>explained</strong> component (differences in observable characteristics, valued at pooled returns) and an <strong>unexplained</strong> component (differences in the <em>returns</em> to those characteristics). The unexplained share is commonly read as a proxy for discrimination, though it also absorbs unobserved productivity differences.</p>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
 <section id="mincer-regression" class="level3">
 <h3 class="anchored" data-anchor-id="mincer-regression">Mincer regression</h3>
-<table class="caption-top table">
-<caption><strong>Table 1:</strong> Effect of Gender and Citizenship on Log Wages. N = 526,832. *** p&lt;0.01, ** p&lt;0.05. Model 1 has no controls; Model 2 adds human capital and demographic controls; Model 3 adds year, industry, birthplace, and geography fixed effects.</caption>
-<colgroup>
-<col style="width: 21%">
-<col style="width: 26%">
-<col style="width: 26%">
-<col style="width: 26%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Variable</th>
-<th style="text-align: center;">Model 1</th>
-<th style="text-align: center;">Model 2</th>
-<th style="text-align: center;">Model 3</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Naturalized Citizen</td>
-<td style="text-align: center;">0.148***</td>
-<td style="text-align: center;">0.042***</td>
-<td style="text-align: center;">0.045**</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Non-Citizen</td>
-<td style="text-align: center;">−0.247***</td>
-<td style="text-align: center;">−0.018</td>
-<td style="text-align: center;">−0.020</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Female</td>
-<td style="text-align: center;">−0.403***</td>
-<td style="text-align: center;">−0.437***</td>
-<td style="text-align: center;">−0.359***</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Naturalized × Female</td>
-<td style="text-align: center;">0.019</td>
-<td style="text-align: center;">0.043**</td>
-<td style="text-align: center;">0.023</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Non-Citizen × Female</strong></td>
-<td style="text-align: center;"><strong>−0.040**</strong></td>
-<td style="text-align: center;"><strong>−0.042***</strong></td>
-<td style="text-align: center;"><strong>−0.048***</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Controls</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">X</td>
-<td style="text-align: center;">X</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Fixed Effects</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">X</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span class="math inline">\(R^2\)</span></td>
-<td style="text-align: center;">0.038</td>
-<td style="text-align: center;">0.339</td>
-<td style="text-align: center;">0.390</td>
-</tr>
-</tbody>
-</table>
 <ul>
 <li><p><strong>Women earn approximately 30% less than men</strong> in the preferred specification (Model 3), conditional on human capital, race, industry, and location. Notably, the gender penalty <em>widens</em> once controls are added. Women in the sample hold slightly better observable characteristics than men, so comparing equally credentialed workers enlarges the gap.</p></li>
 <li><p><strong>Non-citizen women face an additional 4.7% penalty</strong> beyond the effects of gender and citizenship alone (p&lt;0.01).</p></li>
@@ -516,55 +449,6 @@ window.Quarto = {
 </section>
 <section id="blinderoaxaca-decomposition" class="level3">
 <h3 class="anchored" data-anchor-id="blinderoaxaca-decomposition">Blinder–Oaxaca decomposition</h3>
-<table class="caption-top table">
-<caption><strong>Table 2:</strong> Two-fold Blinder–Oaxaca decompositions, pooled reference. Gaps are in log points; “NC” denotes non-citizen. *** p&lt;0.01, ** p&lt;0.05.</caption>
-<colgroup>
-<col style="width: 16%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Contrast</th>
-<th style="text-align: center;">Total Gap</th>
-<th style="text-align: center;">Explained</th>
-<th style="text-align: center;">Unexplained</th>
-<th style="text-align: center;">% Unexplained</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Male vs.&nbsp;Female</td>
-<td style="text-align: center;">0.397***</td>
-<td style="text-align: center;">0.031***</td>
-<td style="text-align: center;">0.366***</td>
-<td style="text-align: center;">92.1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Citizen vs.&nbsp;Non-Citizen</td>
-<td style="text-align: center;">0.243***</td>
-<td style="text-align: center;">0.208***</td>
-<td style="text-align: center;">0.035**</td>
-<td style="text-align: center;">14.3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">NC Female vs.&nbsp;Citizen Female</td>
-<td style="text-align: center;">−0.302***</td>
-<td style="text-align: center;">−0.219***</td>
-<td style="text-align: center;">−0.084***</td>
-<td style="text-align: center;">27.7</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">NC Female vs.&nbsp;NC Male</td>
-<td style="text-align: center;">−0.443***</td>
-<td style="text-align: center;">−0.025**</td>
-<td style="text-align: center;">−0.417***</td>
-<td style="text-align: center;">94.3</td>
-</tr>
-</tbody>
-</table>
 <p>The main finding is that <strong>the gender and citizenship gaps have opposite anatomies</strong>:</p>
 <ul>
 <li><p>The <strong>gender gap is 92.1% unexplained.</strong> The explained component is small (0.031) only because two forces offset: women’s industry composition works against them, while their <em>advantage</em> in educational attainment pushes the other way. Within the unexplained portion, the largest identifiable contributor is the return to children: a fatherhood premium coexisting with a motherhood penalty.</p></li>
