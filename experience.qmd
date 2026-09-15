@@ -1,6 +1,8 @@
 ---
 title: ""
-format: html
+format:
+  html:
+    page-layout: full
 css: styles.css
 ---
 
@@ -9,26 +11,19 @@ css: styles.css
 I am working on three research projects this summer:
 
 
-**Data Scientist** \| University of Chicago, via PREDOC \| April 2026–Present
+**Data Scientist** \| University of Chicago, via PREDOC \| April 2026–August 2026
 
 - **Self-Command and Screen-Time: Evidence from an Educational Intervention** (with Mridul Joshi, Jalnidh Kaur and Lena Song) — *Conditionally accepted at the Journal of Development Economics based on pre-results review.* A randomized controlled trial evaluating a digital empowerment intervention for college students in Punjab, India. I work on making the trial's analysis meet top economics journals' reproducibility standards and on developing the study's research hypotheses by synthesizing more than 20 cross-disciplinary papers on digital wellness.
 
-- **Mobile Phones and Gender Attitudes in Sub-Saharan Africa** — Observational study of how mobile phone expansion affects gender-related attitudes and behaviors, exploiting exogenous variation in phone coverage from lightning strikes. *(more details soon.)*
+- **Mobile Phones and Gender Attitudes in Sub-Saharan Africa** (with Profs. Isabelle Cohen and Lindsey Novak) — Observational study of how mobile phone expansion affects gender-related attitudes and behaviors, using lightning-strike frequency from NASA satellite data as an instrument for phone coverage. I recovered data from key coastal cities that was being lost during the dataset merging process, restoring 17,000 households to the study sample.
 
-**Research Assistant** \| Macalester College, via MSCS Department \| Summer 2026
+**Research Assistant** \| Macalester College, via MSCS Department \| June 2026-August 2026
 
 - **Health Impacts of the Hennepin Energy Recovery Center (HERC)** — (with Prof. Leslie Myint) Estimating the causal impact of HERC, a municipal waste incinerator in the Twin Cities, on asthma and cancer outcomes in nearby communities ahead of the facility's 2027 closure debate. I integrated four government datasets at the census-tract level to estimate localized pollution exposure and apply causal inference methods in R, evaluating the robustness of findings through sensitivity analyses and alternative specifications. The project aims to provide rigorous evidence to inform ongoing public discussions about HERC's future. For background on the broader policy debate, see the [Zero Burn Coalition](https://www.zeroburncoalition.org/).
 
-
-## Publications
-
-[**Inequalities in the U.S. Labor Market**](/posts/metrics/) — Econometrics research quantifying wage disparities by gender and citizenship status using a Mincer earnings regression and Blinder-Oaxaca decomposition on 500K+ ACS records (2012–2019). Published in the *Macalester Street Journal: Equilibrium*, Vol. 3 (2025). See the [full project page](/posts/metrics/) for more information.
-
-- I will be presenting this paper at the **PREDOC Research Conference** at the Booth School of Business, University of Chicago, in **July 2026**.
-
 ## Industry Experience
 
-**Data Analyst** \| Metropolitan Council, St. Paul, MN \| Jan 2026–May 2026
+**Analyst** \| Metropolitan Council, St. Paul, MN \| Jan 2026–May 2026
 
 - Modeled regional transit demand to optimize service timing, accessibility, and network usage by analyzing Travel Behavior Inventory data from 5,000+ households in R.
 
@@ -43,6 +38,12 @@ I am working on three research projects this summer:
 - Quantified economic damages in a TV network contract dispute by modeling counterfactual viewership in Stata, isolating the blackout's true impact from a pre-existing ratings decline.
 
 - Distilled the damages estimates into a client-ready memo to guide the case team's litigation strategy.
+
+## Publications
+
+[**Inequalities in the U.S. Labor Market**](/posts/metrics/) — Econometrics research quantifying wage disparities by gender and citizenship status using a Mincer earnings regression and Blinder-Oaxaca decomposition on 500K+ ACS records (2012–2019). Published in the *Macalester Street Journal: Equilibrium*, Vol. 3 (2025). See the [full project page](/posts/metrics/) for more information.
+
+- I will be presenting this paper at the **PREDOC Research Conference** at the Booth School of Business, University of Chicago, in **July 2026**.
 
 
 ## Teaching
