@@ -20,12 +20,12 @@ format:
 ::: {.column width="95%" style="padding-top: 0.5rem; padding-left: 2rem; padding-bottom: 0; margin-bottom: 0;"}
 ### Hermogenes David Rios
 
-I am Hermogenes David Rios, a senior studying Economics and Statistics at [Macalester College](https://www.macalester.edu) in Saint Paul, Minnesota (graduating in May 2027). I work in applied econometrics and causal inference, using data to separate what a policy or an event actually caused from what was already underway. Learn more [about me](experience.qmd).
+I am Hermogenes David Rios, a senior studying Economics and Statistics at [Macalester College](https://www.macalester.edu) in Saint Paul, Minnesota, graduating in May 2027. My research interests span applied econometrics, causal inference, and macroeconomics. I use empirical methods and macroeconomic models to inform policy. I am currently working on my honors thesis in Macroeconomics. Learn more [about me](experience.qmd).
 
 
 ### Highlights
 
-[**Research Assistant on Three Projects This Summer:**](experience.qmd#research) I estimate the health effects of a Twin Cities waste incinerator using causal inference methods in R, audit the analysis pipeline for a randomized controlled trial of a digital-literacy curriculum in Punjab, India, and recovered 17,000 households for a study of how mobile phone access shapes gender attitudes in Sub-Saharan Africa.
+[**Research Assistant on Three Projects This Summer:**](experience.qmd#research) Estimated the health effects of a Twin Cities waste incinerator using causal inference methods in R, audited the analysis pipeline for a randomized controlled trial of a digital-literacy curriculum in Punjab, India, and recovered 17,000 households for a study of how mobile phone access shapes gender attitudes in Sub-Saharan Africa.
 
 [**Author of "Immigration, Gender, and Citizenship":**](/posts/metrics/) Quantified labor market disparities using Mincer earnings regressions and a Blinder-Oaxaca decomposition on 500K+ census records. Published in the *Macalester Street Journal: Equilibrium*, Vol. 3 (2025).
 
