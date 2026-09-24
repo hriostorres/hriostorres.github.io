@@ -8,8 +8,7 @@ css: styles.css
 
 ## Research
 
-I am working on three research projects this summer:
-
+I have worked on three different research projects this past Summer 2026:
 
 **Data Scientist** \| University of Chicago, via PREDOC \| April 2026–August 2026
 
