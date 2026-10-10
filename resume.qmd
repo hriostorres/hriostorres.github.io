@@ -1,0 +1,18 @@
+---
+title: "Resume"
+format: html
+toc: false
+resources:
+  - Rios_Resume_Oct.pdf
+---
+
+
+::: resume-buttons
+<a class="btn resume-btn" href="Rios_Resume_Oct.pdf" download><i class="bi bi-download"></i> Download my resume</a>
+:::
+
+::: resume-frame
+<iframe src="Rios_Resume_Oct.pdf#view=FitH" title="David Rios resume">
+
+</iframe>
+:::
