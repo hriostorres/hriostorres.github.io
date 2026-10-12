@@ -15,8 +15,6 @@ website:
         text: Home
       - href: experience.qmd
         text: Experience
-      - href: resume.qmd
-        text: Resume
       - href: projects.qmd
         text: Projects
       - href: photos.qmd
