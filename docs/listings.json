@@ -3,6 +3,8 @@
     "listing": "/projects.html",
     "items": [
       "/projects/redlining-spatial/index.html",
+      "/projects/active-longitudinal/index.html",
+      "/projects/migration-time-series/index.html",
       "/projects/ai-adoption/index.html",
       "/projects/camino-a-la-u/index.html",
       "/projects/bolivia-elections/index.html",

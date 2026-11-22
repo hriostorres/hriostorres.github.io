@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -48,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-a35bc03f1e2f430db05a1405b12fe5d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-3030fd4fecb0acdf68e5a430843b89ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-ad2609e0ac7c3eab34e67e973dc4bbc3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -354,8 +389,8 @@ window.Quarto = {
 <div class="quarto-title">
 <h1 class="title">Redlining and Home Values in the Twin Cities</h1>
   <div class="quarto-categories">
+    <div class="quarto-category">correlated data</div>
     <div class="quarto-category">spatial statistics</div>
-    <div class="quarto-category">research</div>
     <div class="quarto-category">R</div>
   </div>
   </div>
@@ -391,7 +426,7 @@ window.Quarto = {
 </header>
 
 
-<p>Final project for Correlated Data at Macalester. <a href="redlining-slides.pdf">Download the slides (PDF)</a>.</p>
+<p>Spatial data project for Correlated Data at Macalester. <a href="redlining-slides.pdf">Download the slides (PDF)</a>.</p>
 <section id="question" class="level2">
 <h2 class="anchored" data-anchor-id="question">Question</h2>
 <p>Between 1935 and 1940, the Home Owners’ Loan Corporation (HOLC) graded neighborhoods from A (“best”) to D (“hazardous”), and lenders denied credit to D-graded, largely minority neighborhoods. Do those grades still predict home values in the Twin Cities?</p>
@@ -403,15 +438,13 @@ window.Quarto = {
 <li><strong>Treatment:</strong> HOLC grade from <a href="https://dsl.richmond.edu/panorama/redlining">Mapping Inequality</a>, assigned to each tract by largest area of overlap. The sample is limited to the HOLC-graded area: most of Minneapolis, St.&nbsp;Paul, and some suburbs.</li>
 <li><strong>Neighborhood structure:</strong> 3-nearest neighbors, which gives every tract a comparable number of neighbors and limits links across the Mississippi River.</li>
 </ul>
-<p>We fit conditional (CAR) and simultaneous (SAR) autoregressive models and selected SAR: its residuals show essentially no spatial autocorrelation (Moran’s I = −0.06, vs.&nbsp;0.386 for CAR).</p>
-<p><span class="math display">\[
-\log(Y) = X\beta + \epsilon, \qquad \epsilon = \lambda W \epsilon + u, \qquad u \sim N(0, \sigma^2 I)
-\]</span></p>
+<p>We fit conditional (CAR) and simultaneous (SAR) autoregressive models and selected SAR: its residuals show essentially no spatial autocorrelation (Moran’s I = −0.06, vs.&nbsp;0.386 for CAR), and its BIC is lower (72.3 vs.&nbsp;153.9).</p>
+<p><span class="math display">\[\log(Y) = X\beta + \epsilon, \qquad \epsilon = \lambda W \epsilon + u, \qquad u \sim N(0, \sigma^2 I)\]</span></p>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
 <p>Relative to A-graded tracts, tracts graded C or D in the 1930s have home values roughly <strong>23–24% lower</strong> today.</p>
-<table class="table-striped caption-top table">
+<table class="caption-top table">
 <caption>SAR coefficient estimates. Implied difference = exp(β) − 1. BIC = 72.3.</caption>
 <colgroup>
 <col style="width: 29%">
@@ -467,6 +500,16 @@ window.Quarto = {
 <section id="takeaways" class="level2">
 <h2 class="anchored" data-anchor-id="takeaways">Takeaways</h2>
 <p>Areas deemed “safe” for lending in the 1930s have higher home values today. The residual pattern suggests that mid-century interstate construction created additional divisions within the cities. The model includes no confounders, so these estimates are conditional associations, not causal effects.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Neighborhoods and SAR model</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="Neighborhoods and SAR model"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>centroids <span class="ot">&lt;-</span> <span class="fu">st_centroid</span>(<span class="fu">st_geometry</span>(joined), <span class="at">of_largest_polygon =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>knn_nb <span class="ot">&lt;-</span> <span class="fu">knn2nb</span>(<span class="fu">knearneigh</span>(centroids, <span class="at">k =</span> <span class="dv">3</span>))</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Ww <span class="ot">&lt;-</span> <span class="fu">nb2listw</span>(knn_nb, <span class="at">style =</span> <span class="st">"W"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>mod_sar <span class="ot">&lt;-</span> <span class="fu">spautolm</span>(log_val <span class="sc">~</span> grade, <span class="at">data =</span> joined, <span class="at">listw =</span> Ww, <span class="at">family =</span> <span class="st">"SAR"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 
 
 </section>

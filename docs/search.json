@@ -46,7 +46,7 @@
     "href": "projects/redlining-spatial/index.html",
     "title": "Redlining and Home Values in the Twin Cities",
     "section": "",
-    "text": "Final project for Correlated Data at Macalester. Download the slides (PDF)."
+    "text": "Spatial data project for Correlated Data at Macalester. Download the slides (PDF)."
   },
   {
     "objectID": "projects/redlining-spatial/index.html#question",
@@ -60,7 +60,7 @@
     "href": "projects/redlining-spatial/index.html#data-and-model",
     "title": "Redlining and Home Values in the Twin Cities",
     "section": "Data and Model",
-    "text": "Data and Model\n\nOutcome: log median home value by census tract, from American Community Survey 5-year estimates.\nTreatment: HOLC grade from Mapping Inequality, assigned to each tract by largest area of overlap. The sample is limited to the HOLC-graded area: most of Minneapolis, St. Paul, and some suburbs.\nNeighborhood structure: 3-nearest neighbors, which gives every tract a comparable number of neighbors and limits links across the Mississippi River.\n\nWe fit conditional (CAR) and simultaneous (SAR) autoregressive models and selected SAR: its residuals show essentially no spatial autocorrelation (Moran’s I = −0.06, vs. 0.386 for CAR).\n\\[\n\\log(Y) = X\\beta + \\epsilon, \\qquad \\epsilon = \\lambda W \\epsilon + u, \\qquad u \\sim N(0, \\sigma^2 I)\n\\]"
+    "text": "Data and Model\n\nOutcome: log median home value by census tract, from American Community Survey 5-year estimates.\nTreatment: HOLC grade from Mapping Inequality, assigned to each tract by largest area of overlap. The sample is limited to the HOLC-graded area: most of Minneapolis, St. Paul, and some suburbs.\nNeighborhood structure: 3-nearest neighbors, which gives every tract a comparable number of neighbors and limits links across the Mississippi River.\n\nWe fit conditional (CAR) and simultaneous (SAR) autoregressive models and selected SAR: its residuals show essentially no spatial autocorrelation (Moran’s I = −0.06, vs. 0.386 for CAR), and its BIC is lower (72.3 vs. 153.9).\n\\[\\log(Y) = X\\beta + \\epsilon, \\qquad \\epsilon = \\lambda W \\epsilon + u, \\qquad u \\sim N(0, \\sigma^2 I)\\]"
   },
   {
     "objectID": "projects/redlining-spatial/index.html#results",
@@ -74,35 +74,77 @@
     "href": "projects/redlining-spatial/index.html#takeaways",
     "title": "Redlining and Home Values in the Twin Cities",
     "section": "Takeaways",
-    "text": "Takeaways\nAreas deemed “safe” for lending in the 1930s have higher home values today. The residual pattern suggests that mid-century interstate construction created additional divisions within the cities. The model includes no confounders, so these estimates are conditional associations, not causal effects."
+    "text": "Takeaways\nAreas deemed “safe” for lending in the 1930s have higher home values today. The residual pattern suggests that mid-century interstate construction created additional divisions within the cities. The model includes no confounders, so these estimates are conditional associations, not causal effects.\n\n\nNeighborhoods and SAR model\n\ncentroids &lt;- st_centroid(st_geometry(joined), of_largest_polygon = TRUE)\nknn_nb &lt;- knn2nb(knearneigh(centroids, k = 3))\nWw &lt;- nb2listw(knn_nb, style = \"W\")\n\nmod_sar &lt;- spautolm(log_val ~ grade, data = joined, listw = Ww, family = \"SAR\")"
   },
   {
-    "objectID": "projects/bolivia-elections/index.html",
-    "href": "projects/bolivia-elections/index.html",
-    "title": "2025 Bolivia Elections Website",
+    "objectID": "projects/camino-a-la-u/index.html",
+    "href": "projects/camino-a-la-u/index.html",
+    "title": "Camino a la U",
     "section": "",
-    "text": "I created a multilingual website to support voters as they navigate the upcoming Bolivia 2025 national elections.\nThe site features:\n\nIn-depth candidate profiles\nSummarized and official party platforms\nContextual political analysis\nInteractive decision-support tools\nAvailability in Spanish, Quechua, Aymara, Guaraní, English, and more — because democracy should speak everyone’s language.\n\n🌐 Visit the website\n\n\n\n\n\n\nTipImportant:\n\n\n\nThis page does not promote or support any particular candidate. Its sole purpose is to provide clear, verified, and accessible information to all Bolivians, regardless of background or political affiliation.\n\n\nThis site was built with accessibility and civic empowerment in mind. Designed for both desktop and mobile users, the interface is clean and intuitive to encourage broader engagement from all sectors of society."
+    "text": "Camino a la U came from my own experience navigating scholarships and applications with very little guidance. I wanted to make the path clearer for students who were just as capable as I was, but who lacked the information, mentorship, and financial resources."
   },
   {
-    "objectID": "projects/bolivia-elections/index.html#overview",
-    "href": "projects/bolivia-elections/index.html#overview",
-    "title": "2025 Bolivia Elections Website",
+    "objectID": "projects/camino-a-la-u/index.html#why-i-started-this",
+    "href": "projects/camino-a-la-u/index.html#why-i-started-this",
+    "title": "Camino a la U",
     "section": "",
-    "text": "I created a multilingual website to support voters as they navigate the upcoming Bolivia 2025 national elections.\nThe site features:\n\nIn-depth candidate profiles\nSummarized and official party platforms\nContextual political analysis\nInteractive decision-support tools\nAvailability in Spanish, Quechua, Aymara, Guaraní, English, and more — because democracy should speak everyone’s language.\n\n🌐 Visit the website\n\n\n\n\n\n\nTipImportant:\n\n\n\nThis page does not promote or support any particular candidate. Its sole purpose is to provide clear, verified, and accessible information to all Bolivians, regardless of background or political affiliation.\n\n\nThis site was built with accessibility and civic empowerment in mind. Designed for both desktop and mobile users, the interface is clean and intuitive to encourage broader engagement from all sectors of society."
+    "text": "Camino a la U came from my own experience navigating scholarships and applications with very little guidance. I wanted to make the path clearer for students who were just as capable as I was, but who lacked the information, mentorship, and financial resources."
   },
   {
-    "objectID": "projects/bolivia-elections/index.html#authors-note",
-    "href": "projects/bolivia-elections/index.html#authors-note",
-    "title": "2025 Bolivia Elections Website",
-    "section": "Author’s Note",
-    "text": "Author’s Note\nWith Bolivia facing an economic crisis, a growing parallel exchange rate, and deep political polarization across departments, the August 17th elections are more than a vote—they’re a turning point.\nThis project aims to inform, clarify, and empower. There’s a lot of speculation about each candidate’s platform. To help cut through the noise, I gathered and organized reliable, verifiable information into one publicly available platform.\nEach profile includes a summary of the candidate’s platform, as well as a link to their official government plan filed with the Tribunal Supremo Electoral.\n\nThis is a personal, nonpartisan project driven by the hope for a more informed, inclusive, and democratic Bolivia."
+    "objectID": "projects/camino-a-la-u/index.html#the-problem",
+    "href": "projects/camino-a-la-u/index.html#the-problem",
+    "title": "Camino a la U",
+    "section": "The Problem",
+    "text": "The Problem\nTo enter a public university in Bolivia, students must pass a single high-stakes entrance exam. There is no holistic review. Every year, 25,000–27,000 students in Santa Cruz take the PSA/CUP admission exam, competing for only about 100 spots per major.\nThe students who pass are rarely just the most capable. They are the ones who can afford preparation courses that bridge the gap between what public schools teach and what the exam demands. A prep course costs around 700 bolivianos (100 USD), roughly 22% of a family’s monthly income. Access to college becomes access to test prep."
+  },
+  {
+    "objectID": "projects/camino-a-la-u/index.html#what-we-did",
+    "href": "projects/camino-a-la-u/index.html#what-we-did",
+    "title": "Camino a la U",
+    "section": "What We Did",
+    "text": "What We Did\nIn December 2025 and January 2026, I went back home to Santa Cruz to run the program’s first cohort, backed by a $2,000 Live It Fund grant from Macalester’s Entrepreneurship and Innovation Department:\n\nSelected 25 students from a pool of more than 200 applicants.\nCoordinated five teachers from my old school, Hnos. Cavanis, and secured approval from the school’s principal and the state department of education.\nBuilt the curriculum around real exam-style questions, which I had been collecting and studying since November.\nCovered every barrier the grant could reach: school materials, refreshments, and transportation for students who needed it."
+  },
+  {
+    "objectID": "projects/camino-a-la-u/index.html#the-results",
+    "href": "projects/camino-a-la-u/index.html#the-results",
+    "title": "Camino a la U",
+    "section": "The Results",
+    "text": "The Results\nStudents took two quizzes every week, plus three cumulative exams covering all the material:\n\n\n\n\nPre-Test\nMid-Term\nFinal Test\n\n\n\n\nAverage score\n32.3%\n42.3%\n84.2%\n\n\n\nBy the end of the program, the cohort’s average score had climbed 52 percentage points — from 32% on the diagnostic to 84% on the final — on the kind of exam where a few points decide who gets a seat."
+  },
+  {
+    "objectID": "projects/camino-a-la-u/index.html#in-the-classroom",
+    "href": "projects/camino-a-la-u/index.html#in-the-classroom",
+    "title": "Camino a la U",
+    "section": "In the Classroom",
+    "text": "In the Classroom\n\n\n\n  \n    \n      \n      \n        Factorization day!Photo shared with the students' consent.\n      \n    \n    \n      \n      \n        Midterm Examination.Photo shared with the students' consent.\n      \n    \n    \n      \n      \n        The first Camino a la U cohort at Hnos. Cavanis.Photo shared with the students' consent.\n      \n    \n  \n  \n    \n    Previous\n  \n  \n    \n    Next"
+  },
+  {
+    "objectID": "projects/camino-a-la-u/index.html#free-prep-for-everyone",
+    "href": "projects/camino-a-la-u/index.html#free-prep-for-everyone",
+    "title": "Camino a la U",
+    "section": "Free Prep for Everyone",
+    "text": "Free Prep for Everyone\nTo make the project sustainable beyond the cohort, I recorded the questions students missed most often, and the mistakes behind them, and published everything as a free YouTube playlist. I plan to keep adding videos so that any student, anywhere, can practice and improve their chances of getting in."
+  },
+  {
+    "objectID": "projects/camino-a-la-u/index.html#the-long-game",
+    "href": "projects/camino-a-la-u/index.html#the-long-game",
+    "title": "Camino a la U",
+    "section": "The Long Game",
+    "text": "The Long Game\nThe long-term goal is not to grant access to the 25 students in the first cohort, or to whoever finds my videos. It is to remove the barrier itself, so that no one has to decide who gets to pursue higher education, and financing is never the limitation.\n\nEducation was my path to freedom, and I want others to find theirs."
+  },
+  {
+    "objectID": "projects/ai-adoption/index.html",
+    "href": "projects/ai-adoption/index.html",
+    "title": "AI Usage in the US",
+    "section": "",
+    "text": "🌐 Visit the website"
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nRedlining and Home Values in the Twin Cities\n\n\n\nspatial statistics\n\nresearch\n\nR\n\n\n\nA spatial autoregressive model of how 1930s HOLC redlining grades predict home values today in Minneapolis–St. Paul.\n\n\n\n\n\n\n\n\n\n\n\n\nAI Usage in the US\n\n\n\ndata science\n\nR\n\n\n\nInteractive data science project analyzing AI adoption, workforce composition, and wage premiums across U.S. industries.\n\n\n\n\n\n\n\n\n\n\n\n\nCamino a la U\n\n\n\neducation\n\nbolivia\n\n\n\nA free university-access program for low-income students in Santa Cruz, Bolivia — funded by Macalester’s Live It Fund.\n\n\n\n\n\n\n\n\n\n\n\n\n2025 Bolivia Elections Website\n\n\n\nbolivia\n\nR\n\n\n\nMultilingual, nonpartisan voter guide for Bolivia’s 2025 national elections.\n\n\n\n\n\n\n\n\n\n\n\n\nWage Disparities Research\n\n\n\neconometrics\n\nresearch\n\nStata\n\nR\n\n\n\nHow gender and citizenship jointly shape U.S. wage gaps, using 527K ACS records.\n\n\n\n\n\n\n\n\n\n\n\n\nUnsupervised Learning: Clustering and PCA\n\n\n\nmachine learning\n\nR\n\n\n\nK-means, hierarchical clustering, and PCA on the audio features of Justin Bieber’s Billboard hits.\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nRedlining and Home Values in the Twin Cities\n\n\n\ncorrelated data\n\nspatial statistics\n\nR\n\n\n\nA spatial autoregressive model of how 1930s HOLC redlining grades predict home values today in Minneapolis–St. Paul.\n\n\n\n\n\n\n\n\n\n\n\n\nCognitive Training in Older Adults: A Longitudinal Analysis\n\n\n\ncorrelated data\n\nlongitudinal\n\nR\n\n\n\nMixed-effects models of 10-year speed-of-processing outcomes in the ACTIVE randomized trial.\n\n\n\n\n\n\n\n\n\n\n\n\nPublic Attention to Migration\n\n\n\ncorrelated data\n\ntime series\n\nR\n\n\n\nB-spline trend, monthly seasonality, and an MA(1) error model for U.S. Google searches of “migration,” 2004–2026.\n\n\n\n\n\n\n\n\n\n\n\n\nAI Usage in the US\n\n\n\ndata science\n\nR\n\n\n\nInteractive data science project analyzing AI adoption, workforce composition, and wage premiums across U.S. industries.\n\n\n\n\n\n\n\n\n\n\n\n\nCamino a la U\n\n\n\neducation\n\nbolivia\n\n\n\nA free university-access program for low-income students in Santa Cruz, Bolivia — funded by Macalester’s Live It Fund.\n\n\n\n\n\n\n\n\n\n\n\n\n2025 Bolivia Elections Website\n\n\n\nbolivia\n\nR\n\n\n\nMultilingual, nonpartisan voter guide for Bolivia’s 2025 national elections.\n\n\n\n\n\n\n\n\n\n\n\n\nWage Disparities Research\n\n\n\neconometrics\n\nresearch\n\nStata\n\nR\n\n\n\nHow gender and citizenship jointly shape U.S. wage gaps, using 527K ACS records.\n\n\n\n\n\n\n\n\n\n\n\n\nUnsupervised Learning: Clustering and PCA\n\n\n\nmachine learning\n\nR\n\n\n\nK-means, hierarchical clustering, and PCA on the audio features of Justin Bieber’s Billboard hits.\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -161,67 +203,88 @@
     "text": "V5–V6 Route at the St. Paul Bouldering Project\n  \n  \n    \n    Codo de los Andes in Santa Cruz, Bolivia\n  \n  \n    \n    Monserrate in Bogotá, Colombia\n  \n  \n    \n    Miraflores in Lima, Perú\n  \n  \n    \n    Chicago Skyline from Lake Michigan\n  \n  \n    \n    Palacio Real in Madrid, Spain\n  \n  \n    \n    Aurora Borealis over Flekke, Norway\n  \n  \n    \n    Split Rock Lighthouse near Duluth, MN\n  \n  \n    \n    Old Main at Macalester College"
   },
   {
-    "objectID": "projects/ai-adoption/index.html",
-    "href": "projects/ai-adoption/index.html",
-    "title": "AI Usage in the US",
+    "objectID": "projects/active-longitudinal/index.html",
+    "href": "projects/active-longitudinal/index.html",
+    "title": "Cognitive Training in Older Adults: A Longitudinal Analysis",
     "section": "",
-    "text": "🌐 Visit the website"
+    "text": "Longitudinal data project for Correlated Data at Macalester. Download the full report (PDF)."
   },
   {
-    "objectID": "projects/camino-a-la-u/index.html",
-    "href": "projects/camino-a-la-u/index.html",
-    "title": "Camino a la U",
+    "objectID": "projects/active-longitudinal/index.html#question",
+    "href": "projects/active-longitudinal/index.html#question",
+    "title": "Cognitive Training in Older Adults: A Longitudinal Analysis",
+    "section": "Question",
+    "text": "Question\nIn the ACTIVE trial, does cognitive training change older adults’ speed of processing over 10 years, after adjusting for baseline age, gender, and baseline memory?"
+  },
+  {
+    "objectID": "projects/active-longitudinal/index.html#data-and-model",
+    "href": "projects/active-longitudinal/index.html#data-and-model",
+    "title": "Cognitive Training in Older Adults: A Longitudinal Analysis",
+    "section": "Data and Model",
+    "text": "Data and Model\nACTIVE randomized 2,489 adults aged 65+ to memory, reasoning, or speed-of-processing training, or a control group, with follow-ups after training and at years 1, 2, 3, 5, and 10. The outcome is total time across four speed tests (lower = faster).\nWe fit four linear mixed-effects models with lme4::lmer(), all with categorical time and adjustment for baseline age, gender, and baseline memory. They varied the treatment specification (all three training arms vs. speed training only) and the random effects (intercepts vs. intercepts and slopes). Likelihood ratio tests and BIC selected the simplest model: speed training × visit, with random intercepts by participant.\n\\[\\text{Speed}_{it} = \\beta_0 + \\mathbf{X}_i'\\boldsymbol\\beta + \\tau_t + \\gamma_t\\,\\text{SpeedTrain}_i + b_i + \\varepsilon_{it}, \\qquad b_i \\sim N(0, \\sigma_b^2)\\]\n\nFig. 1: Mean speed-of-processing score by training group. Speed training (purple) produces a large immediate gain that fades but persists."
+  },
+  {
+    "objectID": "projects/active-longitudinal/index.html#results",
+    "href": "projects/active-longitudinal/index.html#results",
+    "title": "Cognitive Training in Older Adults: A Longitudinal Analysis",
+    "section": "Results",
+    "text": "Results\n\nMemory and reasoning training did not change speed differently from control.\nSpeed training lowered scores by about 268 points relative to all other groups immediately after training, and by 155 points (SE 13.7) at year 10.\nBy year 10, the other groups were 168 points slower (SE 7.1) than at baseline; the speed group was close to its starting level.\n\nBecause assignment was randomized, these differences can be read as causal effects of the training. About 41% of participants died during follow-up, so estimates may reflect healthier survivors.\n\n\nSelected model\n\nlmer_mod3 &lt;- lmer(Speed ~ AgeAtBaseline + GENDER + BaselineMem +\n                    factor(Years) * SpeedGRP + (1 | AID),\n                  data = modData, REML = FALSE)"
+  },
+  {
+    "objectID": "projects/bolivia-elections/index.html",
+    "href": "projects/bolivia-elections/index.html",
+    "title": "2025 Bolivia Elections Website",
     "section": "",
-    "text": "Camino a la U came from my own experience navigating scholarships and applications with very little guidance. I wanted to make the path clearer for students who were just as capable as I was, but who lacked the information, mentorship, and financial resources."
+    "text": "I created a multilingual website to support voters as they navigate the upcoming Bolivia 2025 national elections.\nThe site features:\n\nIn-depth candidate profiles\nSummarized and official party platforms\nContextual political analysis\nInteractive decision-support tools\nAvailability in Spanish, Quechua, Aymara, Guaraní, English, and more — because democracy should speak everyone’s language.\n\n🌐 Visit the website\n\n\n\n\n\n\nTipImportant:\n\n\n\nThis page does not promote or support any particular candidate. Its sole purpose is to provide clear, verified, and accessible information to all Bolivians, regardless of background or political affiliation.\n\n\nThis site was built with accessibility and civic empowerment in mind. Designed for both desktop and mobile users, the interface is clean and intuitive to encourage broader engagement from all sectors of society."
   },
   {
-    "objectID": "projects/camino-a-la-u/index.html#why-i-started-this",
-    "href": "projects/camino-a-la-u/index.html#why-i-started-this",
-    "title": "Camino a la U",
+    "objectID": "projects/bolivia-elections/index.html#overview",
+    "href": "projects/bolivia-elections/index.html#overview",
+    "title": "2025 Bolivia Elections Website",
     "section": "",
-    "text": "Camino a la U came from my own experience navigating scholarships and applications with very little guidance. I wanted to make the path clearer for students who were just as capable as I was, but who lacked the information, mentorship, and financial resources."
+    "text": "I created a multilingual website to support voters as they navigate the upcoming Bolivia 2025 national elections.\nThe site features:\n\nIn-depth candidate profiles\nSummarized and official party platforms\nContextual political analysis\nInteractive decision-support tools\nAvailability in Spanish, Quechua, Aymara, Guaraní, English, and more — because democracy should speak everyone’s language.\n\n🌐 Visit the website\n\n\n\n\n\n\nTipImportant:\n\n\n\nThis page does not promote or support any particular candidate. Its sole purpose is to provide clear, verified, and accessible information to all Bolivians, regardless of background or political affiliation.\n\n\nThis site was built with accessibility and civic empowerment in mind. Designed for both desktop and mobile users, the interface is clean and intuitive to encourage broader engagement from all sectors of society."
   },
   {
-    "objectID": "projects/camino-a-la-u/index.html#the-problem",
-    "href": "projects/camino-a-la-u/index.html#the-problem",
-    "title": "Camino a la U",
-    "section": "The Problem",
-    "text": "The Problem\nTo enter a public university in Bolivia, students must pass a single high-stakes entrance exam. There is no holistic review. Every year, 25,000–27,000 students in Santa Cruz take the PSA/CUP admission exam, competing for only about 100 spots per major.\nThe students who pass are rarely just the most capable. They are the ones who can afford preparation courses that bridge the gap between what public schools teach and what the exam demands. A prep course costs around 700 bolivianos (100 USD), roughly 22% of a family’s monthly income. Access to college becomes access to test prep."
+    "objectID": "projects/bolivia-elections/index.html#authors-note",
+    "href": "projects/bolivia-elections/index.html#authors-note",
+    "title": "2025 Bolivia Elections Website",
+    "section": "Author’s Note",
+    "text": "Author’s Note\nWith Bolivia facing an economic crisis, a growing parallel exchange rate, and deep political polarization across departments, the August 17th elections are more than a vote—they’re a turning point.\nThis project aims to inform, clarify, and empower. There’s a lot of speculation about each candidate’s platform. To help cut through the noise, I gathered and organized reliable, verifiable information into one publicly available platform.\nEach profile includes a summary of the candidate’s platform, as well as a link to their official government plan filed with the Tribunal Supremo Electoral.\n\nThis is a personal, nonpartisan project driven by the hope for a more informed, inclusive, and democratic Bolivia."
   },
   {
-    "objectID": "projects/camino-a-la-u/index.html#what-we-did",
-    "href": "projects/camino-a-la-u/index.html#what-we-did",
-    "title": "Camino a la U",
-    "section": "What We Did",
-    "text": "What We Did\nIn December 2025 and January 2026, I went back home to Santa Cruz to run the program’s first cohort, backed by a $2,000 Live It Fund grant from Macalester’s Entrepreneurship and Innovation Department:\n\nSelected 25 students from a pool of more than 200 applicants.\nCoordinated five teachers from my old school, Hnos. Cavanis, and secured approval from the school’s principal and the state department of education.\nBuilt the curriculum around real exam-style questions, which I had been collecting and studying since November.\nCovered every barrier the grant could reach: school materials, refreshments, and transportation for students who needed it."
+    "objectID": "projects/migration-time-series/index.html",
+    "href": "projects/migration-time-series/index.html",
+    "title": "Public Attention to Migration",
+    "section": "",
+    "text": "Time series project for Correlated Data at Macalester. Read the full report."
   },
   {
-    "objectID": "projects/camino-a-la-u/index.html#the-results",
-    "href": "projects/camino-a-la-u/index.html#the-results",
-    "title": "Camino a la U",
-    "section": "The Results",
-    "text": "The Results\nStudents took two quizzes every week, plus three cumulative exams covering all the material:\n\n\n\n\nPre-Test\nMid-Term\nFinal Test\n\n\n\n\nAverage score\n32.3%\n42.3%\n84.2%\n\n\n\nBy the end of the program, the cohort’s average score had climbed 52 percentage points — from 32% on the diagnostic to 84% on the final — on the kind of exam where a few points decide who gets a seat."
+    "objectID": "projects/migration-time-series/index.html#question",
+    "href": "projects/migration-time-series/index.html#question",
+    "title": "Public Attention to Migration",
+    "section": "Question",
+    "text": "Question\nHow has U.S. public attention to migration evolved since 2004, and how much of it is driven by political events rather than trend or seasonality?"
   },
   {
-    "objectID": "projects/camino-a-la-u/index.html#in-the-classroom",
-    "href": "projects/camino-a-la-u/index.html#in-the-classroom",
-    "title": "Camino a la U",
-    "section": "In the Classroom",
-    "text": "In the Classroom\n\n\n\n  \n    \n      \n      \n        Factorization day!Photo shared with the students' consent.\n      \n    \n    \n      \n      \n        Midterm Examination.Photo shared with the students' consent.\n      \n    \n    \n      \n      \n        The first Camino a la U cohort at Hnos. Cavanis.Photo shared with the students' consent.\n      \n    \n  \n  \n    \n    Previous\n  \n  \n    \n    Next"
+    "objectID": "projects/migration-time-series/index.html#data-and-model",
+    "href": "projects/migration-time-series/index.html#data-and-model",
+    "title": "Public Attention to Migration",
+    "section": "Data and Model",
+    "text": "Data and Model\nMonthly Google Trends index (0–100) for the search term “migration” in the U.S., January 2004–September 2026 (273 months).\n\nTrend: B-spline with knots at 2015, 2020, and 2023.\nSeasonality: month indicators, plus indicators for two news-driven periods: Dec 2023–Apr 2024 (2024 presidential campaign) and Feb–Jun 2026 (Metro Surge enforcement coverage).\nErrors: MA(1), chosen by BIC and residual diagnostics after inspecting the ACF/PACF; fit with astsa::sarima().\n\n\\[Y_t = f(t) + \\sum_{m=2}^{12}\\gamma_m \\mathbb{1}[\\text{month}_t = m] + \\delta_1 N^{(24)}_t + \\delta_2 N^{(26)}_t + \\epsilon_t, \\qquad \\epsilon_t = W_t + \\theta W_{t-1}\\]\n\nFig. 1: Monthly search interest with a loess smoother. Shaded areas mark the two news-driven periods."
   },
   {
-    "objectID": "projects/camino-a-la-u/index.html#free-prep-for-everyone",
-    "href": "projects/camino-a-la-u/index.html#free-prep-for-everyone",
-    "title": "Camino a la U",
-    "section": "Free Prep for Everyone",
-    "text": "Free Prep for Everyone\nTo make the project sustainable beyond the cohort, I recorded the questions students missed most often, and the mistakes behind them, and published everything as a free YouTube playlist. I plan to keep adding videos so that any student, anywhere, can practice and improve their chances of getting in."
+    "objectID": "projects/migration-time-series/index.html#results",
+    "href": "projects/migration-time-series/index.html#results",
+    "title": "Public Attention to Migration",
+    "section": "Results",
+    "text": "Results\n\nSearch interest was flat from 2006 to about 2020, then rose sharply after 2023.\nHolding trend and month constant, interest was 30.7 points higher (SE 1.8) in late 2023–early 2024 and 39.2 points higher (SE 2.1) in early 2026; both p &lt; 0.01.\n\\(\\hat\\theta = 0.46\\) (SE 0.06): each month’s shock carries partly into the next month and no further.\nSeasonality peaks in spring and fall and dips in summer.\n\n\nFig. 2: Two-year forecast (red) with prediction intervals, assuming no new news-driven spikes."
   },
   {
-    "objectID": "projects/camino-a-la-u/index.html#the-long-game",
-    "href": "projects/camino-a-la-u/index.html#the-long-game",
-    "title": "Camino a la U",
-    "section": "The Long Game",
-    "text": "The Long Game\nThe long-term goal is not to grant access to the 25 students in the first cohort, or to whoever finds my videos. It is to remove the barrier itself, so that no one has to decide who gets to pursue higher education, and financing is never the limitation.\n\nEducation was my path to freedom, and I want others to find theirs."
+    "objectID": "projects/migration-time-series/index.html#takeaways",
+    "href": "projects/migration-time-series/index.html#takeaways",
+    "title": "Public Attention to Migration",
+    "section": "Takeaways",
+    "text": "Takeaways\nPublic attention to migration responds sharply to political events, beyond its long-run trend. Limitations: Google Trends is a relative, sampled index; “migration” also captures unrelated searches (bird or data migration); and the forecast extrapolates the spline.\n\n\nCore model\n\nX &lt;- model.matrix(~ bs(Date, knots = c(2015, 2020, 2023)) +\n                    factor(Month, levels = 1:12) + news24 + news26,\n                  data = migration)[, -1]\n\nm_ma1 &lt;- sarima(migration_ts, p = 0, d = 0, q = 1, xreg = X)"
   },
   {
     "objectID": "projects/unsupervised-learning/index.html",
