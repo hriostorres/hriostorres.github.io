@@ -1,12 +1,15 @@
 ---
 title: "Projects"
 listing:
-  contents: posts
+  contents: projects
   sort: "date desc"
-  type: default
+  type: grid
+  grid-columns: 3
+  image-height: 200px
   categories: true
-  sort-ui: false
-  filter-ui: false
+  sort-ui: [date, title]
+  filter-ui: true
+  fields: [image, title, description, categories]
 page-layout: full
 title-block-banner: true
 ---

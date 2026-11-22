@@ -1,0 +1,14 @@
+---
+title: "[AI Usage in the US](https://mac-ds212-s26.github.io/project-economics-and-ds/)"
+author: David Rios, Katherine Manuel, Isauro Reyes
+date: 2026-05-07
+categories: [data science, R]
+image: thumbnail.png
+aliases:
+  - /posts/ai_usage/ai_usage.html
+description: >
+  Interactive data science project analyzing AI adoption,
+  workforce composition, and wage premiums across U.S. industries.
+---
+
+🌐 [Visit the website](https://mac-ds212-s26.github.io/project-economics-and-ds/)

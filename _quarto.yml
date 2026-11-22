@@ -4,10 +4,9 @@ project:
   render:
     - "*.qmd"
 
-
 website:
   title: "Hermogenes David Rios"
-  favicon: "logo_hr.png"
+  favicon: assets/img/favicon.png
   google-analytics: G-JBCLMNEM0Z
   navbar:
     right:
@@ -17,7 +16,7 @@ website:
         text: Experience
       - href: projects.qmd
         text: Projects
-      - href: photos.qmd
+      - href: personal.qmd
         text: Personal
       - icon: linkedin
         href: https://www.linkedin.com/in/hermogenesdavid/ 
@@ -35,15 +34,9 @@ website:
 format:
   html:
     theme:
-      # light: flatly
-      # dark: darkly
-      dark: [cosmo, theme-common.scss, theme-dark.scss]
-      light: [cosmo, theme-common.scss]
-    css: styles.css
+      dark: [cosmo, assets/styles/theme-common.scss, assets/styles/theme-dark.scss]
+      light: [cosmo, assets/styles/theme-common.scss]
+    css: assets/styles/styles.css
     toc: true
     
 editor: visual
-
-
-
-

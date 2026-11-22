@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./logo_hr.png" rel="icon" type="image/png">
+<link href="./assets/img/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-a35bc03f1e2f430db05a1405b12fe5d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-7ecacad2203a841610095ae3c51bd915.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dark-3030fd4fecb0acdf68e5a430843b89ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -85,9 +85,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -144,7 +144,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 
 <body class="nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
@@ -333,15 +333,11 @@ window.Quarto = {
 <span class="menu-text">Experience</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
-<span class="menu-text">Resume</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./projects.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./photos.html"> 
+    <a class="nav-link" href="./personal.html"> 
 <span class="menu-text">Personal</span></a>
   </li>  
   <li class="nav-item compact">
@@ -384,7 +380,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Ym9saXZpYQ==">bolivia <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZGF0YSUyMHNjaWVuY2U=">data science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZWNvbm9tZXRyaWNz">econometrics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZWR1Y2F0aW9u">education <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cg==">r <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cmVzZWFyY2g=">research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3RhdGE=">stata <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Ym9saXZpYQ==">bolivia <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZGF0YSUyMHNjaWVuY2U=">data science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZWNvbm9tZXRyaWNz">econometrics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZWR1Y2F0aW9u">education <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(5)</span></div><div class="category" data-category="cmVzZWFyY2g=">research <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c3BhdGlhbCUyMHN0YXRpc3RpY3M=">spatial statistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RhdGE=">Stata <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -397,56 +393,82 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="ZGF0YSUyMHNjaWVuY2UlMkNy" data-listing-date-sort="1778126400000" data-listing-file-modified-sort="1778175908809" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<div class="thumbnail"><a href="./posts/ai_usage/ai_usage.html" class="no-external">
-
-<img loading="lazy" src="./posts/ai_usage/ai_image.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ai_usage/ai_usage.html" class="no-external"></a><a href="https://mac-stat212-s26.github.io/project-economics-and-ds/">AI Usage in the US</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ai_usage/ai_usage.html" class="no-external"></a>
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="c3BhdGlhbCUyMHN0YXRpc3RpY3MlMkNyZXNlYXJjaCUyQ1I=" data-listing-date-sort="1795154400000" data-listing-file-modified-sort="1795387496318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="469">
+<a href="./projects/redlining-spatial/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/redlining-spatial/sar-residuals.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Redlining and Home Values in the Twin Cities
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3BhdGlhbCUyMHN0YXRpc3RpY3M='); return false;">spatial statistics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cmVzZWFyY2g='); return false;">research</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>A spatial autoregressive model of how 1930s HOLC redlining grades predict home values today in Minneapolis–St.&nbsp;Paul.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="ZGF0YSUyMHNjaWVuY2UlMkNS" data-listing-date-sort="1778130000000" data-listing-file-modified-sort="1795387459725" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<a href="./projects/ai-adoption/index.html" class="quarto-grid-link">
+</a><div class="quarto-grid-item card h-100 card-left"><a href="./projects/ai-adoption/index.html" class="quarto-grid-link">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/ai-adoption/thumbnail.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+</a><div class="card-body post-contents"><a href="./projects/ai-adoption/index.html" class="quarto-grid-link">
+</a><h5 class="no-anchor card-title listing-title"><a href="./projects/ai-adoption/index.html" class="quarto-grid-link">
+</a><a href="https://mac-ds212-s26.github.io/project-economics-and-ds/">AI Usage in the US</a>
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMHNjaWVuY2U='); return false;">data science</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('cg=='); return false;">r</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/ai_usage/ai_usage.html" class="no-external">
+<div class="card-text listing-description delink">
 <p>Interactive data science project analyzing AI adoption, workforce composition, and wage premiums across U.S. industries.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/ai_usage/ai_usage.html" class="no-external">
-<div class="listing-date">
-May 7, 2026
-</div>
-<div class="listing-author">
-David Rios, Katherine Manuel, Isauro Reyes
-</div>
-</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="ZWR1Y2F0aW9uJTJDYm9saXZpYQ==" data-listing-date-sort="1768453200000" data-listing-file-modified-sort="1784735794893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="734">
-<div class="thumbnail"><a href="./posts/camino/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/camino/camino-3.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/camino/index.html" class="no-external">Camino a la U</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/camino/index.html" class="no-external"></a>
 </div>
+</div>
+<div class="g-col-1" data-index="2" data-categories="ZWR1Y2F0aW9uJTJDYm9saXZpYQ==" data-listing-date-sort="1768456800000" data-listing-file-modified-sort="1795387459727" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="734">
+<a href="./projects/camino-a-la-u/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/camino-a-la-u/camino-3.jpg" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Camino a la U
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('ZWR1Y2F0aW9u'); return false;">education</div>
@@ -454,125 +476,84 @@ David Rios, Katherine Manuel, Isauro Reyes
 <div class="listing-category" onclick="window.quartoListingCategory('Ym9saXZpYQ=='); return false;">bolivia</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/camino/index.html" class="no-external">
+<div class="card-text listing-description delink">
 <p>A free university-access program for low-income students in Santa Cruz, Bolivia — funded by Macalester’s Live It Fund.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/camino/index.html" class="no-external">
-<div class="listing-date">
-Jan 15, 2026
-</div>
-<div class="listing-author">
-David Rios
-</div>
-</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Ym9saXZpYQ==" data-listing-date-sort="1748836800000" data-listing-file-modified-sort="1783969594347" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="220">
-<div class="thumbnail"><a href="./posts/website/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/website/websitepp.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/website/index.html" class="no-external">2025 Bolivia Elections Website</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/website/index.html" class="no-external"></a>
+</div></a>
 </div>
+<div class="g-col-1" data-index="3" data-categories="Ym9saXZpYSUyQ1I=" data-listing-date-sort="1748840400000" data-listing-file-modified-sort="1795387459726" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="220">
+<a href="./projects/bolivia-elections/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/bolivia-elections/thumbnail.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+2025 Bolivia Elections Website
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Ym9saXZpYQ=='); return false;">bolivia</div>
 
-</div>
-<div class="delink listing-description"><a href="./posts/website/index.html" class="no-external">
-I created a multilingual website to support voters as they navigate the upcoming Bolivia 2025 national elections.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/website/index.html" class="no-external">
-<div class="listing-date">
-Jun 2, 2025
-</div>
-<div class="listing-author">
-David Rios
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="ZWNvbm9tZXRyaWNzJTJDcmVzZWFyY2glMkNzdGF0YSUyQ3I=" data-listing-date-sort="1746417600000" data-listing-file-modified-sort="1785093781208" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="869">
-<div class="thumbnail"><a href="./posts/metrics/index.html" class="no-external">
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
 
-<img loading="lazy" src="./posts/metrics/wagepp.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/metrics/index.html" class="no-external">Wage Disparities Research</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/metrics/index.html" class="no-external"></a>
 </div>
+<div class="card-text listing-description delink">
+<p>Multilingual, nonpartisan voter guide for Bolivia’s 2025 national elections.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="ZWNvbm9tZXRyaWNzJTJDcmVzZWFyY2glMkNTdGF0YSUyQ1I=" data-listing-date-sort="1746421200000" data-listing-file-modified-sort="1795387459728" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="842">
+<a href="./projects/wage-disparities/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/wage-disparities/thumbnail.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Wage Disparities Research
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('ZWNvbm9tZXRyaWNz'); return false;">econometrics</div>
 
 <div class="listing-category" onclick="window.quartoListingCategory('cmVzZWFyY2g='); return false;">research</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('c3RhdGE='); return false;">stata</div>
+<div class="listing-category" onclick="window.quartoListingCategory('U3RhdGE='); return false;">Stata</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('cg=='); return false;">r</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/metrics/index.html" class="no-external">
-This is an executive summary of my research. The full paper is available here, along with the conference poster I made when I presented at the 2026 PREDOC Conference at…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/metrics/index.html" class="no-external">
-<div class="listing-date">
-May 5, 2025
-</div>
-<div class="listing-author">
-David Rios
-</div>
-</a>
+<div class="card-text listing-description delink">
+<p>How gender and citizenship jointly shape U.S. wage gaps, using 527K ACS records.</p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5n" data-listing-date-sort="1743480000000" data-listing-file-modified-sort="1781025864633" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2428">
-<div class="thumbnail"><a href="./posts/stats253/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/stats253/pca.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/stats253/index.html" class="no-external">Unsupervised Learning: Clustering and PCA</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/stats253/index.html" class="no-external">Machine Learning Group Assignment</a>
+</div></a>
 </div>
+<div class="g-col-1" data-index="5" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDUg==" data-listing-date-sort="1743483600000" data-listing-file-modified-sort="1795387459730" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2429">
+<a href="./projects/unsupervised-learning/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/unsupervised-learning/thumbnail.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Unsupervised Learning: Clustering and PCA
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
 </div>
-<div class="delink listing-description"><a href="./posts/stats253/index.html" class="no-external">
-This ML project applies unsupervised machine learning techniques—clustering and PCA—to analyze the musical features of Justin Bieber’s top hits!
-</a></div>
+<div class="card-text listing-description delink">
+<p>K-means, hierarchical clustering, and PCA on the audio features of Justin Bieber’s Billboard hits.</p>
 </div>
-<div class="metadata">
-<a href="./posts/stats253/index.html" class="no-external">
-<div class="listing-date">
-Apr 1, 2025
 </div>
-<div class="listing-author">
-David Rios, Elena Ortiz, Fiona Godsill, and Lily Morgan
-</div>
-</a>
-</div>
+</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
