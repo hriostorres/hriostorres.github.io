@@ -9,7 +9,7 @@ resources:
   - redlining-slides.pdf
 ---
 
-Spatial data project for Correlated Data at Macalester. [Download the slides (PDF)](redlining-slides.pdf).
+Spatial data project for Correlated Data at Macalester. [Download the slides (PDF)](Redlining_Presentation.pdf).
 
 ## Question
 
